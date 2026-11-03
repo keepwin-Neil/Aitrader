@@ -1,0 +1,100 @@
+{
+  "claude_fft_cycle_trend": {
+    "params": {
+      "fft_window": 20,
+      "min_period": 7,
+      "max_period": 18,
+      "ema_period": 35,
+      "buy_threshold": -0.19999999999999996,
+      "sell_threshold": 0.2,
+      "atr_stop_mul": 2.0
+    },
+    "promoted_at": "2026-03-22T21:01:45.208352",
+    "source_sharpe": 1.88,
+    "source_return": 168.12,
+    "std_return": 43.14,
+    "delta_return": 124.98,
+    "source_method": "bayesian",
+    "wf_consistency": 55.6
+  },
+  "claude_garch_vol_timing": {
+    "params": {
+      "garch_omega": 0.00021,
+      "garch_alpha": 0.25,
+      "garch_beta": 0.95,
+      "vol_ma": 60,
+      "vol_buy_thresh": 1.2,
+      "vol_sell_thresh": 1.2,
+      "ema_fast": 10,
+      "ema_slow": 35,
+      "atr_stop_mul": 2.0
+    },
+    "promoted_at": "2026-03-23T08:06:56.180381",
+    "source_sharpe": 1.84,
+    "source_return": 108.67,
+    "std_return": 16.56,
+    "delta_return": 92.11,
+    "source_method": "bayesian",
+    "wf_consistency": 55.6
+  },
+  "claude_dual_ma_cross": {
+    "params": {
+      "fast_period": 8,
+      "slow_period": 36,
+      "ma_type": "sma",
+      "atr_stop_mul": 1.0
+    },
+    "promoted_at": "2026-03-23T10:56:39.372981",
+    "source_sharpe": 1.25,
+    "source_return": 136.2,
+    "std_return": 15.83,
+    "delta_return": 120.37,
+    "source_method": "bayesian",
+    "wf_consistency": 55.6
+  },
+  "claude_trix_momentum": {
+    "params": {
+      "trix_period": 22,
+      "signal_period": 15,
+      "atr_stop_mul": 1.5
+    },
+    "promoted_at": "2026-03-23T10:56:39.410236",
+    "source_sharpe": 1.18,
+    "source_return": 130.51,
+    "std_return": 82.42,
+    "delta_return": 48.09,
+    "source_method": "bayesian",
+    "wf_consistency": 55.6
+  },
+  "claude_chandelier_exit": {
+    "params": {
+      "lookback": 25,
+      "atr_mult": 2.0,
+      "atr_period": 28,
+      "atr_stop_mul": 2.0
+    },
+    "promoted_at": "2026-03-23T10:56:39.441724",
+    "source_sharpe": 1.71,
+    "source_return": 200.98,
+    "std_return": 72.49,
+    "delta_return": 128.49,
+    "source_method": "bayesian",
+    "wf_consistency": 77.8
+  },
+  "claude_adaptive_ensemble_v2": {
+    "params": {
+      "rolling_window": 70,
+      "min_weight": 0.06999999999999999,
+      "buy_threshold": 0.45,
+      "sell_threshold": 0.3,
+      "atr_stop_mul": 3.0
+    },
+    "promoted_at": "2026-03-23T10:56:39.592001",
+    "source_sharpe": 1.25,
+    "source_return": 72.71,
+    "std_return": -19.7,
+    "delta_return": 92.41,
+    "source_method": "bayesian",
+    "wf_consistency": 55.6
+  }
+}

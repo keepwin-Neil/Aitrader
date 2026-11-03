@@ -1,0 +1,31 @@
+{
+  "claude_trix_momentum": {
+    "params": {
+      "trix_period": 25,
+      "signal_period": 15,
+      "atr_stop_mul": 1.5
+    },
+    "promoted_at": "2026-03-23T11:01:00.448145",
+    "source_sharpe": 0.55,
+    "source_return": 10.3,
+    "std_return": -12.67,
+    "delta_return": 22.97,
+    "source_method": "bayesian",
+    "wf_consistency": 62.5
+  },
+  "claude_aroon_oscillator": {
+    "params": {
+      "aroon_period": 30,
+      "buy_threshold": 40,
+      "sell_threshold": -70,
+      "atr_stop_mul": 2.0
+    },
+    "promoted_at": "2026-03-23T11:01:00.537349",
+    "source_sharpe": 0.39,
+    "source_return": 8.51,
+    "std_return": -2.94,
+    "delta_return": 11.45,
+    "source_method": "bayesian",
+    "wf_consistency": 58.3
+  }
+}

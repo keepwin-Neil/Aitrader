@@ -1,0 +1,1302 @@
+{
+  "symbol": "BTC",
+  "market": "CRYPTO",
+  "period": "2y",
+  "dynamic_position": false,
+  "method": "bayesian",
+  "optimized_at": "2026-03-23T16:28:23.269260",
+  "total_combos_tested": 3200,
+  "elapsed_seconds": 41.9,
+  "strategies": {
+    "claude_momentum_breakout": {
+      "params": {
+        "breakout_period": 39,
+        "exit_period": 3,
+        "vol_ma": 20,
+        "vol_ratio_min": 1.9000000000000001,
+        "atr_stop_mul": 2.0
+      },
+      "optimized_keys": [
+        "breakout_period",
+        "exit_period",
+        "vol_ratio_min",
+        "atr_stop_mul"
+      ],
+      "sharpe": 0.85,
+      "total_return": 19.49,
+      "max_drawdown": -5.29,
+      "win_rate": 100.0,
+      "total_trades": 2,
+      "combos_tested": 200,
+      "method": "bayesian"
+    },
+    "claude_linreg_trend": {
+      "params": {
+        "linreg_period": 45,
+        "slope_min": 0.04,
+        "r2_min": 0.4,
+        "band_std": 2.0,
+        "ema_period": 75,
+        "rsi_period": 14,
+        "rsi_max": 60,
+        "atr_stop_mul": 1.0
+      },
+      "optimized_keys": [
+        "linreg_period",
+        "slope_min",
+        "r2_min",
+        "band_std",
+        "ema_period",
+        "rsi_max",
+        "atr_stop_mul"
+      ],
+      "sharpe": 1.01,
+      "total_return": 30.01,
+      "max_drawdown": -9.77,
+      "win_rate": 100.0,
+      "total_trades": 1,
+      "combos_tested": 200,
+      "method": "bayesian"
+    },
+    "claude_fft_cycle_trend": {
+      "params": {
+        "fft_window": 40,
+        "min_period": 4,
+        "max_period": 30,
+        "ema_period": 35,
+        "buy_threshold": 0.09999999999999998,
+        "sell_threshold": 0.4,
+        "atr_stop_mul": 4.0
+      },
+      "optimized_keys": [
+        "fft_window",
+        "min_period",
+        "max_period",
+        "ema_period",
+        "buy_threshold",
+        "sell_threshold",
+        "atr_stop_mul"
+      ],
+      "sharpe": 1.63,
+      "total_return": 67.79,
+      "max_drawdown": -6.41,
+      "win_rate": 71.43,
+      "total_trades": 7,
+      "combos_tested": 200,
+      "method": "bayesian"
+    },
+    "claude_volatility_breakout": {
+      "params": {
+        "k_factor": 0.9000000000000001,
+        "ema_period": 80,
+        "min_range": 0.7500000000000001,
+        "atr_stop_mul": 2.5
+      },
+      "optimized_keys": [
+        "k_factor",
+        "ema_period",
+        "min_range",
+        "atr_stop_mul"
+      ],
+      "sharpe": 0.64,
+      "total_return": 29.58,
+      "max_drawdown": -16.89,
+      "win_rate": 20.0,
+      "total_trades": 10,
+      "combos_tested": 200,
+      "method": "bayesian"
+    },
+    "claude_momentum_reversion_hybrid": {
+      "params": {
+        "adx_period": 14,
+        "adx_threshold": 30,
+        "ema_fast": 16,
+        "ema_slow": 40,
+        "rsi_period": 14,
+        "rsi_oversold": 40,
+        "rsi_overbought": 80,
+        "bb_period": 20,
+        "bb_std": 2.0,
+        "atr_stop_mul": 4.0
+      },
+      "optimized_keys": [
+        "adx_period",
+        "adx_threshold",
+        "ema_fast",
+        "ema_slow",
+        "rsi_oversold",
+        "rsi_overbought",
+        "bb_period",
+        "bb_std",
+        "atr_stop_mul"
+      ],
+      "sharpe": 1.49,
+      "total_return": 77.81,
+      "max_drawdown": -9.78,
+      "win_rate": 66.67,
+      "total_trades": 15,
+      "combos_tested": 200,
+      "method": "bayesian"
+    },
+    "claude_trix_momentum": {
+      "params": {
+        "trix_period": 18,
+        "signal_period": 9,
+        "atr_stop_mul": 3.0
+      },
+      "optimized_keys": [
+        "trix_period",
+        "signal_period",
+        "atr_stop_mul"
+      ],
+      "sharpe": 0.85,
+      "total_return": 47.07,
+      "max_drawdown": -16.47,
+      "win_rate": 46.15,
+      "total_trades": 13,
+      "combos_tested": 200,
+      "method": "bayesian"
+    },
+    "claude_elder_force": {
+      "params": {
+        "short_period": 3,
+        "long_period": 8,
+        "ema_period": 50,
+        "atr_stop_mul": 3.0
+      },
+      "optimized_keys": [
+        "short_period",
+        "long_period",
+        "ema_period",
+        "atr_stop_mul"
+      ],
+      "sharpe": 1.06,
+      "total_return": 42.7,
+      "max_drawdown": -13.53,
+      "win_rate": 50.0,
+      "total_trades": 18,
+      "combos_tested": 200,
+      "method": "bayesian"
+    },
+    "claude_aroon_oscillator": {
+      "params": {
+        "aroon_period": 25,
+        "buy_threshold": 50,
+        "sell_threshold": -60,
+        "atr_stop_mul": 3.0
+      },
+      "optimized_keys": [
+        "aroon_period",
+        "buy_threshold",
+        "sell_threshold",
+        "atr_stop_mul"
+      ],
+      "sharpe": 0.7,
+      "total_return": 34.59,
+      "max_drawdown": -18.56,
+      "win_rate": 28.57,
+      "total_trades": 7,
+      "combos_tested": 200,
+      "method": "bayesian"
+    },
+    "claude_adaptive_ma": {
+      "params": {
+        "er_period": 25,
+        "fast_sc": 2,
+        "slow_sc": 20,
+        "atr_stop_mul": 2.0,
+        "threshold": 0.0073
+      },
+      "optimized_keys": [
+        "er_period",
+        "fast_sc",
+        "slow_sc",
+        "threshold",
+        "atr_stop_mul"
+      ],
+      "sharpe": 1.03,
+      "total_return": 30.07,
+      "max_drawdown": -6.4,
+      "win_rate": 66.67,
+      "total_trades": 3,
+      "combos_tested": 200,
+      "method": "bayesian"
+    },
+    "claude_atr_channel_trend": {
+      "params": {
+        "ema_period": 30,
+        "atr_period": 18,
+        "atr_mult": 1.5,
+        "atr_stop_mul": 1.5
+      },
+      "optimized_keys": [
+        "ema_period",
+        "atr_period",
+        "atr_mult",
+        "atr_stop_mul"
+      ],
+      "sharpe": 0.55,
+      "total_return": 25.55,
+      "max_drawdown": -16.47,
+      "win_rate": 33.33,
+      "total_trades": 6,
+      "combos_tested": 200,
+      "method": "bayesian"
+    },
+    "claude_momentum_quality": {
+      "params": {
+        "mom_period": 14,
+        "quality_days": 8,
+        "quality_threshold": 6,
+        "ema_trend": 80,
+        "atr_stop_mul": 3.0
+      },
+      "optimized_keys": [
+        "mom_period",
+        "quality_days",
+        "quality_threshold",
+        "ema_trend",
+        "atr_stop_mul"
+      ],
+      "sharpe": 1.12,
+      "total_return": 53.35,
+      "max_drawdown": -10.72,
+      "win_rate": 50.0,
+      "total_trades": 4,
+      "combos_tested": 200,
+      "method": "bayesian"
+    },
+    "claude_multi_timeframe_trend": {
+      "params": {
+        "weekly_ema_period": 50,
+        "daily_ema": 20,
+        "daily_ema_fast": 12,
+        "rsi_period": 14,
+        "pullback_tolerance": 0.015,
+        "atr_stop_mul": 4.0
+      },
+      "optimized_keys": [
+        "weekly_ema_period",
+        "daily_ema",
+        "daily_ema_fast",
+        "pullback_tolerance",
+        "atr_stop_mul"
+      ],
+      "sharpe": 0.86,
+      "total_return": 41.65,
+      "max_drawdown": -14.63,
+      "win_rate": 28.57,
+      "total_trades": 7,
+      "combos_tested": 200,
+      "method": "bayesian"
+    },
+    "claude_dual_thrust": {
+      "params": {
+        "lookback": 4,
+        "k1": 0.65,
+        "k2": 0.4,
+        "atr_stop_mul": 3.0
+      },
+      "optimized_keys": [
+        "lookback",
+        "k1",
+        "k2",
+        "atr_stop_mul"
+      ],
+      "sharpe": 0.55,
+      "total_return": 24.81,
+      "max_drawdown": -22.48,
+      "win_rate": 41.38,
+      "total_trades": 29,
+      "combos_tested": 200,
+      "method": "bayesian"
+    },
+    "claude_dual_ma_cross": {
+      "params": {
+        "fast_period": 8,
+        "slow_period": 40,
+        "ma_type": "sma",
+        "atr_stop_mul": 1.0
+      },
+      "optimized_keys": [
+        "fast_period",
+        "slow_period",
+        "ma_type",
+        "atr_stop_mul"
+      ],
+      "sharpe": 0.85,
+      "total_return": 39.15,
+      "max_drawdown": -13.73,
+      "win_rate": 27.27,
+      "total_trades": 11,
+      "combos_tested": 200,
+      "method": "bayesian"
+    },
+    "claude_chandelier_exit": {
+      "params": {
+        "lookback": 15,
+        "atr_mult": 4.0,
+        "atr_period": 14,
+        "atr_stop_mul": 1.5
+      },
+      "optimized_keys": [
+        "lookback",
+        "atr_mult",
+        "atr_period",
+        "atr_stop_mul"
+      ],
+      "sharpe": 0.71,
+      "total_return": 33.5,
+      "max_drawdown": -15.24,
+      "win_rate": 33.33,
+      "total_trades": 6,
+      "combos_tested": 200,
+      "method": "bayesian"
+    },
+    "claude_supertrend": {
+      "params": {
+        "st_period": 30,
+        "st_multiplier": 4.0,
+        "vol_ma": 20,
+        "atr_stop_mul": 4.0
+      },
+      "optimized_keys": [
+        "st_period",
+        "st_multiplier",
+        "atr_stop_mul"
+      ],
+      "sharpe": 0.57,
+      "total_return": 25.6,
+      "max_drawdown": -23.15,
+      "win_rate": 50.0,
+      "total_trades": 4,
+      "combos_tested": 200,
+      "method": "bayesian"
+    },
+    "claude_ma_ribbon": {
+      "params": {
+        "ema_1": 5,
+        "ema_2": 13,
+        "ema_3": 18,
+        "ema_4": 38,
+        "ema_5": 60,
+        "atr_stop_mul": 4.0
+      },
+      "optimized_keys": [
+        "ema_1",
+        "ema_2",
+        "ema_3",
+        "ema_4",
+        "ema_5",
+        "atr_stop_mul"
+      ],
+      "sharpe": 0.6,
+      "total_return": 22.5,
+      "max_drawdown": -15.31,
+      "win_rate": 33.33,
+      "total_trades": 9,
+      "combos_tested": 200,
+      "method": "bayesian"
+    },
+    "claude_vol_adj_momentum": {
+      "params": {
+        "mom_period": 25,
+        "vol_period": 30,
+        "signal_ema": 18,
+        "buy_threshold": 0.30000000000000004,
+        "sell_threshold": 0.5,
+        "ema_period": 20,
+        "atr_stop_mul": 1.0
+      },
+      "optimized_keys": [
+        "mom_period",
+        "vol_period",
+        "signal_ema",
+        "buy_threshold",
+        "sell_threshold",
+        "ema_period",
+        "atr_stop_mul"
+      ],
+      "sharpe": 1.16,
+      "total_return": 35.36,
+      "max_drawdown": -5.42,
+      "win_rate": 66.67,
+      "total_trades": 3,
+      "combos_tested": 200,
+      "method": "bayesian"
+    },
+    "claude_adaptive_ensemble_v2": {
+      "params": {
+        "rolling_window": 60,
+        "min_weight": 0.01,
+        "buy_threshold": 0.55,
+        "sell_threshold": 0.55,
+        "atr_stop_mul": 1.5
+      },
+      "optimized_keys": [
+        "rolling_window",
+        "min_weight",
+        "buy_threshold",
+        "sell_threshold",
+        "atr_stop_mul"
+      ],
+      "sharpe": 1.16,
+      "total_return": 60.44,
+      "max_drawdown": -10.33,
+      "win_rate": 50.0,
+      "total_trades": 6,
+      "combos_tested": 200,
+      "method": "bayesian"
+    },
+    "claude_ross_hook": {
+      "params": {
+        "fractal_n": 2,
+        "ema_period": 70,
+        "atr_stop_mul": 1.5
+      },
+      "optimized_keys": [
+        "fractal_n",
+        "ema_period",
+        "atr_stop_mul"
+      ],
+      "sharpe": 1.31,
+      "total_return": 44.8,
+      "max_drawdown": -9.75,
+      "win_rate": 50.0,
+      "total_trades": 6,
+      "combos_tested": 200,
+      "method": "bayesian"
+    }
+  },
+  "method_best": {
+    "claude_trix_momentum": {
+      "bayesian": {
+        "params": {
+          "trix_period": 18,
+          "signal_period": 9,
+          "atr_stop_mul": 3.0
+        },
+        "optimized_keys": [
+          "trix_period",
+          "signal_period",
+          "atr_stop_mul"
+        ],
+        "sharpe": 0.85,
+        "total_return": 47.07,
+        "max_drawdown": -16.47,
+        "win_rate": 46.15,
+        "total_trades": 13,
+        "combos_tested": 200,
+        "method": "bayesian",
+        "updated_at": "2026-03-22T16:18:55.623691"
+      }
+    },
+    "claude_dual_ma_cross": {
+      "bayesian": {
+        "params": {
+          "fast_period": 8,
+          "slow_period": 40,
+          "ma_type": "sma",
+          "atr_stop_mul": 1.0
+        },
+        "optimized_keys": [
+          "fast_period",
+          "slow_period",
+          "ma_type",
+          "atr_stop_mul"
+        ],
+        "sharpe": 0.85,
+        "total_return": 39.15,
+        "max_drawdown": -13.73,
+        "win_rate": 27.27,
+        "total_trades": 11,
+        "combos_tested": 200,
+        "method": "bayesian",
+        "updated_at": "2026-03-22T16:18:55.623696"
+      }
+    },
+    "claude_volatility_breakout": {
+      "bayesian": {
+        "params": {
+          "k_factor": 0.9000000000000001,
+          "ema_period": 80,
+          "min_range": 0.7500000000000001,
+          "atr_stop_mul": 2.5
+        },
+        "optimized_keys": [
+          "k_factor",
+          "ema_period",
+          "min_range",
+          "atr_stop_mul"
+        ],
+        "sharpe": 0.64,
+        "total_return": 29.58,
+        "max_drawdown": -16.89,
+        "win_rate": 20.0,
+        "total_trades": 10,
+        "combos_tested": 200,
+        "method": "bayesian",
+        "updated_at": "2026-03-22T16:18:55.623699"
+      }
+    },
+    "claude_elder_force": {
+      "bayesian": {
+        "params": {
+          "short_period": 3,
+          "long_period": 8,
+          "ema_period": 50,
+          "atr_stop_mul": 3.0
+        },
+        "optimized_keys": [
+          "short_period",
+          "long_period",
+          "ema_period",
+          "atr_stop_mul"
+        ],
+        "sharpe": 1.06,
+        "total_return": 42.7,
+        "max_drawdown": -13.53,
+        "win_rate": 50.0,
+        "total_trades": 18,
+        "combos_tested": 200,
+        "method": "bayesian",
+        "updated_at": "2026-03-22T16:18:55.623701"
+      }
+    },
+    "claude_ross_hook": {
+      "bayesian": {
+        "params": {
+          "fractal_n": 2,
+          "ema_period": 70,
+          "atr_stop_mul": 1.5
+        },
+        "optimized_keys": [
+          "fractal_n",
+          "ema_period",
+          "atr_stop_mul"
+        ],
+        "sharpe": 1.31,
+        "total_return": 44.8,
+        "max_drawdown": -9.75,
+        "win_rate": 50.0,
+        "total_trades": 6,
+        "combos_tested": 200,
+        "method": "bayesian",
+        "updated_at": "2026-03-22T16:18:55.623703"
+      }
+    },
+    "claude_momentum_breakout": {
+      "bayesian": {
+        "params": {
+          "breakout_period": 39,
+          "exit_period": 3,
+          "vol_ma": 20,
+          "vol_ratio_min": 1.9000000000000001,
+          "atr_stop_mul": 2.0
+        },
+        "optimized_keys": [
+          "breakout_period",
+          "exit_period",
+          "vol_ratio_min",
+          "atr_stop_mul"
+        ],
+        "sharpe": 0.85,
+        "total_return": 19.49,
+        "max_drawdown": -5.29,
+        "win_rate": 100.0,
+        "total_trades": 2,
+        "combos_tested": 200,
+        "method": "bayesian",
+        "updated_at": "2026-03-22T16:18:55.623709"
+      }
+    },
+    "claude_multi_timeframe_trend": {
+      "bayesian": {
+        "params": {
+          "weekly_ema_period": 50,
+          "daily_ema": 20,
+          "daily_ema_fast": 12,
+          "rsi_period": 14,
+          "pullback_tolerance": 0.015,
+          "atr_stop_mul": 4.0
+        },
+        "optimized_keys": [
+          "weekly_ema_period",
+          "daily_ema",
+          "daily_ema_fast",
+          "pullback_tolerance",
+          "atr_stop_mul"
+        ],
+        "sharpe": 0.86,
+        "total_return": 41.65,
+        "max_drawdown": -14.63,
+        "win_rate": 28.57,
+        "total_trades": 7,
+        "combos_tested": 200,
+        "method": "bayesian",
+        "updated_at": "2026-03-22T16:18:55.623711"
+      }
+    },
+    "claude_adaptive_ma": {
+      "bayesian": {
+        "params": {
+          "er_period": 25,
+          "fast_sc": 2,
+          "slow_sc": 20,
+          "atr_stop_mul": 2.0,
+          "threshold": 0.0073
+        },
+        "optimized_keys": [
+          "er_period",
+          "fast_sc",
+          "slow_sc",
+          "threshold",
+          "atr_stop_mul"
+        ],
+        "sharpe": 1.03,
+        "total_return": 30.07,
+        "max_drawdown": -6.4,
+        "win_rate": 66.67,
+        "total_trades": 3,
+        "combos_tested": 200,
+        "method": "bayesian",
+        "updated_at": "2026-03-22T16:18:55.623713"
+      }
+    },
+    "claude_momentum_reversion_hybrid": {
+      "bayesian": {
+        "params": {
+          "adx_period": 14,
+          "adx_threshold": 30,
+          "ema_fast": 16,
+          "ema_slow": 40,
+          "rsi_period": 14,
+          "rsi_oversold": 40,
+          "rsi_overbought": 80,
+          "bb_period": 20,
+          "bb_std": 2.0,
+          "atr_stop_mul": 4.0
+        },
+        "optimized_keys": [
+          "adx_period",
+          "adx_threshold",
+          "ema_fast",
+          "ema_slow",
+          "rsi_oversold",
+          "rsi_overbought",
+          "bb_period",
+          "bb_std",
+          "atr_stop_mul"
+        ],
+        "sharpe": 1.49,
+        "total_return": 77.81,
+        "max_drawdown": -9.78,
+        "win_rate": 66.67,
+        "total_trades": 15,
+        "combos_tested": 200,
+        "method": "bayesian",
+        "updated_at": "2026-03-22T16:18:55.623715"
+      }
+    },
+    "claude_supertrend": {
+      "bayesian": {
+        "params": {
+          "st_period": 30,
+          "st_multiplier": 4.0,
+          "vol_ma": 20,
+          "atr_stop_mul": 4.0
+        },
+        "optimized_keys": [
+          "st_period",
+          "st_multiplier",
+          "atr_stop_mul"
+        ],
+        "sharpe": 0.57,
+        "total_return": 25.6,
+        "max_drawdown": -23.15,
+        "win_rate": 50.0,
+        "total_trades": 4,
+        "combos_tested": 200,
+        "method": "bayesian",
+        "updated_at": "2026-03-22T16:18:55.623716"
+      }
+    },
+    "claude_chandelier_exit": {
+      "bayesian": {
+        "params": {
+          "lookback": 15,
+          "atr_mult": 4.0,
+          "atr_period": 14,
+          "atr_stop_mul": 1.5
+        },
+        "optimized_keys": [
+          "lookback",
+          "atr_mult",
+          "atr_period",
+          "atr_stop_mul"
+        ],
+        "sharpe": 0.71,
+        "total_return": 33.5,
+        "max_drawdown": -15.24,
+        "win_rate": 33.33,
+        "total_trades": 6,
+        "combos_tested": 200,
+        "method": "bayesian",
+        "updated_at": "2026-03-22T16:18:55.623718"
+      }
+    },
+    "claude_dual_thrust": {
+      "bayesian": {
+        "params": {
+          "lookback": 4,
+          "k1": 0.65,
+          "k2": 0.4,
+          "atr_stop_mul": 3.0
+        },
+        "optimized_keys": [
+          "lookback",
+          "k1",
+          "k2",
+          "atr_stop_mul"
+        ],
+        "sharpe": 0.55,
+        "total_return": 24.81,
+        "max_drawdown": -22.48,
+        "win_rate": 41.38,
+        "total_trades": 29,
+        "combos_tested": 200,
+        "method": "bayesian",
+        "updated_at": "2026-03-22T16:18:55.623720"
+      }
+    },
+    "claude_atr_channel_trend": {
+      "bayesian": {
+        "params": {
+          "ema_period": 30,
+          "atr_period": 18,
+          "atr_mult": 1.5,
+          "atr_stop_mul": 1.5
+        },
+        "optimized_keys": [
+          "ema_period",
+          "atr_period",
+          "atr_mult",
+          "atr_stop_mul"
+        ],
+        "sharpe": 0.55,
+        "total_return": 25.55,
+        "max_drawdown": -16.47,
+        "win_rate": 33.33,
+        "total_trades": 6,
+        "combos_tested": 200,
+        "method": "bayesian",
+        "updated_at": "2026-03-23T16:28:09.331639"
+      }
+    },
+    "claude_aroon_oscillator": {
+      "bayesian": {
+        "params": {
+          "aroon_period": 25,
+          "buy_threshold": 50,
+          "sell_threshold": -60,
+          "atr_stop_mul": 3.0
+        },
+        "optimized_keys": [
+          "aroon_period",
+          "buy_threshold",
+          "sell_threshold",
+          "atr_stop_mul"
+        ],
+        "sharpe": 0.7,
+        "total_return": 34.59,
+        "max_drawdown": -18.56,
+        "win_rate": 28.57,
+        "total_trades": 7,
+        "combos_tested": 200,
+        "method": "bayesian",
+        "updated_at": "2026-03-22T16:18:55.623723"
+      }
+    },
+    "claude_ma_ribbon": {
+      "bayesian": {
+        "params": {
+          "ema_1": 5,
+          "ema_2": 13,
+          "ema_3": 18,
+          "ema_4": 38,
+          "ema_5": 60,
+          "atr_stop_mul": 4.0
+        },
+        "optimized_keys": [
+          "ema_1",
+          "ema_2",
+          "ema_3",
+          "ema_4",
+          "ema_5",
+          "atr_stop_mul"
+        ],
+        "sharpe": 0.6,
+        "total_return": 22.5,
+        "max_drawdown": -15.31,
+        "win_rate": 33.33,
+        "total_trades": 9,
+        "combos_tested": 200,
+        "method": "bayesian",
+        "updated_at": "2026-03-22T16:18:55.623725"
+      }
+    },
+    "claude_momentum_quality": {
+      "bayesian": {
+        "params": {
+          "mom_period": 14,
+          "quality_days": 8,
+          "quality_threshold": 6,
+          "ema_trend": 80,
+          "atr_stop_mul": 3.0
+        },
+        "optimized_keys": [
+          "mom_period",
+          "quality_days",
+          "quality_threshold",
+          "ema_trend",
+          "atr_stop_mul"
+        ],
+        "sharpe": 1.12,
+        "total_return": 53.35,
+        "max_drawdown": -10.72,
+        "win_rate": 50.0,
+        "total_trades": 4,
+        "combos_tested": 200,
+        "method": "bayesian",
+        "updated_at": "2026-03-22T16:18:55.623726"
+      }
+    },
+    "claude_vol_adj_momentum": {
+      "bayesian": {
+        "params": {
+          "mom_period": 25,
+          "vol_period": 30,
+          "signal_ema": 18,
+          "buy_threshold": 0.30000000000000004,
+          "sell_threshold": 0.5,
+          "ema_period": 20,
+          "atr_stop_mul": 1.0
+        },
+        "optimized_keys": [
+          "mom_period",
+          "vol_period",
+          "signal_ema",
+          "buy_threshold",
+          "sell_threshold",
+          "ema_period",
+          "atr_stop_mul"
+        ],
+        "sharpe": 1.16,
+        "total_return": 35.36,
+        "max_drawdown": -5.42,
+        "win_rate": 66.67,
+        "total_trades": 3,
+        "combos_tested": 200,
+        "method": "bayesian",
+        "updated_at": "2026-03-23T16:28:09.331645"
+      }
+    },
+    "claude_fft_cycle_trend": {
+      "bayesian": {
+        "params": {
+          "fft_window": 40,
+          "min_period": 4,
+          "max_period": 30,
+          "ema_period": 35,
+          "buy_threshold": 0.09999999999999998,
+          "sell_threshold": 0.4,
+          "atr_stop_mul": 4.0
+        },
+        "optimized_keys": [
+          "fft_window",
+          "min_period",
+          "max_period",
+          "ema_period",
+          "buy_threshold",
+          "sell_threshold",
+          "atr_stop_mul"
+        ],
+        "sharpe": 1.63,
+        "total_return": 67.79,
+        "max_drawdown": -6.41,
+        "win_rate": 71.43,
+        "total_trades": 7,
+        "combos_tested": 200,
+        "method": "bayesian",
+        "updated_at": "2026-03-23T16:28:09.331647"
+      }
+    },
+    "claude_linreg_trend": {
+      "bayesian": {
+        "params": {
+          "linreg_period": 45,
+          "slope_min": 0.04,
+          "r2_min": 0.4,
+          "band_std": 2.0,
+          "ema_period": 75,
+          "rsi_period": 14,
+          "rsi_max": 60,
+          "atr_stop_mul": 1.0
+        },
+        "optimized_keys": [
+          "linreg_period",
+          "slope_min",
+          "r2_min",
+          "band_std",
+          "ema_period",
+          "rsi_max",
+          "atr_stop_mul"
+        ],
+        "sharpe": 1.01,
+        "total_return": 30.01,
+        "max_drawdown": -9.77,
+        "win_rate": 100.0,
+        "total_trades": 1,
+        "combos_tested": 200,
+        "method": "bayesian",
+        "updated_at": "2026-03-23T16:28:09.331649"
+      }
+    },
+    "claude_adaptive_ensemble_v2": {
+      "bayesian": {
+        "params": {
+          "rolling_window": 60,
+          "min_weight": 0.01,
+          "buy_threshold": 0.55,
+          "sell_threshold": 0.55,
+          "atr_stop_mul": 1.5
+        },
+        "optimized_keys": [
+          "rolling_window",
+          "min_weight",
+          "buy_threshold",
+          "sell_threshold",
+          "atr_stop_mul"
+        ],
+        "sharpe": 1.16,
+        "total_return": 60.44,
+        "max_drawdown": -10.33,
+        "win_rate": 50.0,
+        "total_trades": 6,
+        "combos_tested": 200,
+        "method": "bayesian",
+        "updated_at": "2026-03-23T16:28:09.331651"
+      }
+    }
+  },
+  "wf_validation": {
+    "best": {
+      "claude_trix_momentum": {
+        "verdict": "fair",
+        "consistency": 63.0,
+        "avg_test_sharpe": 0.73,
+        "avg_test_return": 16.65,
+        "avg_test_max_dd": -14.7,
+        "num_windows": 27,
+        "promoted": false,
+        "window_mode": "standard",
+        "reliability": "high",
+        "note": null
+      },
+      "claude_dual_ma_cross": {
+        "verdict": "overfit",
+        "consistency": 37.0,
+        "avg_test_sharpe": 0.09,
+        "avg_test_return": 8.81,
+        "avg_test_max_dd": -7.19,
+        "num_windows": 27,
+        "promoted": false,
+        "window_mode": "standard",
+        "reliability": "high",
+        "note": null
+      },
+      "claude_dual_thrust": {
+        "verdict": "robust",
+        "consistency": 66.7,
+        "avg_test_sharpe": 1.0,
+        "avg_test_return": 26.9,
+        "avg_test_max_dd": -14.68,
+        "num_windows": 27,
+        "promoted": true,
+        "window_mode": "standard",
+        "reliability": "high",
+        "note": null
+      },
+      "claude_ross_hook": {
+        "verdict": "overfit",
+        "consistency": 29.6,
+        "avg_test_sharpe": 0.14,
+        "avg_test_return": 1.92,
+        "avg_test_max_dd": -4.78,
+        "num_windows": 27,
+        "promoted": false,
+        "window_mode": "standard",
+        "reliability": "high",
+        "note": null
+      },
+      "claude_aroon_oscillator": {
+        "verdict": "fair",
+        "consistency": 59.3,
+        "avg_test_sharpe": 0.7,
+        "avg_test_return": 18.31,
+        "avg_test_max_dd": -15.85,
+        "num_windows": 27,
+        "promoted": false,
+        "window_mode": "standard",
+        "reliability": "high",
+        "note": null
+      },
+      "claude_momentum_breakout": {
+        "verdict": "overfit",
+        "consistency": 25.9,
+        "avg_test_sharpe": 0.2,
+        "avg_test_return": 3.16,
+        "avg_test_max_dd": -3.74,
+        "num_windows": 27,
+        "promoted": false,
+        "window_mode": "standard",
+        "reliability": "high",
+        "note": null
+      },
+      "claude_ma_ribbon": {
+        "verdict": "overfit",
+        "consistency": 40.7,
+        "avg_test_sharpe": 0.13,
+        "avg_test_return": 6.14,
+        "avg_test_max_dd": -7.2,
+        "num_windows": 27,
+        "promoted": false,
+        "window_mode": "standard",
+        "reliability": "high",
+        "note": null
+      },
+      "claude_adaptive_ma": {
+        "verdict": "fair",
+        "consistency": 51.9,
+        "avg_test_sharpe": 0.5,
+        "avg_test_return": 10.25,
+        "avg_test_max_dd": -8.81,
+        "num_windows": 27,
+        "promoted": false,
+        "window_mode": "standard",
+        "reliability": "high",
+        "note": null
+      },
+      "claude_momentum_reversion_hybrid": {
+        "verdict": "fair",
+        "consistency": 59.3,
+        "avg_test_sharpe": 0.62,
+        "avg_test_return": 5.44,
+        "avg_test_max_dd": -13.03,
+        "num_windows": 27,
+        "promoted": false,
+        "window_mode": "standard",
+        "reliability": "high",
+        "note": null
+      },
+      "claude_supertrend": {
+        "verdict": "fair",
+        "consistency": 55.6,
+        "avg_test_sharpe": 0.62,
+        "avg_test_return": 13.18,
+        "avg_test_max_dd": -11.54,
+        "num_windows": 27,
+        "promoted": false,
+        "window_mode": "standard",
+        "reliability": "high",
+        "note": null
+      },
+      "claude_chandelier_exit": {
+        "verdict": "fair",
+        "consistency": 59.3,
+        "avg_test_sharpe": 0.85,
+        "avg_test_return": 21.2,
+        "avg_test_max_dd": -13.91,
+        "num_windows": 27,
+        "promoted": false,
+        "window_mode": "standard",
+        "reliability": "high",
+        "note": null
+      },
+      "claude_atr_channel_trend": {
+        "verdict": "fair",
+        "consistency": 55.6,
+        "avg_test_sharpe": 0.62,
+        "avg_test_return": 15.14,
+        "avg_test_max_dd": -12.6,
+        "num_windows": 27,
+        "promoted": false,
+        "window_mode": "standard",
+        "reliability": "high",
+        "note": null
+      },
+      "claude_vol_adj_momentum": {
+        "verdict": "overfit",
+        "consistency": 29.6,
+        "avg_test_sharpe": 0.24,
+        "avg_test_return": 6.66,
+        "avg_test_max_dd": -5.73,
+        "num_windows": 27,
+        "promoted": false,
+        "window_mode": "standard",
+        "reliability": "high",
+        "note": null
+      },
+      "claude_fft_cycle_trend": {
+        "verdict": "fair",
+        "consistency": 55.6,
+        "avg_test_sharpe": 0.59,
+        "avg_test_return": 5.75,
+        "avg_test_max_dd": -7.56,
+        "num_windows": 27,
+        "promoted": false,
+        "window_mode": "standard",
+        "reliability": "high",
+        "note": null
+      },
+      "claude_linreg_trend": {
+        "verdict": "overfit",
+        "consistency": 0.0,
+        "avg_test_sharpe": -0.27,
+        "avg_test_return": -0.88,
+        "avg_test_max_dd": -0.94,
+        "num_windows": 27,
+        "promoted": false,
+        "window_mode": "standard",
+        "reliability": "high",
+        "note": null
+      },
+      "claude_adaptive_ensemble_v2": {
+        "verdict": "overfit",
+        "consistency": 44.4,
+        "avg_test_sharpe": 0.34,
+        "avg_test_return": 9.92,
+        "avg_test_max_dd": -9.78,
+        "num_windows": 27,
+        "promoted": false,
+        "window_mode": "standard",
+        "reliability": "high",
+        "note": null
+      }
+    },
+    "custom": {
+      "claude_supertrend": {
+        "verdict": "fair",
+        "consistency": 55.6,
+        "avg_test_sharpe": 0.65,
+        "num_windows": 27,
+        "promoted": true
+      },
+      "claude_momentum_reversion_hybrid": {
+        "verdict": "robust",
+        "consistency": 70.4,
+        "avg_test_sharpe": 0.65,
+        "num_windows": 27,
+        "promoted": true
+      },
+      "claude_trix_momentum": {
+        "verdict": "fair",
+        "consistency": 63.0,
+        "avg_test_sharpe": 0.73,
+        "num_windows": 27,
+        "promoted": true
+      },
+      "claude_aroon_oscillator": {
+        "verdict": "fair",
+        "consistency": 59.3,
+        "avg_test_sharpe": 0.7,
+        "num_windows": 27,
+        "promoted": true
+      },
+      "claude_dual_thrust": {
+        "verdict": "robust",
+        "consistency": 66.7,
+        "avg_test_sharpe": 1.0,
+        "num_windows": 27,
+        "promoted": true
+      },
+      "claude_chandelier_exit": {
+        "verdict": "fair",
+        "consistency": 59.3,
+        "avg_test_sharpe": 0.85,
+        "num_windows": 27,
+        "promoted": true
+      },
+      "claude_atr_channel_trend": {
+        "verdict": "fair",
+        "consistency": 55.6,
+        "avg_test_sharpe": 0.62,
+        "num_windows": 27,
+        "promoted": true
+      },
+      "claude_dual_ma_cross": {
+        "verdict": "overfit",
+        "consistency": 44.4,
+        "avg_test_sharpe": 0.24,
+        "num_windows": 27,
+        "promoted": false
+      },
+      "claude_momentum_breakout": {
+        "verdict": "fair",
+        "consistency": 51.9,
+        "avg_test_sharpe": 0.78,
+        "num_windows": 27,
+        "promoted": false
+      },
+      "claude_adaptive_ma": {
+        "verdict": "fair",
+        "consistency": 51.9,
+        "avg_test_sharpe": 0.64,
+        "num_windows": 27,
+        "promoted": false
+      },
+      "claude_volatility_breakout": {
+        "verdict": "fair",
+        "consistency": 55.6,
+        "avg_test_sharpe": 0.54,
+        "num_windows": 27,
+        "promoted": true
+      },
+      "claude_ross_hook": {
+        "verdict": "robust",
+        "consistency": 66.7,
+        "avg_test_sharpe": 0.78,
+        "num_windows": 27,
+        "promoted": true
+      },
+      "claude_multi_timeframe_trend": {
+        "verdict": "overfit",
+        "consistency": 44.4,
+        "avg_test_sharpe": 0.06,
+        "num_windows": 27,
+        "promoted": false
+      },
+      "claude_elder_force": {
+        "verdict": "overfit",
+        "consistency": 48.1,
+        "avg_test_sharpe": 0.55,
+        "num_windows": 27,
+        "promoted": false
+      },
+      "claude_ma_ribbon": {
+        "verdict": "fair",
+        "consistency": 51.9,
+        "avg_test_sharpe": 0.42,
+        "num_windows": 27,
+        "promoted": false
+      },
+      "claude_momentum_quality": {
+        "verdict": "fair",
+        "consistency": 51.9,
+        "avg_test_sharpe": 0.55,
+        "num_windows": 27,
+        "promoted": false
+      }
+    }
+  }
+}

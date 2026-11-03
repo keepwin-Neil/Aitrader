@@ -1,0 +1,91 @@
+{
+  "intervals": {
+    "1d": {
+      "symbol": "MP",
+      "market": "US",
+      "period": "1y",
+      "interval": "1d",
+      "dynamic_position": false,
+      "method": "bayesian",
+      "optimized_at": "2026-09-21T07:00:11.214558",
+      "total_combos_tested": 100,
+      "elapsed_seconds": 3.1,
+      "strategies": {
+        "claude_dual_ma_cross": {
+          "params": {
+            "fast_period": 18,
+            "slow_period": 57,
+            "ma_type": "sma",
+            "atr_stop_mul": 1.5
+          },
+          "optimized_keys": [
+            "fast_period",
+            "slow_period",
+            "ma_type",
+            "atr_stop_mul"
+          ],
+          "combos_tested": 100,
+          "method": "buy_and_sell",
+          "signal_type": "buy_and_sell",
+          "capital": 100000,
+          "final_equity": 81497.73,
+          "total_return": -18.5,
+          "bh_return": -18.56,
+          "max_drawdown": -29.33,
+          "sharpe": -0.29,
+          "win_rate": 0.0,
+          "profit_factor": 0.0,
+          "total_trades": 3,
+          "win_trades": 0,
+          "lose_trades": 3,
+          "avg_win": 0,
+          "avg_loss": -6167.42,
+          "buy_params": {
+            "fast_period": 6,
+            "slow_period": 42,
+            "ma_type": "sma",
+            "atr_stop_mul": 3.0
+          },
+          "sell_params": {
+            "fast_period": 18,
+            "slow_period": 57,
+            "ma_type": "sma",
+            "atr_stop_mul": 1.5
+          },
+          "buy_metrics": {
+            "total_buy_points": 4,
+            "success_rate": 75.0,
+            "avg_mfe": 17.67,
+            "avg_mae": -10.03,
+            "avg_r_ratio": 4.04,
+            "best_window": 20
+          },
+          "sell_metrics": {
+            "total_sell_points": 2,
+            "success_rate": 50.0,
+            "avg_mfe": 19.8,
+            "avg_mae": 3.9,
+            "avg_r_ratio": 50.74,
+            "best_window": 20
+          }
+        }
+      },
+      "wf_validation": {
+        "best": {
+          "claude_dual_ma_cross": {
+            "verdict": "overfit",
+            "consistency": 0.0,
+            "avg_test_sharpe": -0.7,
+            "avg_test_return": -3.67,
+            "avg_test_max_dd": -6.7,
+            "num_windows": 6,
+            "promoted": false,
+            "window_mode": "standard",
+            "reliability": "high",
+            "note": null
+          }
+        }
+      }
+    }
+  }
+}

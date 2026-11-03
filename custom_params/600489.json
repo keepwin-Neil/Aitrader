@@ -1,0 +1,93 @@
+{
+  "claude_dual_ma_cross": {
+    "params": {
+      "fast_period": 8,
+      "slow_period": 20,
+      "ma_type": "sma",
+      "atr_stop_mul": 3.5
+    },
+    "promoted_at": "2026-03-22T16:51:12.895023",
+    "source_sharpe": 1.39,
+    "source_return": 124.75,
+    "std_return": 80.61,
+    "delta_return": 44.14,
+    "source_method": "bayesian",
+    "wf_consistency": 59.5
+  },
+  "claude_adaptive_ma": {
+    "params": {
+      "er_period": 9,
+      "fast_sc": 2,
+      "slow_sc": 25,
+      "atr_stop_mul": 2.5,
+      "threshold": 0.0068000000000000005
+    },
+    "promoted_at": "2026-03-22T16:51:12.937503",
+    "source_sharpe": 1.27,
+    "source_return": 80.79,
+    "std_return": 27.99,
+    "delta_return": 52.8,
+    "source_method": "bayesian",
+    "wf_consistency": 56.8
+  },
+  "claude_trix_momentum": {
+    "params": {
+      "trix_period": 10,
+      "signal_period": 5,
+      "atr_stop_mul": 3.5
+    },
+    "promoted_at": "2026-03-22T16:51:12.967179",
+    "source_sharpe": 1.31,
+    "source_return": 103.09,
+    "std_return": 51.6,
+    "delta_return": 51.49,
+    "source_method": "bayesian",
+    "wf_consistency": 62.2
+  },
+  "claude_dual_thrust": {
+    "params": {
+      "lookback": 4,
+      "k1": 0.3,
+      "k2": 0.35,
+      "atr_stop_mul": 2.0
+    },
+    "promoted_at": "2026-03-22T16:51:12.996870",
+    "source_sharpe": 1.38,
+    "source_return": 117.93,
+    "std_return": 39.51,
+    "delta_return": 78.42,
+    "source_method": "bayesian",
+    "wf_consistency": 56.8
+  },
+  "claude_chandelier_exit": {
+    "params": {
+      "lookback": 25,
+      "atr_mult": 2.0,
+      "atr_period": 28,
+      "atr_stop_mul": 3.0
+    },
+    "promoted_at": "2026-03-22T16:51:13.025709",
+    "source_sharpe": 1.93,
+    "source_return": 149.06,
+    "std_return": 100.96,
+    "delta_return": 48.1,
+    "source_method": "bayesian",
+    "wf_consistency": 75.7
+  },
+  "claude_momentum_quality": {
+    "params": {
+      "mom_period": 13,
+      "quality_days": 7,
+      "quality_threshold": 5,
+      "ema_trend": 20,
+      "atr_stop_mul": 1.5
+    },
+    "promoted_at": "2026-03-22T16:51:13.057320",
+    "source_sharpe": 1.58,
+    "source_return": 143.28,
+    "std_return": 55.16,
+    "delta_return": 88.12,
+    "source_method": "bayesian",
+    "wf_consistency": 56.8
+  }
+}

@@ -1,0 +1,409 @@
+{
+  "intervals": {
+    "1d": {
+      "symbol": "CHTR",
+      "market": "US",
+      "period": "1y",
+      "interval": "1d",
+      "dynamic_position": false,
+      "method": "bayesian",
+      "optimized_at": "2026-03-27T11:15:14.509986",
+      "total_combos_tested": 2400,
+      "elapsed_seconds": 820.4,
+      "strategies": {
+        "gemini_trend_persistence": {
+          "params": {
+            "window": 10,
+            "threshold": 0.35,
+            "atr_stop_mul": 3.25
+          },
+          "optimized_keys": [
+            "window",
+            "threshold",
+            "atr_stop_mul"
+          ],
+          "sharpe": 0.69,
+          "total_return": 8.32,
+          "max_drawdown": -14.84,
+          "win_rate": 33.33,
+          "total_trades": 9,
+          "combos_tested": 200,
+          "method": "bayesian"
+        },
+        "gemini_mcginley_dynamic": {
+          "params": {
+            "window": 7,
+            "atr_stop_mul": 3.45
+          },
+          "optimized_keys": [
+            "window",
+            "atr_stop_mul"
+          ],
+          "sharpe": -0.25,
+          "total_return": -7.19,
+          "max_drawdown": -22.49,
+          "win_rate": 27.78,
+          "total_trades": 18,
+          "combos_tested": 200,
+          "method": "bayesian"
+        },
+        "gemini_shooting_star": {
+          "params": {
+            "atr_stop_mul": 1.35
+          },
+          "optimized_keys": [
+            "atr_stop_mul"
+          ],
+          "sharpe": 0.18,
+          "total_return": 1.43,
+          "max_drawdown": -15.11,
+          "win_rate": 50.0,
+          "total_trades": 2,
+          "combos_tested": 200,
+          "method": "bayesian"
+        },
+        "gemini_fractal_trend": {
+          "params": {
+            "window": 10,
+            "threshold": 0.35,
+            "atr_stop_mul": 3.25
+          },
+          "optimized_keys": [
+            "window",
+            "threshold",
+            "atr_stop_mul"
+          ],
+          "sharpe": 0.69,
+          "total_return": 8.32,
+          "max_drawdown": -14.84,
+          "win_rate": 33.33,
+          "total_trades": 9,
+          "combos_tested": 200,
+          "method": "bayesian"
+        },
+        "gemini_klinger_volume": {
+          "params": {
+            "short_period": 2,
+            "long_period": 15,
+            "ema_period": 25,
+            "atr_stop_mul": 3.75
+          },
+          "optimized_keys": [
+            "short_period",
+            "long_period",
+            "ema_period",
+            "atr_stop_mul"
+          ],
+          "sharpe": -1.05,
+          "total_return": -14.99,
+          "max_drawdown": -22.93,
+          "win_rate": 25.0,
+          "total_trades": 4,
+          "combos_tested": 200,
+          "method": "bayesian"
+        },
+        "gemini_price_action_liquidity": {
+          "params": {
+            "fractal_n": 2,
+            "ema_period": 21,
+            "atr_stop_mul": 2.35
+          },
+          "optimized_keys": [
+            "fractal_n",
+            "ema_period",
+            "atr_stop_mul"
+          ],
+          "sharpe": 1.79,
+          "total_return": 18.53,
+          "max_drawdown": -8.83,
+          "win_rate": 66.67,
+          "total_trades": 3,
+          "combos_tested": 200,
+          "method": "bayesian"
+        },
+        "gemini_adaptive_alpha": {
+          "params": {
+            "er_period": 12,
+            "fast_sc": 4,
+            "slow_sc": 24,
+            "atr_stop_mul": 2.85,
+            "threshold": -0.047
+          },
+          "optimized_keys": [
+            "er_period",
+            "fast_sc",
+            "slow_sc",
+            "atr_stop_mul",
+            "threshold"
+          ],
+          "sharpe": 0.87,
+          "total_return": 15.53,
+          "max_drawdown": -14.09,
+          "win_rate": 33.33,
+          "total_trades": 6,
+          "combos_tested": 200,
+          "method": "bayesian"
+        },
+        "gemini_triple_screen_pulse": {
+          "params": {
+            "roc_period": 7,
+            "accel_period": 5,
+            "ema_period": 75,
+            "atr_stop_mul": 1.85
+          },
+          "optimized_keys": [
+            "roc_period",
+            "accel_period",
+            "ema_period",
+            "atr_stop_mul"
+          ],
+          "sharpe": 0.92,
+          "total_return": 0.35,
+          "max_drawdown": -0.09,
+          "win_rate": 100.0,
+          "total_trades": 1,
+          "combos_tested": 200,
+          "method": "bayesian"
+        },
+        "gemini_volume_price_div": {
+          "params": {
+            "vwm_period": 16,
+            "signal_period": 11,
+            "ema_period": 25,
+            "atr_stop_mul": 3.75
+          },
+          "optimized_keys": [
+            "vwm_period",
+            "signal_period",
+            "ema_period",
+            "atr_stop_mul"
+          ],
+          "sharpe": 0.36,
+          "total_return": 0.06,
+          "max_drawdown": -0.1,
+          "win_rate": 100.0,
+          "total_trades": 1,
+          "combos_tested": 200,
+          "method": "bayesian"
+        },
+        "gemini_supertrend_v2": {
+          "params": {
+            "st_period": 14,
+            "st_multiplier": 2.6,
+            "vol_ma": 21,
+            "atr_stop_mul": 1.0
+          },
+          "optimized_keys": [
+            "st_period",
+            "st_multiplier",
+            "vol_ma",
+            "atr_stop_mul"
+          ],
+          "sharpe": 0.57,
+          "total_return": 7.14,
+          "max_drawdown": -11.21,
+          "win_rate": 66.67,
+          "total_trades": 3,
+          "combos_tested": 200,
+          "method": "bayesian"
+        },
+        "gemini_atr_volatility_stop": {
+          "params": {
+            "lookback": 12,
+            "atr_mult": 1.6,
+            "atr_period": 14,
+            "atr_stop_mul": 1.25
+          },
+          "optimized_keys": [
+            "lookback",
+            "atr_mult",
+            "atr_period",
+            "atr_stop_mul"
+          ],
+          "sharpe": 0.65,
+          "total_return": 12.59,
+          "max_drawdown": -24.0,
+          "win_rate": 36.36,
+          "total_trades": 11,
+          "combos_tested": 200,
+          "method": "bayesian"
+        },
+        "gemini_heikin_ashi_balance": {
+          "params": {
+            "ema_period": 60,
+            "rsi_period": 10,
+            "rsi_min": 45,
+            "rsi_overbought": 80,
+            "consec_bull": 4,
+            "consec_bear": 2,
+            "atr_stop_mul": 3.05
+          },
+          "optimized_keys": [
+            "ema_period",
+            "rsi_period",
+            "rsi_min",
+            "rsi_overbought",
+            "consec_bull",
+            "consec_bear",
+            "atr_stop_mul"
+          ],
+          "sharpe": 1.44,
+          "total_return": 9.9,
+          "max_drawdown": -3.77,
+          "win_rate": 66.67,
+          "total_trades": 3,
+          "combos_tested": 200,
+          "method": "bayesian"
+        }
+      },
+      "wf_validation": {
+        "best": {
+          "gemini_trend_persistence": {
+            "verdict": "overfit",
+            "consistency": 0.0,
+            "avg_test_sharpe": 0.0,
+            "avg_test_return": -0.1,
+            "avg_test_max_dd": -0.1,
+            "num_windows": 2,
+            "promoted": false,
+            "window_mode": "anchored_micro",
+            "reliability": "low",
+            "note": "历史仅252条，WF改为anchored_micro模式，训练210天 / 测试21天 / 2个窗口；样本偏短，结果只用于排除明显过拟合，不建议直接升级标准参数"
+          },
+          "gemini_price_action_liquidity": {
+            "verdict": "overfit",
+            "consistency": 0.0,
+            "avg_test_sharpe": 0.0,
+            "avg_test_return": 0.0,
+            "avg_test_max_dd": 0.0,
+            "num_windows": 2,
+            "promoted": false,
+            "window_mode": "anchored_micro",
+            "reliability": "low",
+            "note": "历史仅252条，WF改为anchored_micro模式，训练210天 / 测试21天 / 2个窗口；样本偏短，结果只用于排除明显过拟合，不建议直接升级标准参数"
+          },
+          "gemini_fractal_trend": {
+            "verdict": "overfit",
+            "consistency": 0.0,
+            "avg_test_sharpe": 0.0,
+            "avg_test_return": -0.1,
+            "avg_test_max_dd": -0.1,
+            "num_windows": 2,
+            "promoted": false,
+            "window_mode": "anchored_micro",
+            "reliability": "low",
+            "note": "历史仅252条，WF改为anchored_micro模式，训练210天 / 测试21天 / 2个窗口；样本偏短，结果只用于排除明显过拟合，不建议直接升级标准参数"
+          },
+          "gemini_adaptive_alpha": {
+            "verdict": "fair",
+            "consistency": 50.0,
+            "avg_test_sharpe": 1.46,
+            "avg_test_return": 0.1,
+            "avg_test_max_dd": -0.14,
+            "num_windows": 2,
+            "promoted": false,
+            "window_mode": "anchored_micro",
+            "reliability": "low",
+            "note": "历史仅252条，WF改为anchored_micro模式，训练210天 / 测试21天 / 2个窗口；样本偏短，结果只用于排除明显过拟合，不建议直接升级标准参数"
+          },
+          "gemini_mcginley_dynamic": {
+            "verdict": "fair",
+            "consistency": 50.0,
+            "avg_test_sharpe": -0.46,
+            "avg_test_return": 5.25,
+            "avg_test_max_dd": -7.5,
+            "num_windows": 2,
+            "promoted": false,
+            "window_mode": "anchored_micro",
+            "reliability": "low",
+            "note": "历史仅252条，WF改为anchored_micro模式，训练210天 / 测试21天 / 2个窗口；样本偏短，结果只用于排除明显过拟合，不建议直接升级标准参数"
+          },
+          "gemini_shooting_star": {
+            "verdict": "overfit",
+            "consistency": 0.0,
+            "avg_test_sharpe": 0.0,
+            "avg_test_return": 0.0,
+            "avg_test_max_dd": 0.0,
+            "num_windows": 2,
+            "promoted": false,
+            "window_mode": "anchored_micro",
+            "reliability": "low",
+            "note": "历史仅252条，WF改为anchored_micro模式，训练210天 / 测试21天 / 2个窗口；样本偏短，结果只用于排除明显过拟合，不建议直接升级标准参数"
+          },
+          "gemini_triple_screen_pulse": {
+            "verdict": "overfit",
+            "consistency": 0.0,
+            "avg_test_sharpe": 0.0,
+            "avg_test_return": 0.0,
+            "avg_test_max_dd": 0.0,
+            "num_windows": 2,
+            "promoted": false,
+            "window_mode": "anchored_micro",
+            "reliability": "low",
+            "note": "历史仅252条，WF改为anchored_micro模式，训练210天 / 测试21天 / 2个窗口；样本偏短，结果只用于排除明显过拟合，不建议直接升级标准参数"
+          },
+          "gemini_klinger_volume": {
+            "verdict": "overfit",
+            "consistency": 0.0,
+            "avg_test_sharpe": 0.0,
+            "avg_test_return": 0.0,
+            "avg_test_max_dd": 0.0,
+            "num_windows": 2,
+            "promoted": false,
+            "window_mode": "anchored_micro",
+            "reliability": "low",
+            "note": "历史仅252条，WF改为anchored_micro模式，训练210天 / 测试21天 / 2个窗口；样本偏短，结果只用于排除明显过拟合，不建议直接升级标准参数"
+          },
+          "gemini_volume_price_div": {
+            "verdict": "overfit",
+            "consistency": 0.0,
+            "avg_test_sharpe": 0.0,
+            "avg_test_return": 0.0,
+            "avg_test_max_dd": 0.0,
+            "num_windows": 2,
+            "promoted": false,
+            "window_mode": "anchored_micro",
+            "reliability": "low",
+            "note": "历史仅252条，WF改为anchored_micro模式，训练210天 / 测试21天 / 2个窗口；样本偏短，结果只用于排除明显过拟合，不建议直接升级标准参数"
+          },
+          "gemini_supertrend_v2": {
+            "verdict": "overfit",
+            "consistency": 0.0,
+            "avg_test_sharpe": 0.0,
+            "avg_test_return": 0.0,
+            "avg_test_max_dd": 0.0,
+            "num_windows": 2,
+            "promoted": false,
+            "window_mode": "anchored_micro",
+            "reliability": "low",
+            "note": "历史仅252条，WF改为anchored_micro模式，训练210天 / 测试21天 / 2个窗口；样本偏短，结果只用于排除明显过拟合，不建议直接升级标准参数"
+          },
+          "gemini_atr_volatility_stop": {
+            "verdict": "overfit",
+            "consistency": 0.0,
+            "avg_test_sharpe": 0.0,
+            "avg_test_return": 0.0,
+            "avg_test_max_dd": 0.0,
+            "num_windows": 2,
+            "promoted": false,
+            "window_mode": "anchored_micro",
+            "reliability": "low",
+            "note": "历史仅252条，WF改为anchored_micro模式，训练210天 / 测试21天 / 2个窗口；样本偏短，结果只用于排除明显过拟合，不建议直接升级标准参数"
+          },
+          "gemini_heikin_ashi_balance": {
+            "verdict": "overfit",
+            "consistency": 0.0,
+            "avg_test_sharpe": 0.0,
+            "avg_test_return": 0.0,
+            "avg_test_max_dd": 0.0,
+            "num_windows": 2,
+            "promoted": false,
+            "window_mode": "anchored_micro",
+            "reliability": "low",
+            "note": "历史仅252条，WF改为anchored_micro模式，训练210天 / 测试21天 / 2个窗口；样本偏短，结果只用于排除明显过拟合，不建议直接升级标准参数"
+          }
+        }
+      }
+    }
+  }
+}

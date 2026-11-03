@@ -1,0 +1,20 @@
+{
+  "keltner_breakout": {
+    "kelt_period": 30,
+    "kelt_atr_mul": 1.5,
+    "atr_period": 10,
+    "ema_trend_period": 80,
+    "atr_filter_period": 15,
+    "stop_atr_mul": 3.0,
+    "trail_atr_mul": 2.0
+  },
+  "obv_momentum": {
+    "obv_ema_period": 40,
+    "ema_trend_period": 60,
+    "obv_slope_len": 10,
+    "rsi_period": 10,
+    "rsi_overbought": 80,
+    "rsi_oversold": 40,
+    "volume_ratio_min": 0.8
+  }
+}

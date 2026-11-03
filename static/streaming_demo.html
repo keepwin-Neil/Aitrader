@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<title>Live Streaming Demo · AAPL</title>
+<script src="https://unpkg.com/lightweight-charts@4.1.3/dist/lightweight-charts.standalone.production.js"></script>
+<style>
+  :root {
+    --bg: #0d1117;
+    --card: #161b22;
+    --border: #30363d;
+    --text: #c9d1d9;
+    --muted: #8b949e;
+    --green: #56d364;
+    --red: #f85149;
+    --blue: #58a6ff;
+  }
+  body {
+    background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", sans-serif;
+    margin: 0; padding: 20px;
+  }
+  .wrap { max-width: 1200px; margin: 0 auto; }
+  h1 { font-size: 18px; margin: 0 0 14px 0; }
+  .row { display: flex; gap: 16px; }
+  .card {
+    background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+    padding: 16px; flex: 1;
+  }
+  .stat-row { display: flex; gap: 24px; font-size: 13px; margin-bottom: 12px; }
+  .stat-row > div { color: var(--muted); }
+  .stat-row b { color: var(--text); font-weight: 600; }
+  .price-big { font-size: 32px; font-weight: 600; }
+  .price-big.up { color: var(--green); }
+  .price-big.down { color: var(--red); }
+  .ticks { font-family: ui-monospace, monospace; font-size: 12px; max-height: 200px; overflow-y: auto; }
+  .ticks div { padding: 2px 0; border-bottom: 1px solid rgba(255,255,255,0.04); }
+  #status { padding: 4px 8px; border-radius: 4px; font-size: 12px; }
+  #status.ok { background: rgba(86,211,100,0.15); color: var(--green); }
+  #status.err { background: rgba(248,81,73,0.15); color: var(--red); }
+  #chart { width: 100%; height: 360px; }
+  .controls { margin-bottom: 14px; }
+  .controls input { background: var(--bg); border: 1px solid var(--border); color: var(--text); padding: 6px 10px; border-radius: 4px; }
+  .controls button { background: var(--blue); color: white; border: none; padding: 6px 14px; border-radius: 4px; cursor: pointer; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Live Streaming Demo · <span style="color:var(--blue)">AAPL</span> 1m bar + tick · <span id="status" class="err">disconnected</span></h1>
+
+  <div class="controls">
+    <label>Token: <input id="tokenInput" type="password" placeholder="LIVE_STREAMING_TOKEN" style="width:280px"></label>
+    <label><input id="rememberToken" type="checkbox" checked> remember (localStorage)</label>
+    <button onclick="connect()">连接</button>
+    <button onclick="disconnect()">断开</button>
+  </div>
+
+  <div class="row" style="margin-bottom: 16px;">
+    <div class="card" style="max-width: 320px">
+      <div class="stat-row"><div>当前价 (last tick)</div></div>
+      <div class="price-big" id="priceBig">—</div>
+      <div class="stat-row">
+        <div>bid <b id="bidV">—</b></div>
+        <div>ask <b id="askV">—</b></div>
+      </div>
+      <div class="stat-row">
+        <div>tick seq <b id="tickSeq">0</b></div>
+        <div>bar seq <b id="barSeq">0</b></div>
+      </div>
+      <div class="stat-row">
+        <div>push delay p50 <b id="latP50">—</b> ms</div>
+        <div>p99 <b id="latP99">—</b> ms</div>
+      </div>
+    </div>
+    <div class="card">
+      <div style="font-size:13px;color:var(--muted);margin-bottom:8px">最近 tick</div>
+      <div class="ticks" id="tickList"></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div id="chart"></div>
+  </div>
+</div>
+
+<script>
+  // ── persistent token in localStorage ────────────────────────────────────
+  const tokenInput = document.getElementById('tokenInput');
+  const rememberToken = document.getElementById('rememberToken');
+  tokenInput.value = localStorage.getItem('LIVE_STREAMING_TOKEN') || '';
+
+  function saveTokenIfRequested() {
+    if (rememberToken.checked) {
+      localStorage.setItem('LIVE_STREAMING_TOKEN', tokenInput.value);
+    }
+  }
+
+  // ── Lightweight Charts setup ────────────────────────────────────────────
+  const chartEl = document.getElementById('chart');
+  const chart = LightweightCharts.createChart(chartEl, {
+    width: chartEl.clientWidth,
+    height: 360,
+    layout: { background: { color: '#161b22' }, textColor: '#c9d1d9' },
+    grid: {
+      vertLines: { color: 'rgba(255,255,255,0.05)' },
+      horzLines: { color: 'rgba(255,255,255,0.05)' },
+    },
+    timeScale: { timeVisible: true, secondsVisible: false },
+    rightPriceScale: { borderColor: '#30363d' },
+  });
+  const candleSeries = chart.addCandlestickSeries({
+    upColor: '#56d364', downColor: '#f85149',
+    borderUpColor: '#56d364', borderDownColor: '#f85149',
+    wickUpColor: '#56d364', wickDownColor: '#f85149',
+  });
+  window.addEventListener('resize', () => chart.applyOptions({ width: chartEl.clientWidth }));
+
+  // ── stats ───────────────────────────────────────────────────────────────
+  let lastPrice = null;
+  let latencies = [];
+  function pushLatency(ms) {
+    latencies.push(ms);
+    if (latencies.length > 200) latencies.shift();
+    const sorted = [...latencies].sort((a, b) => a - b);
+    document.getElementById('latP50').textContent = sorted[Math.floor(sorted.length / 2)];
+    document.getElementById('latP99').textContent = sorted[Math.min(sorted.length - 1, Math.floor(sorted.length * 0.99))];
+  }
+
+  function setStatus(text, ok) {
+    const el = document.getElementById('status');
+    el.textContent = text;
+    el.className = ok ? 'ok' : 'err';
+  }
+
+  function updateBar(barMsg) {
+    // Lightweight Charts wants epoch *seconds*
+    const t = Math.floor(barMsg.ts / 1000);
+    candleSeries.update({ time: t, open: barMsg.o, high: barMsg.h, low: barMsg.l, close: barMsg.c });
+    document.getElementById('barSeq').textContent = barMsg.seq;
+  }
+
+  function onTick(msg) {
+    const now = Date.now();
+    const lat = msg.ts ? (now - msg.ts) : null;
+    if (lat !== null) pushLatency(lat);
+
+    const big = document.getElementById('priceBig');
+    if (msg.last !== undefined) {
+      big.textContent = msg.last.toFixed(2);
+      if (lastPrice !== null) {
+        big.classList.remove('up', 'down');
+        big.classList.add(msg.last >= lastPrice ? 'up' : 'down');
+      }
+      lastPrice = msg.last;
+    }
+    if (msg.bid !== undefined) document.getElementById('bidV').textContent = msg.bid.toFixed(2);
+    if (msg.ask !== undefined) document.getElementById('askV').textContent = msg.ask.toFixed(2);
+    document.getElementById('tickSeq').textContent = msg.seq;
+
+    // Append to tick list (keep last 50)
+    const list = document.getElementById('tickList');
+    const line = document.createElement('div');
+    const t = new Date(msg.ts).toISOString().substr(11, 12);
+    line.textContent = `${t}  seq=${msg.seq}  last=${msg.last ?? '—'}  bid=${msg.bid ?? '—'}  ask=${msg.ask ?? '—'}  Δ=${lat}ms`;
+    list.insertBefore(line, list.firstChild);
+    while (list.children.length > 50) list.removeChild(list.lastChild);
+  }
+
+  // ── WS connections (2 sockets, one per channel) ─────────────────────────
+  let wsTick = null;
+  let wsBar = null;
+
+  function connect() {
+    saveTokenIfRequested();
+    const tok = tokenInput.value.trim();
+    if (!tok) { alert('请填 LIVE_STREAMING_TOKEN'); return; }
+    disconnect();
+
+    const host = location.host;
+    const proto = location.protocol === 'https:' ? 'wss:' : 'ws:';
+    const tickUrl = `${proto}//${host}/ws/quote/US/AAPL?token=${encodeURIComponent(tok)}`;
+    const barUrl  = `${proto}//${host}/ws/kline/US/AAPL/1m?token=${encodeURIComponent(tok)}`;
+
+    wsTick = new WebSocket(tickUrl);
+    wsBar  = new WebSocket(barUrl);
+
+    let openCount = 0;
+    [['tick', wsTick], ['bar', wsBar]].forEach(([label, ws]) => {
+      ws.onopen = () => {
+        openCount++;
+        if (openCount === 2) setStatus('connected', true);
+        // server-sent ping is automatic; the server sends hb every 15s
+        // We also send ping every 15s for the double-direction heartbeat.
+        ws._pingTimer = setInterval(() => {
+          try { ws.send(JSON.stringify({ action: 'ping' })); } catch (e) {}
+        }, 15000);
+      };
+      ws.onmessage = (ev) => {
+        let msg;
+        try { msg = JSON.parse(ev.data); } catch (e) { return; }
+        if (msg.type === 'tick') onTick(msg);
+        else if (msg.type === 'bar') updateBar(msg);
+        else if (msg.type === 'snapshot' && msg.bars) msg.bars.forEach(b => updateBar({...b, seq: msg.last_seq}));
+        else if (msg.type === 'hb' || msg.type === 'pong' || msg.type === 'subscribed') {/* silent */}
+        else console.log(`[${label}]`, msg);
+      };
+      ws.onerror = (e) => { console.error(`[${label}] ws error`, e); setStatus('error', false); };
+      ws.onclose = (ev) => {
+        clearInterval(ws._pingTimer);
+        setStatus(`closed (${ev.code})`, false);
+      };
+    });
+  }
+
+  function disconnect() {
+    [wsTick, wsBar].forEach(ws => { if (ws) { try { ws.close(); } catch (e) {} } });
+    wsTick = wsBar = null;
+    setStatus('disconnected', false);
+  }
+</script>
+<script src="/static/i18n.js?v=12"></script>
+</body>
+</html>

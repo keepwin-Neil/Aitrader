@@ -1,0 +1,517 @@
+{
+  "intervals": {
+    "1d": {
+      "claude_entropy_momentum": {
+        "signal_params": {
+          "buy": {
+            "entropy_window": 17,
+            "entropy_bins": 9,
+            "entropy_smooth": 4,
+            "entropy_low": 3.075,
+            "entropy_high": 3.8100000000000005,
+            "mom_period": 14,
+            "mom_exit": 4.345000000000001,
+            "ema_period": 19,
+            "rsi_period": 6,
+            "rsi_sell": 85,
+            "atr_stop_mul": 1.8350000000000002
+          },
+          "sell": {
+            "entropy_window": 18,
+            "entropy_bins": 10,
+            "entropy_smooth": 7,
+            "entropy_low": 2.375,
+            "entropy_high": 1.9100000000000001,
+            "mom_period": 14,
+            "mom_exit": 6.245000000000001,
+            "ema_period": 11,
+            "rsi_period": 10,
+            "rsi_sell": 55,
+            "atr_stop_mul": 3.4350000000000005
+          }
+        },
+        "signal_metrics": {
+          "buy": {
+            "total_buy_points": 6,
+            "success_rate": 83.3,
+            "avg_mfe": 69.7,
+            "avg_mae": -6.84,
+            "avg_r_ratio": 19.99,
+            "best_window": 20,
+            "updated_at": "2026-09-18 17:07"
+          },
+          "sell": {
+            "total_sell_points": 1,
+            "success_rate": 100.0,
+            "avg_mfe": 26.37,
+            "avg_mae": 3.19,
+            "avg_r_ratio": 8.27,
+            "best_window": 20,
+            "updated_at": "2026-09-18 17:07"
+          }
+        }
+      },
+      "claude_ensemble_voting": {
+        "signal_params": {
+          "buy": {
+            "buy_threshold": 1,
+            "sell_threshold": 2,
+            "mr_rsi_oversold": 37,
+            "mr_rsi_overbought": 57,
+            "dm_fast": 14,
+            "dm_slow": 46
+          },
+          "sell": {
+            "buy_threshold": 3,
+            "sell_threshold": 1,
+            "mr_rsi_oversold": 37,
+            "mr_rsi_overbought": 63,
+            "dm_fast": 12,
+            "dm_slow": 15
+          }
+        },
+        "signal_metrics": {
+          "buy": {
+            "total_buy_points": 5,
+            "success_rate": 80.0,
+            "avg_mfe": 78.31,
+            "avg_mae": -5.04,
+            "avg_r_ratio": 21.08,
+            "best_window": 20,
+            "updated_at": "2026-09-18 15:04"
+          },
+          "sell": {
+            "total_sell_points": 6,
+            "success_rate": 33.3,
+            "avg_mfe": 5.86,
+            "avg_mae": 72.39,
+            "avg_r_ratio": 2.81,
+            "best_window": 20,
+            "updated_at": "2026-09-18 15:04"
+          }
+        }
+      },
+      "claude_fft_cycle_trend": {
+        "signal_params": {
+          "buy": {
+            "fft_window": 50,
+            "min_period": 7,
+            "max_period": 18,
+            "ema_period": 20,
+            "buy_threshold": -0.8,
+            "sell_threshold": 1.2,
+            "atr_stop_mul": 3.5
+          },
+          "sell": {
+            "fft_window": 55,
+            "min_period": 6,
+            "max_period": 22,
+            "ema_period": 15,
+            "buy_threshold": -0.09999999999999998,
+            "sell_threshold": 0.9000000000000001,
+            "atr_stop_mul": 1.5
+          }
+        },
+        "signal_metrics": {
+          "buy": {
+            "total_buy_points": 2,
+            "success_rate": 100.0,
+            "avg_mfe": 66.5,
+            "avg_mae": -2.88,
+            "avg_r_ratio": 139.86,
+            "best_window": 20,
+            "updated_at": "2026-09-18 17:07"
+          },
+          "sell": {
+            "total_sell_points": 1,
+            "success_rate": 100.0,
+            "avg_mfe": 45.4,
+            "avg_mae": 0.87,
+            "avg_r_ratio": 52.18,
+            "best_window": 20,
+            "updated_at": "2026-09-18 17:07"
+          }
+        }
+      },
+      "gemini_trend_persistence": {
+        "signal_params": {
+          "buy": {
+            "window": 22,
+            "threshold": 0.30000000000000004,
+            "atr_stop_mul": 1.85
+          },
+          "sell": {
+            "window": 13,
+            "threshold": 0.30000000000000004,
+            "atr_stop_mul": 2.6500000000000004
+          }
+        },
+        "signal_metrics": {
+          "buy": {
+            "total_buy_points": 2,
+            "success_rate": 100.0,
+            "avg_mfe": 88.84,
+            "avg_mae": -1.15,
+            "avg_r_ratio": 75.88,
+            "best_window": 20,
+            "updated_at": "2026-09-18 15:04"
+          },
+          "sell": {
+            "total_sell_points": 8,
+            "success_rate": 37.5,
+            "avg_mfe": 15.34,
+            "avg_mae": 18.23,
+            "avg_r_ratio": 6.67,
+            "best_window": 20,
+            "updated_at": "2026-09-18 15:04"
+          }
+        }
+      },
+      "claude_kaufman_efficiency": {
+        "signal_params": {
+          "buy": {
+            "er_period": 15,
+            "er_threshold": 0.3,
+            "er_exit": 0.1,
+            "kama_fast": 4,
+            "kama_slow": 43,
+            "atr_period": 11,
+            "atr_mul": 2.1100000000000003,
+            "vol_period": 29,
+            "vol_min": 0.67,
+            "rsi_period": 13,
+            "rsi_sell": 64,
+            "atr_stop_mul": 3.38
+          },
+          "sell": {
+            "er_period": 24,
+            "er_threshold": 0.25,
+            "er_exit": 0.0,
+            "kama_fast": 4,
+            "kama_slow": 51,
+            "atr_period": 12,
+            "atr_mul": 2.21,
+            "vol_period": 23,
+            "vol_min": 0.77,
+            "rsi_period": 8,
+            "rsi_sell": 50,
+            "atr_stop_mul": 2.38
+          }
+        },
+        "signal_metrics": {
+          "buy": {
+            "total_buy_points": 7,
+            "success_rate": 85.7,
+            "avg_mfe": 69.22,
+            "avg_mae": -5.41,
+            "avg_r_ratio": 37.73,
+            "best_window": 20,
+            "updated_at": "2026-09-18 15:04"
+          },
+          "sell": {
+            "total_sell_points": 2,
+            "success_rate": 100.0,
+            "avg_mfe": 28.68,
+            "avg_mae": 1.82,
+            "avg_r_ratio": 19.91,
+            "best_window": 20,
+            "updated_at": "2026-09-18 15:04"
+          }
+        }
+      },
+      "gemini_shooting_star": {
+        "signal_params": {
+          "buy": {
+            "atr_stop_mul": 2.15
+          },
+          "sell": {
+            "atr_stop_mul": 2.15
+          }
+        },
+        "signal_metrics": {
+          "buy": {
+            "total_buy_points": 2,
+            "success_rate": 100.0,
+            "avg_mfe": 61.46,
+            "avg_mae": -2.83,
+            "avg_r_ratio": 18.52,
+            "best_window": 20,
+            "updated_at": "2026-09-18 15:04"
+          }
+        }
+      },
+      "gemini_mcginley_dynamic": {
+        "signal_params": {
+          "buy": {
+            "window": 11,
+            "atr_stop_mul": 2.55
+          },
+          "sell": {
+            "window": 19,
+            "atr_stop_mul": 1.75
+          }
+        },
+        "signal_metrics": {
+          "buy": {
+            "total_buy_points": 5,
+            "success_rate": 80.0,
+            "avg_mfe": 33.42,
+            "avg_mae": -6.69,
+            "avg_r_ratio": 19.45,
+            "best_window": 20,
+            "updated_at": "2026-09-18 17:07"
+          },
+          "sell": {
+            "total_sell_points": 2,
+            "success_rate": 0.0,
+            "avg_mfe": 28.7,
+            "avg_mae": 12.85,
+            "avg_r_ratio": 3.38,
+            "best_window": 20,
+            "updated_at": "2026-09-18 17:07"
+          }
+        }
+      },
+      "claude_vol_adj_momentum": {
+        "signal_params": {
+          "buy": {
+            "mom_period": 30,
+            "vol_period": 15,
+            "signal_ema": 13,
+            "buy_threshold": 0.1,
+            "sell_threshold": -0.3,
+            "ema_period": 35,
+            "atr_stop_mul": 1.5
+          },
+          "sell": {
+            "mom_period": 20,
+            "vol_period": 30,
+            "signal_ema": 20,
+            "buy_threshold": 1.5,
+            "sell_threshold": 0.5,
+            "ema_period": 50,
+            "atr_stop_mul": 4.0
+          }
+        },
+        "signal_metrics": {
+          "buy": {
+            "total_buy_points": 1,
+            "success_rate": 100.0,
+            "avg_mfe": 119.45,
+            "avg_mae": -1.28,
+            "avg_r_ratio": 93.32,
+            "best_window": 20,
+            "updated_at": "2026-09-18 17:07"
+          },
+          "sell": {
+            "total_sell_points": 2,
+            "success_rate": 100.0,
+            "avg_mfe": 19.84,
+            "avg_mae": 1.71,
+            "avg_r_ratio": 11.03,
+            "best_window": 20,
+            "updated_at": "2026-09-18 17:07"
+          }
+        }
+      },
+      "gemini_fractal_trend": {
+        "signal_params": {
+          "buy": {
+            "window": 22,
+            "threshold": 0.30000000000000004,
+            "atr_stop_mul": 1.85
+          },
+          "sell": {
+            "window": 13,
+            "threshold": 0.30000000000000004,
+            "atr_stop_mul": 2.6500000000000004
+          }
+        },
+        "signal_metrics": {
+          "buy": {
+            "total_buy_points": 2,
+            "success_rate": 100.0,
+            "avg_mfe": 88.84,
+            "avg_mae": -1.15,
+            "avg_r_ratio": 75.88,
+            "best_window": 20,
+            "updated_at": "2026-09-18 15:04"
+          },
+          "sell": {
+            "total_sell_points": 8,
+            "success_rate": 37.5,
+            "avg_mfe": 15.34,
+            "avg_mae": 18.23,
+            "avg_r_ratio": 6.67,
+            "best_window": 20,
+            "updated_at": "2026-09-18 15:04"
+          }
+        }
+      },
+      "gemini_atr_volatility_stop": {
+        "signal_params": {
+          "buy": {
+            "lookback": 29,
+            "atr_mult": 3.4000000000000004,
+            "atr_period": 14,
+            "atr_stop_mul": 3.1500000000000004
+          },
+          "sell": {
+            "lookback": 19,
+            "atr_mult": 4.4,
+            "atr_period": 27,
+            "atr_stop_mul": 2.75
+          }
+        },
+        "signal_metrics": {
+          "buy": {
+            "total_buy_points": 2,
+            "success_rate": 100.0,
+            "avg_mfe": 128.32,
+            "avg_mae": -3.61,
+            "avg_r_ratio": 36.6,
+            "best_window": 20,
+            "updated_at": "2026-09-18 15:04"
+          },
+          "sell": {
+            "total_sell_points": 1,
+            "success_rate": 100.0,
+            "avg_mfe": 33.47,
+            "avg_mae": 1.27,
+            "avg_r_ratio": 26.35,
+            "best_window": 20,
+            "updated_at": "2026-09-18 15:04"
+          }
+        }
+      },
+      "claude_adaptive_ensemble_v2": {
+        "signal_params": {
+          "buy": {
+            "rolling_window": 30,
+            "min_weight": 0.05,
+            "buy_threshold": 0.4,
+            "sell_threshold": 0.45,
+            "atr_stop_mul": 2.0
+          },
+          "sell": {
+            "rolling_window": 80,
+            "min_weight": 0.15,
+            "buy_threshold": 0.45,
+            "sell_threshold": 0.35,
+            "atr_stop_mul": 4.0
+          }
+        },
+        "signal_metrics": {
+          "buy": {
+            "total_buy_points": 1,
+            "success_rate": 100.0,
+            "avg_mfe": 15.12,
+            "avg_mae": -5.76,
+            "avg_r_ratio": 2.62,
+            "best_window": 20,
+            "updated_at": "2026-09-18 17:07"
+          },
+          "sell": {
+            "total_sell_points": 1,
+            "success_rate": 100.0,
+            "avg_mfe": 33.47,
+            "avg_mae": 1.27,
+            "avg_r_ratio": 26.35,
+            "best_window": 20,
+            "updated_at": "2026-09-18 17:07"
+          }
+        }
+      },
+      "claude_hurst_exponent": {
+        "signal_params": {
+          "buy": {
+            "hurst_window": 30,
+            "hurst_trend": 0.6175,
+            "hurst_mr": 0.5650000000000001,
+            "ema_fast": 10,
+            "ema_slow": 24,
+            "bb_period": 24,
+            "bb_std": 2.415,
+            "rsi_period": 9,
+            "rsi_oversold": 43,
+            "rsi_overbought": 122,
+            "atr_stop_mul": 1.98
+          },
+          "sell": {
+            "hurst_window": 35,
+            "hurst_trend": 0.7675,
+            "hurst_mr": 0.515,
+            "ema_fast": 26,
+            "ema_slow": 20,
+            "bb_period": 39,
+            "bb_std": 1.815,
+            "rsi_period": 14,
+            "rsi_oversold": 55,
+            "rsi_overbought": 82,
+            "atr_stop_mul": 1.68
+          }
+        },
+        "signal_metrics": {
+          "buy": {
+            "total_buy_points": 1,
+            "success_rate": 100.0,
+            "avg_mfe": 150.77,
+            "avg_mae": -3.24,
+            "avg_r_ratio": 46.53,
+            "best_window": 20,
+            "updated_at": "2026-09-18 17:07"
+          },
+          "sell": {
+            "total_sell_points": 1,
+            "success_rate": 100.0,
+            "avg_mfe": 46.36,
+            "avg_mae": 4.45,
+            "avg_r_ratio": 10.42,
+            "best_window": 20,
+            "updated_at": "2026-09-18 17:07"
+          }
+        }
+      },
+      "openai_percent_b_trend": {
+        "signal_params": {
+          "buy": {
+            "bb_period": 21,
+            "bb_std": 2.7,
+            "buy_level": 0.525,
+            "exit_level": 0.425,
+            "bandwidth_min": 0.1,
+            "atr_stop_mul": 1.45
+          },
+          "sell": {
+            "bb_period": 30,
+            "bb_std": 2.1,
+            "buy_level": 0.47500000000000003,
+            "exit_level": 0.175,
+            "bandwidth_min": 0.1,
+            "atr_stop_mul": 2.75
+          }
+        },
+        "signal_metrics": {
+          "buy": {
+            "total_buy_points": 6,
+            "success_rate": 100.0,
+            "avg_mfe": 81.43,
+            "avg_mae": -3.81,
+            "avg_r_ratio": 22.17,
+            "best_window": 20,
+            "updated_at": "2026-09-18 17:07"
+          },
+          "sell": {
+            "total_sell_points": 4,
+            "success_rate": 25.0,
+            "avg_mfe": 18.99,
+            "avg_mae": 15.19,
+            "avg_r_ratio": 8.12,
+            "best_window": 20,
+            "updated_at": "2026-09-18 17:07"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "claude_dual_ma_cross": {
+    "params": {
+      "fast_period": 20,
+      "slow_period": 31,
+      "ma_type": "sma",
+      "atr_stop_mul": 3.5
+    },
+    "promoted_at": "2026-03-22T16:51:48.503550",
+    "source_sharpe": 0.98,
+    "source_return": 54.96,
+    "std_return": 18.56,
+    "delta_return": 36.4,
+    "source_method": "bayesian",
+    "wf_consistency": 83.3
+  },
+  "claude_momentum_breakout": {
+    "params": {
+      "breakout_period": 9,
+      "exit_period": 12,
+      "vol_ma": 20,
+      "vol_ratio_min": 0.8,
+      "atr_stop_mul": 2.0
+    },
+    "promoted_at": "2026-03-22T16:51:48.535124",
+    "source_sharpe": 0.58,
+    "source_return": 26.78,
+    "std_return": 6.38,
+    "delta_return": 20.4,
+    "source_method": "bayesian",
+    "wf_consistency": 66.7
+  },
+  "claude_volatility_breakout": {
+    "params": {
+      "k_factor": 0.15000000000000002,
+      "ema_period": 20,
+      "min_range": 1.0,
+      "atr_stop_mul": 2.0
+    },
+    "promoted_at": "2026-03-22T16:51:48.564914",
+    "source_sharpe": 0.31,
+    "source_return": 9.35,
+    "std_return": -27.0,
+    "delta_return": 36.35,
+    "source_method": "bayesian",
+    "wf_consistency": 66.7
+  },
+  "claude_ross_hook": {
+    "params": {
+      "fractal_n": 2,
+      "ema_period": 10,
+      "atr_stop_mul": 2.0
+    },
+    "promoted_at": "2026-03-22T16:51:48.599043",
+    "source_sharpe": 1.06,
+    "source_return": 45.51,
+    "std_return": 11.6,
+    "delta_return": 33.91,
+    "source_method": "bayesian",
+    "wf_consistency": 66.7
+  },
+  "claude_elder_force": {
+    "params": {
+      "short_period": 2,
+      "long_period": 8,
+      "ema_period": 30,
+      "atr_stop_mul": 2.0
+    },
+    "promoted_at": "2026-03-22T16:51:48.629962",
+    "source_sharpe": 0.43,
+    "source_return": 15.75,
+    "std_return": -5.88,
+    "delta_return": 21.63,
+    "source_method": "bayesian",
+    "wf_consistency": 66.7
+  },
+  "claude_supertrend": {
+    "params": {
+      "st_period": 29,
+      "st_multiplier": 2.0,
+      "vol_ma": 20,
+      "atr_stop_mul": 0.5
+    },
+    "promoted_at": "2026-03-22T16:51:48.681205",
+    "source_sharpe": 0.83,
+    "source_return": 32.13,
+    "std_return": -10.91,
+    "delta_return": 43.04,
+    "source_method": "bayesian",
+    "wf_consistency": 66.7
+  },
+  "claude_aroon_oscillator": {
+    "params": {
+      "aroon_period": 25,
+      "buy_threshold": 30,
+      "sell_threshold": -40,
+      "atr_stop_mul": 2.5
+    },
+    "promoted_at": "2026-03-22T16:51:48.713458",
+    "source_sharpe": 0.89,
+    "source_return": 49.38,
+    "std_return": 32.3,
+    "delta_return": 17.08,
+    "source_method": "bayesian",
+    "wf_consistency": 66.7
+  },
+  "claude_chandelier_exit": {
+    "params": {
+      "lookback": 25,
+      "atr_mult": 2.0,
+      "atr_period": 21,
+      "atr_stop_mul": 2.0
+    },
+    "promoted_at": "2026-03-22T16:51:48.742824",
+    "source_sharpe": 1.05,
+    "source_return": 53.36,
+    "std_return": 19.14,
+    "delta_return": 34.22,
+    "source_method": "bayesian",
+    "wf_consistency": 66.7
+  },
+  "claude_atr_channel_trend": {
+    "params": {
+      "ema_period": 15,
+      "atr_period": 14,
+      "atr_mult": 1.5,
+      "atr_stop_mul": 4.0
+    },
+    "promoted_at": "2026-03-22T16:51:48.773080",
+    "source_sharpe": 0.23,
+    "source_return": 4.84,
+    "std_return": -30.5,
+    "delta_return": 35.34,
+    "source_method": "bayesian",
+    "wf_consistency": 66.7
+  }
+}

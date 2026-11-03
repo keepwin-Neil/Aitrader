@@ -1,0 +1,85 @@
+{
+  "generated_at": "2026-03-19T04:26:00.979746",
+  "elapsed_minutes": 283.4,
+  "total_rounds": 2,
+  "convergence_curve": [
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      0
+    ]
+  ],
+  "total_upgrades": 1,
+  "final_params": {
+    "chaikin_money_flow": {
+      "cmf_period": 30,
+      "ema_fast": 15,
+      "ema_slow": 30,
+      "cmf_buy_threshold": 0.15,
+      "cmf_sell_threshold": -0.039999999999999994,
+      "atr_stop_mul": 3.5
+    }
+  },
+  "final_baseline": {
+    "stochastic_momentum": {
+      "avg_score": 0.3796,
+      "avg_sharpe": -0.0574
+    },
+    "chaikin_money_flow": {
+      "avg_score": 0.432,
+      "avg_sharpe": 0.1064
+    },
+    "elder_force": {
+      "avg_score": 0.4336,
+      "avg_sharpe": 0.182
+    },
+    "trix_momentum": {
+      "avg_score": 0.4416,
+      "avg_sharpe": 0.2379
+    },
+    "connors_rsi": {
+      "avg_score": 0.4365,
+      "avg_sharpe": 0.1528
+    },
+    "coppock_curve": {
+      "avg_score": 0.414,
+      "avg_sharpe": 0.1208
+    },
+    "mass_index": {
+      "avg_score": 0.3609,
+      "avg_sharpe": -0.1556
+    },
+    "aroon_oscillator": {
+      "avg_score": 0.4522,
+      "avg_sharpe": 0.2361
+    },
+    "squeeze_momentum": {
+      "avg_score": 0.3907,
+      "avg_sharpe": 0.009
+    }
+  },
+  "all_upgrade_log": [
+    {
+      "round": 1,
+      "stock": "ALNY",
+      "strategy": "chaikin_money_flow",
+      "old_score": 0.4167,
+      "new_score": 0.432,
+      "delta": 0.0153,
+      "params": {
+        "cmf_period": 30,
+        "ema_fast": 15,
+        "ema_slow": 30,
+        "cmf_buy_threshold": 0.15,
+        "cmf_sell_threshold": -0.039999999999999994,
+        "atr_stop_mul": 3.5
+      },
+      "wf_consistency": 60.0,
+      "wf_overfit_ratio": 2.36,
+      "timestamp": "2026-03-19T01:36:38.221638"
+    }
+  ]
+}

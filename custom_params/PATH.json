@@ -1,0 +1,165 @@
+{
+  "claude_fft_cycle_trend": {
+    "params": {
+      "fft_window": 20,
+      "min_period": 5,
+      "max_period": 16,
+      "ema_period": 20,
+      "buy_threshold": -0.4,
+      "sell_threshold": 0.5,
+      "atr_stop_mul": 1.5
+    },
+    "promoted_at": "2026-03-22T21:01:34.842140",
+    "source_sharpe": 1.1,
+    "source_return": 82.67,
+    "std_return": 18.05,
+    "delta_return": 64.62,
+    "source_method": "bayesian",
+    "wf_consistency": 66.7
+  },
+  "claude_seasonal_calendar": {
+    "params": {
+      "ema_period": 20,
+      "rsi_period": 15,
+      "rsi_sell": 75,
+      "buy_score": 0.2,
+      "sell_score": 0.25,
+      "month_boost": 2.75,
+      "dow_boost": 1.5,
+      "atr_stop_mul": 2.0
+    },
+    "promoted_at": "2026-03-23T08:06:19.304270",
+    "source_sharpe": 0.91,
+    "source_return": 37.55,
+    "std_return": 16.5,
+    "delta_return": 21.05,
+    "source_method": "bayesian",
+    "wf_consistency": 66.7
+  },
+  "claude_trix_momentum": {
+    "params": {
+      "trix_period": 8,
+      "signal_period": 15,
+      "atr_stop_mul": 4.0
+    },
+    "promoted_at": "2026-03-23T10:54:27.296173",
+    "source_sharpe": 1.02,
+    "source_return": 86.0,
+    "std_return": -29.93,
+    "delta_return": 115.93,
+    "source_method": "bayesian",
+    "wf_consistency": 100.0
+  },
+  "claude_dual_ma_cross": {
+    "params": {
+      "fast_period": 8,
+      "slow_period": 17,
+      "ma_type": "sma",
+      "atr_stop_mul": 4.0
+    },
+    "promoted_at": "2026-03-23T10:54:27.353366",
+    "source_sharpe": 0.7,
+    "source_return": 46.93,
+    "std_return": -6.89,
+    "delta_return": 53.82,
+    "source_method": "bayesian",
+    "wf_consistency": 66.7
+  },
+  "claude_momentum_breakout": {
+    "params": {
+      "breakout_period": 6,
+      "exit_period": 4,
+      "vol_ma": 20,
+      "vol_ratio_min": 0.9000000000000001,
+      "atr_stop_mul": 3.0
+    },
+    "promoted_at": "2026-03-23T10:54:27.404150",
+    "source_sharpe": 0.87,
+    "source_return": 61.79,
+    "std_return": -28.2,
+    "delta_return": 89.99,
+    "source_method": "bayesian",
+    "wf_consistency": 66.7
+  },
+  "claude_supertrend": {
+    "params": {
+      "st_period": 11,
+      "st_multiplier": 1.5,
+      "vol_ma": 20,
+      "atr_stop_mul": 1.5
+    },
+    "promoted_at": "2026-03-23T10:54:27.486310",
+    "source_sharpe": 0.91,
+    "source_return": 58.83,
+    "std_return": -16.27,
+    "delta_return": 75.1,
+    "source_method": "bayesian",
+    "wf_consistency": 66.7
+  },
+  "claude_dual_thrust": {
+    "params": {
+      "lookback": 2,
+      "k1": 0.5,
+      "k2": 0.55,
+      "atr_stop_mul": 4.0
+    },
+    "promoted_at": "2026-03-23T10:54:27.539846",
+    "source_sharpe": 0.43,
+    "source_return": 20.79,
+    "std_return": -45.1,
+    "delta_return": 65.89,
+    "source_method": "bayesian",
+    "wf_consistency": 100.0
+  },
+  "claude_aroon_oscillator": {
+    "params": {
+      "aroon_period": 15,
+      "buy_threshold": 70,
+      "sell_threshold": -30,
+      "atr_stop_mul": 3.5
+    },
+    "promoted_at": "2026-03-23T10:54:27.600822",
+    "source_sharpe": 0.61,
+    "source_return": 31.19,
+    "std_return": 2.8,
+    "delta_return": 28.39,
+    "source_method": "bayesian",
+    "wf_consistency": 66.7
+  },
+  "claude_atr_channel_trend": {
+    "params": {
+      "ema_period": 25,
+      "atr_period": 10,
+      "atr_mult": 2.0,
+      "atr_stop_mul": 2.5
+    },
+    "promoted_at": "2026-03-23T10:54:27.646918",
+    "source_sharpe": 0.08,
+    "source_return": -8.98,
+    "std_return": -34.3,
+    "delta_return": 25.32,
+    "source_method": "bayesian",
+    "wf_consistency": 66.7
+  },
+  "claude_momentum_reversion_hybrid": {
+    "params": {
+      "adx_period": 14,
+      "adx_threshold": 35,
+      "ema_fast": 20,
+      "ema_slow": 50,
+      "rsi_period": 14,
+      "rsi_oversold": 30,
+      "rsi_overbought": 70,
+      "bb_period": 15,
+      "bb_std": 2.0,
+      "atr_stop_mul": 2.0
+    },
+    "promoted_at": "2026-03-23T10:54:27.725648",
+    "source_sharpe": 0.69,
+    "source_return": 32.47,
+    "std_return": -46.06,
+    "delta_return": 78.53,
+    "source_method": "bayesian",
+    "wf_consistency": 100.0
+  }
+}

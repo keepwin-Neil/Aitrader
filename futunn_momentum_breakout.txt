@@ -1,0 +1,25 @@
+{动量突破策略 - Momentum Breakout}
+{N日新高突破买入，跌破M日低点卖出}
+
+BP:=25;
+EP:=10;
+VOL_N:=20;
+VOL_MIN:=0.8;
+
+{前N日最高价（不含当日）}
+NH:REF(HHV(HIGH,BP),1),COLORF44336,LINETHICK1,DOTLINE;
+
+{前M日最低价（不含当日）}
+NL:REF(LLV(LOW,EP),1),COLOR4CAF50,LINETHICK1,DOTLINE;
+
+{成交量比 = 当日成交量 / 20日均量}
+VOL_RATIO:=VOL/MA(VOL,VOL_N);
+
+{买入：收盘突破N日高点 + 量比达标}
+BUY_COND:=CLOSE>NH AND VOL_RATIO>VOL_MIN;
+
+{卖出：收盘跌破M日低点}
+SELL_COND:=CLOSE<NL;
+
+DRAWICON(BUY_COND AND REF(BUY_COND,1)=0,LOW*0.99,1);
+DRAWICON(SELL_COND AND REF(SELL_COND,1)=0,HIGH*1.01,2);

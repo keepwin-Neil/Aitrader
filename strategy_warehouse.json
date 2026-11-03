@@ -1,0 +1,4859 @@
+{
+  "description": "策略仓库管理 - 记录策略状态和入库/出库历史",
+  "updated_at": "2026-09-22",
+  "favourites": [
+    "openai_percent_b_trend",
+    "claude_fft_cycle_trend",
+    "claude_hurst_exponent",
+    "claude_adaptive_ensemble_v2",
+    "gemini_mcginley_dynamic",
+    "claude_vol_adj_momentum",
+    "claude_entropy_momentum",
+    "claude_volatility_regime",
+    "claude_ensemble_voting",
+    "claude_dual_ma_cross"
+  ],
+  "new_strategies": [],
+  "deleted": [
+    {
+      "name": "nonexistent_test_strategy",
+      "deleted_at": "2026-09-10",
+      "reason": "test"
+    },
+    {
+      "name": "claude_pullback_buy",
+      "deleted_at": "2026-09-10",
+      "reason": "手动删除"
+    },
+    {
+      "name": "claude_ehlers_fisher",
+      "deleted_at": "2026-09-10",
+      "reason": "手动删除"
+    },
+    {
+      "name": "gemini_aroon_osc",
+      "deleted_at": "2026-09-17",
+      "reason": "手动删除"
+    },
+    {
+      "name": "gemini_fisher_transform",
+      "deleted_at": "2026-09-17",
+      "reason": "手动删除"
+    },
+    {
+      "name": "gemini_monday_reversal",
+      "deleted_at": "2026-09-17",
+      "reason": "手动删除"
+    },
+    {
+      "name": "gemini_macd_hist_div",
+      "deleted_at": "2026-09-17",
+      "reason": "手动删除"
+    },
+    {
+      "name": "gemini_morning_star",
+      "deleted_at": "2026-09-17",
+      "reason": "手动删除"
+    },
+    {
+      "name": "gemini_support_resistance_sva",
+      "deleted_at": "2026-09-17",
+      "reason": "手动删除"
+    },
+    {
+      "name": "gemini_bullish_engulfing",
+      "deleted_at": "2026-09-17",
+      "reason": "手动删除"
+    },
+    {
+      "name": "gemini_std_dev_channel",
+      "deleted_at": "2026-09-17",
+      "reason": "手动删除"
+    },
+    {
+      "name": "gemini_hammer_bounce",
+      "deleted_at": "2026-09-17",
+      "reason": "手动删除"
+    },
+    {
+      "name": "gemini_bollinger_impulse",
+      "deleted_at": "2026-09-17",
+      "reason": "手动删除"
+    },
+    {
+      "name": "gemini_zscore_spread",
+      "deleted_at": "2026-09-17",
+      "reason": "手动删除"
+    },
+    {
+      "name": "gemini_vortex_trend",
+      "deleted_at": "2026-09-17",
+      "reason": "手动删除"
+    },
+    {
+      "name": "gemini_keltner_meanrev",
+      "deleted_at": "2026-09-17",
+      "reason": "手动删除"
+    },
+    {
+      "name": "gemini_coppock",
+      "deleted_at": "2026-09-17",
+      "reason": "手动删除"
+    },
+    {
+      "name": "gemini_monthly_window",
+      "deleted_at": "2026-09-17",
+      "reason": "手动删除"
+    },
+    {
+      "name": "gemini_pead_momentum",
+      "deleted_at": "2026-09-17",
+      "reason": "手动删除"
+    },
+    {
+      "name": "gemini_garch_filter",
+      "deleted_at": "2026-09-17",
+      "reason": "手动删除"
+    },
+    {
+      "name": "claude_adaptive_rsi_meanrev",
+      "deleted_at": "2026-09-21",
+      "reason": "手动删除"
+    },
+    {
+      "name": "claude_range_expansion",
+      "deleted_at": "2026-09-21",
+      "reason": "手动删除"
+    },
+    {
+      "name": "claude_short_term_reversal",
+      "deleted_at": "2026-09-21",
+      "reason": "手动删除"
+    }
+  ],
+  "active": [
+    "gemini_trend_persistence",
+    "gemini_shooting_star",
+    "gemini_mcginley_dynamic",
+    "openai_percent_b_trend",
+    "gemini_fractal_trend",
+    "gemini_atr_volatility_stop",
+    "claude_ensemble_voting",
+    "claude_adaptive_ensemble_v2",
+    "claude_fft_cycle_trend",
+    "claude_entropy_momentum",
+    "claude_vol_adj_momentum",
+    "claude_hurst_exponent",
+    "claude_kaufman_efficiency",
+    "claude_dual_ma_cross",
+    "claude_volatility_regime",
+    "claude_price_channel_vol",
+    "claude_volatility_breakout",
+    "claude_supertrend",
+    "claude_trix_momentum",
+    "claude_adaptive_ma",
+    "claude_kdj_dmi",
+    "claude_candle_pattern_vol",
+    "openai_ultimate_breakout",
+    "openai_force_trend_pop",
+    "openai_zscore_trend_snap",
+    "openai_atr_expansion_breakout",
+    "openai_chaikin_vol_break",
+    "openai_dema_reclaim",
+    "openai_rsi_range_shift",
+    "openai_schaff_cycle_trend",
+    "openai_ease_move_trend",
+    "openai_bandwidth_expansion",
+    "openai_relative_vigor_reversal",
+    "openai_vwma_breakout",
+    "openai_ppo_trend_pulse",
+    "gemini_triple_screen_pulse",
+    "gemini_klinger_volume",
+    "gemini_heikin_ashi_balance",
+    "gemini_volume_sva",
+    "gemini_ehlers_cycle",
+    "gemini_fractal_dimension",
+    "gemini_hull_ma"
+  ],
+  "archived": [
+    {
+      "name": "openai_cmf_reclaim",
+      "archived_at": "2026-03-26",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 16.41% < 20%",
+      "avg_annual_return": 16.41
+    },
+    {
+      "name": "openai_disparity_rebound",
+      "archived_at": "2026-03-26",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 16.85% < 20%",
+      "avg_annual_return": 16.85
+    },
+    {
+      "name": "openai_donchian_mid_reclaim",
+      "archived_at": "2026-03-26",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 10.45% < 20%",
+      "avg_annual_return": 10.45
+    },
+    {
+      "name": "openai_envelope_pullback",
+      "archived_at": "2026-03-26",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 0.28% < 20%",
+      "avg_annual_return": 0.28
+    },
+    {
+      "name": "openai_gap_reclaim",
+      "archived_at": "2026-03-26",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 17.96% < 20%",
+      "avg_annual_return": 17.96
+    },
+    {
+      "name": "openai_inside_bar_thrust",
+      "archived_at": "2026-03-26",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 9.2% < 20%",
+      "avg_annual_return": 9.2
+    },
+    {
+      "name": "openai_mass_index_pop",
+      "archived_at": "2026-03-26",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 6.95% < 20%",
+      "avg_annual_return": 6.95
+    },
+    {
+      "name": "openai_mfi_pressure_pop",
+      "archived_at": "2026-03-26",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 8.66% < 20%",
+      "avg_annual_return": 8.66
+    },
+    {
+      "name": "openai_range_compression_pulse",
+      "archived_at": "2026-03-26",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 4.3% < 20%",
+      "avg_annual_return": 4.3
+    },
+    {
+      "name": "openai_roc_trend_shift",
+      "archived_at": "2026-03-26",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 4.13% < 20%",
+      "avg_annual_return": 4.13
+    },
+    {
+      "name": "openai_tema_impulse",
+      "archived_at": "2026-03-26",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 4.55% < 20%",
+      "avg_annual_return": 4.55
+    },
+    {
+      "name": "openai_tsi_trendline",
+      "archived_at": "2026-03-26",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 11.85% < 20%",
+      "avg_annual_return": 11.85
+    },
+    {
+      "name": "openai_volume_efficiency_trend",
+      "archived_at": "2026-03-26",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 17.5% < 20%",
+      "avg_annual_return": 17.5
+    },
+    {
+      "name": "openai_wide_range_reversal",
+      "archived_at": "2026-03-26",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 0.31% < 20%",
+      "avg_annual_return": 0.31
+    },
+    {
+      "name": "gemini_chande_momentum",
+      "archived_at": "2026-03-26",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 5.45% < 20%",
+      "avg_annual_return": 5.45
+    },
+    {
+      "name": "gemini_momentum_exhaustion",
+      "archived_at": "2026-03-26",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 5.8% < 20%",
+      "avg_annual_return": 5.8
+    },
+    {
+      "name": "gemini_regime_switching",
+      "archived_at": "2026-03-26",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 15.88% < 20%",
+      "avg_annual_return": 15.88
+    },
+    {
+      "name": "gemini_stochastic_rsi_burst",
+      "archived_at": "2026-03-26",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 15.85% < 20%",
+      "avg_annual_return": 15.85
+    },
+    {
+      "name": "gemini_volatility_burst",
+      "archived_at": "2026-03-26",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 5.46% < 20%",
+      "avg_annual_return": 5.46
+    },
+    {
+      "name": "openai_hammer_trend_confirm",
+      "archived_at": "2026-04-02",
+      "reason": "手动归档"
+    },
+    {
+      "name": "openai_rsi_failure_swing",
+      "archived_at": "2026-04-02",
+      "reason": "手动归档"
+    },
+    {
+      "name": "openai_true_range_pop",
+      "archived_at": "2026-04-02",
+      "reason": "手动归档"
+    },
+    {
+      "name": "openai_adx_donchian_thrust",
+      "archived_at": "2026-09-09",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 -5.34% < 20%",
+      "avg_annual_return": -5.34
+    },
+    {
+      "name": "openai_balance_power_breakout",
+      "archived_at": "2026-09-09",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 -0.27% < 20%",
+      "avg_annual_return": -0.27
+    },
+    {
+      "name": "openai_cci_trend_reclaim",
+      "archived_at": "2026-09-09",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 12.91% < 20%",
+      "avg_annual_return": 12.91
+    },
+    {
+      "name": "openai_dpo_trend_reversal",
+      "archived_at": "2026-09-09",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 -0.27% < 20%",
+      "avg_annual_return": -0.27
+    },
+    {
+      "name": "openai_ema_slope_breakout",
+      "archived_at": "2026-09-09",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 6.67% < 20%",
+      "avg_annual_return": 6.67
+    },
+    {
+      "name": "openai_keltner_midline_resume",
+      "archived_at": "2026-09-09",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 6.01% < 20%",
+      "avg_annual_return": 6.01
+    },
+    {
+      "name": "openai_kst_trend_signal",
+      "archived_at": "2026-09-09",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 6.82% < 20%",
+      "avg_annual_return": 6.82
+    },
+    {
+      "name": "openai_vhf_regime_breakout",
+      "archived_at": "2026-09-09",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 2.59% < 20%",
+      "avg_annual_return": 2.59
+    },
+    {
+      "name": "openai_vortex_trend_pulse",
+      "archived_at": "2026-09-09",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 5.96% < 20%",
+      "avg_annual_return": 5.96
+    },
+    {
+      "name": "claude_stochastic_momentum",
+      "archived_at": "2026-09-10",
+      "reason": "手动归档"
+    },
+    {
+      "name": "claude_adx_trend_strength",
+      "archived_at": "2026-09-10",
+      "reason": "手动归档"
+    },
+    {
+      "name": "claude_volume_profile",
+      "archived_at": "2026-09-10",
+      "reason": "手动归档"
+    },
+    {
+      "name": "claude_macd_divergence",
+      "archived_at": "2026-09-10",
+      "reason": "手动归档"
+    },
+    {
+      "name": "claude_zscore_reversion",
+      "archived_at": "2026-09-10",
+      "reason": "手动归档"
+    },
+    {
+      "name": "claude_aroon_oscillator",
+      "archived_at": "2026-09-10",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 10.54% < 20%",
+      "avg_annual_return": 10.54
+    },
+    {
+      "name": "claude_atr_channel_trend",
+      "archived_at": "2026-09-10",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 6.95% < 20%",
+      "avg_annual_return": 6.95
+    },
+    {
+      "name": "claude_bb_squeeze_breakout",
+      "archived_at": "2026-09-10",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 1.19% < 20%",
+      "avg_annual_return": 1.19
+    },
+    {
+      "name": "claude_breakout_trailing",
+      "archived_at": "2026-09-10",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 3.85% < 20%",
+      "avg_annual_return": 3.85
+    },
+    {
+      "name": "claude_chaikin_money_flow",
+      "archived_at": "2026-09-10",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 14.31% < 20%",
+      "avg_annual_return": 14.31
+    },
+    {
+      "name": "claude_chandelier_exit",
+      "archived_at": "2026-09-10",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 8.66% < 20%",
+      "avg_annual_return": 8.66
+    },
+    {
+      "name": "claude_coppock_curve",
+      "archived_at": "2026-09-10",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 17.77% < 20%",
+      "avg_annual_return": 17.77
+    },
+    {
+      "name": "claude_donchian_breakout",
+      "archived_at": "2026-09-10",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 4.66% < 20%",
+      "avg_annual_return": 4.66
+    },
+    {
+      "name": "claude_dual_thrust",
+      "archived_at": "2026-09-10",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 18.35% < 20%",
+      "avg_annual_return": 18.35
+    },
+    {
+      "name": "claude_elder_force",
+      "archived_at": "2026-09-10",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 19.48% < 20%",
+      "avg_annual_return": 19.48
+    },
+    {
+      "name": "claude_elder_triple_screen",
+      "archived_at": "2026-09-10",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 -1.49% < 20%",
+      "avg_annual_return": -1.49
+    },
+    {
+      "name": "claude_garch_vol_timing",
+      "archived_at": "2026-09-10",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 14.37% < 20%",
+      "avg_annual_return": 14.37
+    },
+    {
+      "name": "claude_heikin_ashi",
+      "archived_at": "2026-09-10",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 16.74% < 20%",
+      "avg_annual_return": 16.74
+    },
+    {
+      "name": "claude_keltner_breakout",
+      "archived_at": "2026-09-10",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 7.59% < 20%",
+      "avg_annual_return": 7.59
+    },
+    {
+      "name": "claude_linreg_trend",
+      "archived_at": "2026-09-10",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 4.62% < 20%",
+      "avg_annual_return": 4.62
+    },
+    {
+      "name": "claude_ma_ribbon",
+      "archived_at": "2026-09-10",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 17.09% < 20%",
+      "avg_annual_return": 17.09
+    },
+    {
+      "name": "claude_momentum_accel",
+      "archived_at": "2026-09-10",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 14.23% < 20%",
+      "avg_annual_return": 14.23
+    },
+    {
+      "name": "claude_momentum_breakout",
+      "archived_at": "2026-09-10",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 6.51% < 20%",
+      "avg_annual_return": 6.51
+    },
+    {
+      "name": "claude_momentum_quality",
+      "archived_at": "2026-09-10",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 13.35% < 20%",
+      "avg_annual_return": 13.35
+    },
+    {
+      "name": "claude_multi_indicator",
+      "archived_at": "2026-09-10",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 -1.12% < 20%",
+      "avg_annual_return": -1.12
+    },
+    {
+      "name": "claude_multi_osc_consensus",
+      "archived_at": "2026-09-10",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 5.0% < 20%",
+      "avg_annual_return": 5.0
+    },
+    {
+      "name": "claude_multi_timeframe_trend",
+      "archived_at": "2026-09-10",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 9.15% < 20%",
+      "avg_annual_return": 9.15
+    },
+    {
+      "name": "claude_obv_momentum",
+      "archived_at": "2026-09-10",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 11.49% < 20%",
+      "avg_annual_return": 11.49
+    },
+    {
+      "name": "claude_ross_hook",
+      "archived_at": "2026-09-10",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 14.46% < 20%",
+      "avg_annual_return": 14.46
+    },
+    {
+      "name": "claude_rsi_macd_trend",
+      "archived_at": "2026-09-10",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 6.12% < 20%",
+      "avg_annual_return": 6.12
+    },
+    {
+      "name": "claude_seasonal_calendar",
+      "archived_at": "2026-09-10",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 18.87% < 20%",
+      "avg_annual_return": 18.87
+    },
+    {
+      "name": "claude_squeeze_momentum",
+      "archived_at": "2026-09-10",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 2.32% < 20%",
+      "avg_annual_return": 2.32
+    },
+    {
+      "name": "claude_stoch_rsi",
+      "archived_at": "2026-09-10",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 3.24% < 20%",
+      "avg_annual_return": 3.24
+    },
+    {
+      "name": "claude_trend_hold",
+      "archived_at": "2026-09-10",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 6.85% < 20%",
+      "avg_annual_return": 6.85
+    },
+    {
+      "name": "claude_triple_ema_cross",
+      "archived_at": "2026-09-10",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 11.54% < 20%",
+      "avg_annual_return": 11.54
+    },
+    {
+      "name": "claude_turtle_trading",
+      "archived_at": "2026-09-10",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 5.28% < 20%",
+      "avg_annual_return": 5.28
+    },
+    {
+      "name": "claude_vol_weighted_mom",
+      "archived_at": "2026-09-10",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 13.23% < 20%",
+      "avg_annual_return": 13.23
+    },
+    {
+      "name": "claude_vwap_breakout",
+      "archived_at": "2026-09-10",
+      "reason": "统一验证淘汰：MYPOOL 平均收益 5.19% < 20%",
+      "avg_annual_return": 5.19
+    },
+    {
+      "name": "gemini_volume_price_div",
+      "archived_at": "2026-09-10",
+      "reason": "手动归档"
+    },
+    {
+      "name": "claude_acc_dist_trend",
+      "archived_at": "2026-09-10",
+      "reason": "从已删除恢复: api probe test only"
+    },
+    {
+      "name": "gemini_anchored_vwap",
+      "archived_at": "2026-09-10",
+      "reason": "从已删除恢复: 手动删除"
+    },
+    {
+      "name": "gemini_schaff_trend",
+      "archived_at": "2026-09-10",
+      "reason": "从已删除恢复: 手动删除"
+    },
+    {
+      "name": "openai_three_bar_strength",
+      "archived_at": "2026-09-17",
+      "reason": "手动归档"
+    },
+    {
+      "name": "openai_intraday_intensity_breakout",
+      "archived_at": "2026-09-17",
+      "reason": "手动归档"
+    },
+    {
+      "name": "claude_momentum_reversion_hybrid",
+      "archived_at": "2026-09-18",
+      "reason": "手动归档"
+    },
+    {
+      "name": "openai_atr_ratio_trend",
+      "archived_at": "2026-09-18",
+      "reason": "手动归档"
+    },
+    {
+      "name": "gemini_price_action_liquidity",
+      "archived_at": "2026-09-18",
+      "reason": "手动归档"
+    },
+    {
+      "name": "gemini_supertrend_v2",
+      "archived_at": "2026-09-18",
+      "reason": "手动归档"
+    },
+    {
+      "name": "gemini_adaptive_alpha",
+      "archived_at": "2026-09-18",
+      "reason": "手动归档"
+    },
+    {
+      "name": "openai_keltner_band_pulse",
+      "archived_at": "2026-09-18",
+      "reason": "手动归档"
+    },
+    {
+      "name": "claude_ichimoku_cloud",
+      "archived_at": "2026-09-21",
+      "reason": "手动归档"
+    },
+    {
+      "name": "claude_vwap_mean_reversion",
+      "archived_at": "2026-09-21",
+      "reason": "手动归档"
+    },
+    {
+      "name": "claude_volume_climax",
+      "archived_at": "2026-09-21",
+      "reason": "手动归档"
+    },
+    {
+      "name": "claude_meanrev_bb_rsi",
+      "archived_at": "2026-09-21",
+      "reason": "手动归档"
+    },
+    {
+      "name": "claude_double_bottom_rsi",
+      "archived_at": "2026-09-21",
+      "reason": "手动归档"
+    },
+    {
+      "name": "claude_divergence_combo",
+      "archived_at": "2026-09-21",
+      "reason": "手动归档"
+    },
+    {
+      "name": "claude_combo_meanrev_plus",
+      "archived_at": "2026-09-21",
+      "reason": "手动归档"
+    },
+    {
+      "name": "claude_swing_failure",
+      "archived_at": "2026-09-21",
+      "reason": "手动归档"
+    },
+    {
+      "name": "claude_pivot_bounce",
+      "archived_at": "2026-09-21",
+      "reason": "手动归档"
+    },
+    {
+      "name": "claude_williams_r_adx",
+      "archived_at": "2026-09-21",
+      "reason": "手动归档"
+    },
+    {
+      "name": "claude_trend_strength",
+      "archived_at": "2026-09-21",
+      "reason": "手动归档"
+    },
+    {
+      "name": "claude_mean_reversion_filtered",
+      "archived_at": "2026-09-21",
+      "reason": "手动归档"
+    },
+    {
+      "name": "claude_adaptive_bollinger",
+      "archived_at": "2026-09-21",
+      "reason": "手动归档"
+    },
+    {
+      "name": "claude_gap_and_go",
+      "archived_at": "2026-09-21",
+      "reason": "手动归档"
+    },
+    {
+      "name": "claude_parabolic_sar",
+      "archived_at": "2026-09-21",
+      "reason": "手动归档"
+    },
+    {
+      "name": "claude_mean_reversion",
+      "archived_at": "2026-09-21",
+      "reason": "手动归档"
+    },
+    {
+      "name": "claude_keltner_meanrev",
+      "archived_at": "2026-09-21",
+      "reason": "手动归档"
+    },
+    {
+      "name": "claude_rsi_divergence",
+      "archived_at": "2026-09-21",
+      "reason": "手动归档"
+    },
+    {
+      "name": "claude_adaptive_regime",
+      "archived_at": "2026-09-21",
+      "reason": "手动归档"
+    },
+    {
+      "name": "claude_connors_rsi",
+      "archived_at": "2026-09-21",
+      "reason": "手动归档"
+    },
+    {
+      "name": "claude_mass_index",
+      "archived_at": "2026-09-22",
+      "reason": "手动归档"
+    }
+  ],
+  "history": [
+    {
+      "date": "2026-03-17",
+      "action": "archived",
+      "strategies": [
+        "macd_divergence",
+        "kdj_dmi",
+        "elder_triple_screen"
+      ],
+      "reason": "年度对比分析显示这3个策略年均收益为负"
+    },
+    {
+      "date": "2026-03-17",
+      "action": "added",
+      "strategies": [
+        "trend_hold",
+        "momentum_reversion_hybrid",
+        "breakout_trailing",
+        "multi_timeframe_trend",
+        "adaptive_regime"
+      ],
+      "reason": "替换入库策略"
+    },
+    {
+      "date": "2026-03-17",
+      "action": "archived",
+      "strategies": [
+        "kdj_dmi",
+        "trend_hold",
+        "volatility_breakout",
+        "ichimoku_cloud",
+        "vwap_breakout"
+      ],
+      "reason": "多轮验证淘汰"
+    },
+    {
+      "date": "2026-03-18",
+      "action": "archived",
+      "strategies": [
+        "rsi_macd_trend",
+        "multi_indicator",
+        "parabolic_sar",
+        "donchian_breakout",
+        "keltner_breakout",
+        "zscore_reversion",
+        "williams_r_adx"
+      ],
+      "reason": "全面评测淘汰"
+    },
+    {
+      "date": "2026-03-18",
+      "action": "added",
+      "strategies": [
+        "heikin_ashi",
+        "obv_momentum"
+      ],
+      "reason": "新策略评测入选"
+    },
+    {
+      "date": "2026-03-19",
+      "action": "batch_eval_and_swap",
+      "added": [
+        "meanrev_bb_rsi",
+        "price_channel_vol",
+        "vol_weighted_mom",
+        "rsi_divergence"
+      ],
+      "archived": [
+        "momentum_reversion_hybrid",
+        "multi_timeframe_trend",
+        "adaptive_regime",
+        "obv_momentum"
+      ],
+      "reason": "32策略全面评测(20股×2年)，新策略meanrev_bb_rsi(#5,0.2868)、price_channel_vol(#11,0.2760)、vol_weighted_mom(#12,0.2697)、rsi_divergence(#15,0.2566)入选替换表现垫底的3个旧策略+1个弱新策略"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "restored",
+      "strategies": [
+        "momentum_quality"
+      ],
+      "reason": "手动恢复"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "archived",
+      "strategies": [
+        "volatility_regime"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "restored",
+      "strategies": [
+        "adaptive_ensemble_v2"
+      ],
+      "reason": "手动恢复"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "restored",
+      "strategies": [
+        "acc_dist_trend"
+      ],
+      "reason": "手动恢复"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "restored",
+      "strategies": [
+        "vwap_breakout"
+      ],
+      "reason": "手动恢复"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "restored",
+      "strategies": [
+        "squeeze_momentum"
+      ],
+      "reason": "手动恢复"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "deleted",
+      "strategies": [
+        "ehlers_fisher"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "deleted",
+      "strategies": [
+        "range_expansion"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "deleted",
+      "strategies": [
+        "short_term_reversal"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "deleted",
+      "strategies": [
+        "adaptive_rsi_meanrev"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "deleted",
+      "strategies": [
+        "pullback_buy"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "deleted",
+      "strategies": [
+        "mass_index"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "deleted",
+      "strategies": [
+        "trend_strength"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "deleted",
+      "strategies": [
+        "williams_r_adx"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "deleted",
+      "strategies": [
+        "volume_climax"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "deleted",
+      "strategies": [
+        "swing_failure"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "deleted",
+      "strategies": [
+        "double_bottom_rsi"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "deleted",
+      "strategies": [
+        "elder_triple_screen"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "deleted",
+      "strategies": [
+        "meanrev_bb_rsi"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "deleted",
+      "strategies": [
+        "macd_divergence"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "deleted",
+      "strategies": [
+        "volume_profile"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "deleted",
+      "strategies": [
+        "vwap_mean_reversion"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "deleted",
+      "strategies": [
+        "kdj_dmi"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "deleted",
+      "strategies": [
+        "connors_rsi"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "deleted",
+      "strategies": [
+        "mean_reversion_filtered"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "deleted",
+      "strategies": [
+        "stochastic_momentum"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "deleted",
+      "strategies": [
+        "pivot_bounce"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "deleted",
+      "strategies": [
+        "zscore_reversion"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "deleted",
+      "strategies": [
+        "adaptive_bollinger"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "deleted",
+      "strategies": [
+        "gap_and_go"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "deleted",
+      "strategies": [
+        "ichimoku_cloud"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "deleted",
+      "strategies": [
+        "keltner_breakout"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "deleted",
+      "strategies": [
+        "combo_meanrev_plus"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "deleted",
+      "strategies": [
+        "mean_reversion"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "deleted",
+      "strategies": [
+        "rsi_divergence"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "deleted",
+      "strategies": [
+        "volatility_regime"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "deleted",
+      "strategies": [
+        "keltner_meanrev"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "deleted",
+      "strategies": [
+        "divergence_combo"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "deleted",
+      "strategies": [
+        "adx_trend_strength"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "deleted",
+      "strategies": [
+        "bb_squeeze_breakout"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "deleted",
+      "strategies": [
+        "trend_hold"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "deleted",
+      "strategies": [
+        "stoch_rsi"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "archived",
+      "strategies": [
+        "breakout_trailing"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "archived",
+      "strategies": [
+        "squeeze_momentum"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "archived",
+      "strategies": [
+        "acc_dist_trend"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "archived",
+      "strategies": [
+        "ensemble_voting"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "archived",
+      "strategies": [
+        "vwap_breakout"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "archived",
+      "strategies": [
+        "vol_weighted_mom"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "archived",
+      "strategies": [
+        "adaptive_regime"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "archived",
+      "strategies": [
+        "price_channel_vol"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-03-20",
+      "action": "archived",
+      "strategies": [
+        "adaptive_ensemble_v2"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-03-23",
+      "action": "activated",
+      "strategies": [
+        "fft_cycle_trend"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-03-23",
+      "action": "activated",
+      "strategies": [
+        "vol_adj_momentum"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-03-23",
+      "action": "activated",
+      "strategies": [
+        "linreg_trend"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-03-23",
+      "action": "activated",
+      "strategies": [
+        "seasonal_calendar"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-03-23",
+      "action": "activated",
+      "strategies": [
+        "garch_vol_timing"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-03-23",
+      "action": "activated",
+      "strategies": [
+        "candle_pattern_vol"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-03-23",
+      "action": "activated",
+      "strategies": [
+        "hurst_exponent"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-03-23",
+      "action": "activated",
+      "strategies": [
+        "entropy_momentum"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-03-23",
+      "action": "activated",
+      "strategies": [
+        "kaufman_efficiency"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-03-23",
+      "action": "activated",
+      "strategies": [
+        "adaptive_ensemble_v2"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-03-23",
+      "action": "archived",
+      "strategies": [
+        "candle_pattern_vol"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-03-23",
+      "action": "archived",
+      "strategies": [
+        "kaufman_efficiency"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-03-23",
+      "action": "archived",
+      "strategies": [
+        "volatility_breakout"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-03-23",
+      "action": "archived",
+      "strategies": [
+        "seasonal_calendar"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-03-23",
+      "action": "archived",
+      "strategies": [
+        "multi_timeframe_trend"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-03-23",
+      "action": "archived",
+      "strategies": [
+        "elder_force"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-03-23",
+      "action": "archived",
+      "strategies": [
+        "garch_vol_timing"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-03-23",
+      "action": "archived",
+      "strategies": [
+        "momentum_quality"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "new_candidate",
+      "strategies": [
+        "adx_donchian_thrust"
+      ],
+      "reason": "统一验证完成，保留在新策略"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "new_candidate",
+      "strategies": [
+        "atr_expansion_breakout"
+      ],
+      "reason": "统一验证完成，保留在新策略"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "new_candidate",
+      "strategies": [
+        "balance_power_breakout"
+      ],
+      "reason": "统一验证完成，保留在新策略"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "new_candidate",
+      "strategies": [
+        "cci_trend_reclaim"
+      ],
+      "reason": "统一验证完成，保留在新策略"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "dpo_trend_reversal"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 9.29% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "new_candidate",
+      "strategies": [
+        "ema_slope_breakout"
+      ],
+      "reason": "统一验证完成，保留在新策略"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "new_candidate",
+      "strategies": [
+        "keltner_midline_resume"
+      ],
+      "reason": "统一验证完成，保留在新策略"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "kst_trend_signal"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 8.73% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "new_candidate",
+      "strategies": [
+        "ppo_trend_pulse"
+      ],
+      "reason": "统一验证完成，保留在新策略"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "relative_vigor_reversal"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 16.66% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "new_candidate",
+      "strategies": [
+        "rsi_range_shift"
+      ],
+      "reason": "统一验证完成，保留在新策略"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "schaff_cycle_trend"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 15.96% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "new_candidate",
+      "strategies": [
+        "vhf_regime_breakout"
+      ],
+      "reason": "统一验证完成，保留在新策略"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "vortex_trend_pulse"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 18.27% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "activated",
+      "strategies": [
+        "ppo_trend_pulse"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "activated",
+      "strategies": [
+        "balance_power_breakout"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "activated",
+      "strategies": [
+        "cci_trend_reclaim"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "activated",
+      "strategies": [
+        "atr_expansion_breakout"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "activated",
+      "strategies": [
+        "rsi_range_shift"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "activated",
+      "strategies": [
+        "keltner_midline_resume"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "activated",
+      "strategies": [
+        "vhf_regime_breakout"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "activated",
+      "strategies": [
+        "adx_donchian_thrust"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "activated",
+      "strategies": [
+        "ema_slope_breakout"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "gemini_anchored_vwap"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 -2.45% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "gemini_aroon_osc"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 N/A% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "gemini_bullish_engulfing"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 2.94% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "gemini_coppock"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 7.72% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "gemini_ehlers_cycle"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 6.78% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "gemini_garch_filter"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 13.97% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "gemini_hammer_bounce"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 0.94% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "gemini_hull_ma"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 15.9% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "gemini_keltner_meanrev"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 0.53% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "new_candidate",
+      "strategies": [
+        "gemini_mcginley_dynamic"
+      ],
+      "reason": "统一验证完成，保留在新策略"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "gemini_monday_reversal"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 0.03% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "gemini_monthly_window"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 2.16% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "gemini_morning_star"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 0.56% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "gemini_pead_momentum"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 7.07% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "gemini_schaff_trend"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 9.45% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "new_candidate",
+      "strategies": [
+        "gemini_shooting_star"
+      ],
+      "reason": "统一验证完成，保留在新策略"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "new_candidate",
+      "strategies": [
+        "gemini_trend_persistence"
+      ],
+      "reason": "统一验证完成，保留在新策略"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "gemini_volume_sva"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 9.8% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "gemini_vortex_trend"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 3.99% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "gemini_zscore_spread"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 -1.89% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "activated",
+      "strategies": [
+        "gemini_trend_persistence"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "activated",
+      "strategies": [
+        "gemini_shooting_star"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "activated",
+      "strategies": [
+        "gemini_mcginley_dynamic"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "new_candidate",
+      "strategies": [
+        "openai_atr_ratio_trend"
+      ],
+      "reason": "统一验证完成，保留在新策略"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "new_candidate",
+      "strategies": [
+        "openai_bandwidth_expansion"
+      ],
+      "reason": "统一验证完成，保留在新策略"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "openai_chaikin_vol_break"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 8.08% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "openai_cmf_reclaim"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 16.41% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "openai_dema_reclaim"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 5.6% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "openai_disparity_rebound"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 16.85% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "openai_donchian_mid_reclaim"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 10.45% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "openai_ease_move_trend"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 3.55% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "openai_envelope_pullback"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 0.28% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "openai_force_trend_pop"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 12.17% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "openai_gap_reclaim"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 17.96% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "new_candidate",
+      "strategies": [
+        "openai_hammer_trend_confirm"
+      ],
+      "reason": "统一验证完成，保留在新策略"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "openai_inside_bar_thrust"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 9.2% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "new_candidate",
+      "strategies": [
+        "openai_intraday_intensity_breakout"
+      ],
+      "reason": "统一验证完成，保留在新策略"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "new_candidate",
+      "strategies": [
+        "openai_keltner_band_pulse"
+      ],
+      "reason": "统一验证完成，保留在新策略"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "openai_mass_index_pop"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 6.95% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "openai_mfi_pressure_pop"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 8.66% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "new_candidate",
+      "strategies": [
+        "openai_percent_b_trend"
+      ],
+      "reason": "统一验证完成，保留在新策略"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "openai_range_compression_pulse"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 4.3% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "openai_roc_trend_shift"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 4.13% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "new_candidate",
+      "strategies": [
+        "openai_rsi_failure_swing"
+      ],
+      "reason": "统一验证完成，保留在新策略"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "openai_tema_impulse"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 4.55% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "new_candidate",
+      "strategies": [
+        "openai_three_bar_strength"
+      ],
+      "reason": "统一验证完成，保留在新策略"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "new_candidate",
+      "strategies": [
+        "openai_true_range_pop"
+      ],
+      "reason": "统一验证完成，保留在新策略"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "openai_tsi_trendline"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 11.85% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "openai_ultimate_breakout"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 10.23% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "openai_volume_efficiency_trend"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 17.5% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "openai_vwma_breakout"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 14.38% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "openai_wide_range_reversal"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 0.31% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "openai_zscore_trend_snap"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 1.58% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "activated",
+      "strategies": [
+        "openai_atr_ratio_trend"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "activated",
+      "strategies": [
+        "openai_rsi_failure_swing"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "activated",
+      "strategies": [
+        "openai_percent_b_trend"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "activated",
+      "strategies": [
+        "openai_bandwidth_expansion"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "activated",
+      "strategies": [
+        "openai_keltner_band_pulse"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "activated",
+      "strategies": [
+        "openai_intraday_intensity_breakout"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "activated",
+      "strategies": [
+        "openai_three_bar_strength"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "activated",
+      "strategies": [
+        "openai_hammer_trend_confirm"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "activated",
+      "strategies": [
+        "openai_true_range_pop"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "gemini_bollinger_impulse"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 7.32% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "gemini_chande_momentum"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 5.45% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "gemini_fisher_transform"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 N/A% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "gemini_fractal_dimension"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 11.52% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "gemini_macd_hist_div"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 6.71% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "gemini_momentum_exhaustion"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 5.8% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "gemini_regime_switching"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 15.88% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "gemini_std_dev_channel"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 3.41% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "gemini_stochastic_rsi_burst"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 15.85% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "gemini_support_resistance_sva"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 3.91% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "archived",
+      "strategies": [
+        "gemini_volatility_burst"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 5.46% < 20%"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "activated",
+      "strategies": [
+        "gemini_fractal_trend"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "activated",
+      "strategies": [
+        "gemini_klinger_volume"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "activated",
+      "strategies": [
+        "gemini_supertrend_v2"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "activated",
+      "strategies": [
+        "gemini_adaptive_alpha"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "activated",
+      "strategies": [
+        "gemini_price_action_liquidity"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "activated",
+      "strategies": [
+        "gemini_volume_price_div"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "activated",
+      "strategies": [
+        "gemini_triple_screen_pulse"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "activated",
+      "strategies": [
+        "gemini_heikin_ashi_balance"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-03-26",
+      "action": "activated",
+      "strategies": [
+        "gemini_atr_volatility_stop"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-04-02",
+      "action": "archived",
+      "strategies": [
+        "openai_hammer_trend_confirm"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-04-02",
+      "action": "archived",
+      "strategies": [
+        "trix_momentum"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-04-02",
+      "action": "archived",
+      "strategies": [
+        "balance_power_breakout"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-04-02",
+      "action": "archived",
+      "strategies": [
+        "cci_trend_reclaim"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-04-02",
+      "action": "archived",
+      "strategies": [
+        "openai_rsi_failure_swing"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-04-02",
+      "action": "archived",
+      "strategies": [
+        "ppo_trend_pulse"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-04-02",
+      "action": "archived",
+      "strategies": [
+        "openai_true_range_pop"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-04-02",
+      "action": "archived",
+      "strategies": [
+        "keltner_midline_resume"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-04-05",
+      "action": "archived",
+      "strategies": [
+        "rsi_range_shift"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-04-05",
+      "action": "archived",
+      "strategies": [
+        "atr_expansion_breakout"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-04-05",
+      "action": "archived",
+      "strategies": [
+        "rsi_range_shift"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-09",
+      "action": "archived",
+      "strategies": [
+        "openai_adx_donchian_thrust"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 -5.34% < 20%"
+    },
+    {
+      "date": "2026-09-09",
+      "action": "archived",
+      "strategies": [
+        "openai_atr_expansion_breakout"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 -0.59% < 20%"
+    },
+    {
+      "date": "2026-09-09",
+      "action": "archived",
+      "strategies": [
+        "openai_balance_power_breakout"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 -0.27% < 20%"
+    },
+    {
+      "date": "2026-09-09",
+      "action": "archived",
+      "strategies": [
+        "openai_cci_trend_reclaim"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 12.91% < 20%"
+    },
+    {
+      "date": "2026-09-09",
+      "action": "archived",
+      "strategies": [
+        "openai_dpo_trend_reversal"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 -0.27% < 20%"
+    },
+    {
+      "date": "2026-09-09",
+      "action": "archived",
+      "strategies": [
+        "openai_ema_slope_breakout"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 6.67% < 20%"
+    },
+    {
+      "date": "2026-09-09",
+      "action": "archived",
+      "strategies": [
+        "openai_keltner_midline_resume"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 6.01% < 20%"
+    },
+    {
+      "date": "2026-09-09",
+      "action": "archived",
+      "strategies": [
+        "openai_kst_trend_signal"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 6.82% < 20%"
+    },
+    {
+      "date": "2026-09-09",
+      "action": "archived",
+      "strategies": [
+        "openai_ppo_trend_pulse"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 9.27% < 20%"
+    },
+    {
+      "date": "2026-09-09",
+      "action": "archived",
+      "strategies": [
+        "openai_relative_vigor_reversal"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 -1.24% < 20%"
+    },
+    {
+      "date": "2026-09-09",
+      "action": "archived",
+      "strategies": [
+        "openai_rsi_range_shift"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 4.45% < 20%"
+    },
+    {
+      "date": "2026-09-09",
+      "action": "archived",
+      "strategies": [
+        "openai_schaff_cycle_trend"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 4.42% < 20%"
+    },
+    {
+      "date": "2026-09-09",
+      "action": "archived",
+      "strategies": [
+        "openai_vhf_regime_breakout"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 2.59% < 20%"
+    },
+    {
+      "date": "2026-09-09",
+      "action": "archived",
+      "strategies": [
+        "openai_vortex_trend_pulse"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 5.96% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "new_candidate",
+      "strategies": [
+        "claude_acc_dist_trend"
+      ],
+      "reason": "统一验证完成，保留在新策略"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_adaptive_bollinger"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 3.08% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_adaptive_ensemble_v2"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 18.05% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_ehlers_fisher"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_pullback_buy"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_stochastic_momentum"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_adx_trend_strength"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_adaptive_ma"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 19.0% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_trend_strength"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_short_term_reversal"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_range_expansion"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_adaptive_rsi_meanrev"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_meanrev_bb_rsi"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_mean_reversion_filtered"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_volume_profile"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_macd_divergence"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_volume_climax"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_double_bottom_rsi"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_kdj_dmi"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_williams_r_adx"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_gap_and_go"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_connors_rsi"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_swing_failure"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_zscore_reversion"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_triple_ema_cross"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_elder_triple_screen"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_multi_osc_consensus"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_bb_squeeze_breakout"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_parabolic_sar"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_stoch_rsi"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_squeeze_momentum"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_keltner_breakout"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_ichimoku_cloud"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_rsi_macd_trend"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_multi_indicator"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_pivot_bounce"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_coppock_curve"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_vwap_breakout"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_divergence_combo"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_mass_index"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_heikin_ashi"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_momentum_quality"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_momentum_accel"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_multi_timeframe_trend"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_price_channel_vol"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_donchian_breakout"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_obv_momentum"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_vol_weighted_mom"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_acc_dist_trend"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_trend_hold"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_trix_momentum"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_ensemble_voting"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_rsi_divergence"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_vwap_mean_reversion"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "activated",
+      "strategies": [
+        "claude_fft_cycle_trend"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "activated",
+      "strategies": [
+        "claude_vol_adj_momentum"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "activated",
+      "strategies": [
+        "claude_mean_reversion"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "new_candidate",
+      "strategies": [
+        "claude_adaptive_regime"
+      ],
+      "reason": "统一验证完成，保留在新策略"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "activated",
+      "strategies": [
+        "claude_volatility_regime"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "activated",
+      "strategies": [
+        "claude_combo_meanrev_plus"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "activated",
+      "strategies": [
+        "claude_kaufman_efficiency"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "activated",
+      "strategies": [
+        "claude_keltner_meanrev"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "activated",
+      "strategies": [
+        "claude_entropy_momentum"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "activated",
+      "strategies": [
+        "claude_atr_channel_trend"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "activated",
+      "strategies": [
+        "claude_supertrend"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "activated",
+      "strategies": [
+        "claude_chandelier_exit"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_aroon_oscillator"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 10.54% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_atr_channel_trend"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 6.95% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_bb_squeeze_breakout"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 1.19% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_breakout_trailing"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 3.85% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_candle_pattern_vol"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 8.19% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_chaikin_money_flow"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 14.31% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_chandelier_exit"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 8.66% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "new_candidate",
+      "strategies": [
+        "claude_combo_meanrev_plus"
+      ],
+      "reason": "统一验证完成，保留在新策略"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_coppock_curve"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 17.77% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_divergence_combo"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 10.35% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_donchian_breakout"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 4.66% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_dual_ma_cross"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 8.51% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_dual_thrust"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 18.35% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_elder_force"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 19.48% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_elder_triple_screen"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 -1.49% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "new_candidate",
+      "strategies": [
+        "claude_ensemble_voting"
+      ],
+      "reason": "统一验证完成，保留在新策略"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_entropy_momentum"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 18.77% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_fft_cycle_trend"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 11.38% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_garch_vol_timing"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 14.37% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_heikin_ashi"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 16.74% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_hurst_exponent"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 9.84% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_ichimoku_cloud"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 16.86% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_kaufman_efficiency"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 15.42% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_keltner_breakout"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 7.59% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_keltner_meanrev"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 3.81% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_linreg_trend"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 4.62% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_ma_ribbon"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 17.09% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_mass_index"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 15.29% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "new_candidate",
+      "strategies": [
+        "claude_mean_reversion"
+      ],
+      "reason": "统一验证完成，保留在新策略"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_momentum_accel"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 14.23% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_momentum_breakout"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 6.51% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_momentum_quality"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 13.35% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_momentum_reversion_hybrid"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 13.17% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_multi_indicator"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 -1.12% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_multi_osc_consensus"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 5.0% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_multi_timeframe_trend"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 9.15% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_obv_momentum"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 11.49% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_parabolic_sar"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 6.43% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_pivot_bounce"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 6.97% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_price_channel_vol"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 6.77% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_ross_hook"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 14.46% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "new_candidate",
+      "strategies": [
+        "claude_rsi_divergence"
+      ],
+      "reason": "统一验证完成，保留在新策略"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_rsi_macd_trend"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 6.12% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_seasonal_calendar"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 18.87% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_squeeze_momentum"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 2.32% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_stoch_rsi"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 3.24% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_supertrend"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 3.28% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_trend_hold"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 6.85% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_triple_ema_cross"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 11.54% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_trix_momentum"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 16.49% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_turtle_trading"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 5.28% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_vol_adj_momentum"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 12.98% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_vol_weighted_mom"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 13.23% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_volatility_breakout"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 8.57% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_volatility_regime"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 0.51% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_vwap_breakout"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 5.19% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_vwap_mean_reversion"
+      ],
+      "reason": "统一验证淘汰：MYPOOL 平均收益 0.21% < 20%"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "activated",
+      "strategies": [
+        "claude_mean_reversion"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "activated",
+      "strategies": [
+        "claude_combo_meanrev_plus"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "activated",
+      "strategies": [
+        "claude_adaptive_regime"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "activated",
+      "strategies": [
+        "claude_rsi_divergence"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "activated",
+      "strategies": [
+        "claude_ensemble_voting"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "gemini_heikin_ashi_balance"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "gemini_volume_price_div"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "gemini_triple_screen_pulse"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "activated",
+      "strategies": [
+        "claude_volatility_regime"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "activated",
+      "strategies": [
+        "claude_adaptive_ensemble_v2"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "activated",
+      "strategies": [
+        "claude_fft_cycle_trend"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "activated",
+      "strategies": [
+        "claude_entropy_momentum"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "activated",
+      "strategies": [
+        "claude_momentum_reversion_hybrid"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "activated",
+      "strategies": [
+        "claude_vol_adj_momentum"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "activated",
+      "strategies": [
+        "claude_hurst_exponent"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "activated",
+      "strategies": [
+        "claude_kaufman_efficiency"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "deleted",
+      "strategies": [
+        "nonexistent_test_strategy"
+      ],
+      "reason": "test"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "deleted",
+      "strategies": [
+        "claude_acc_dist_trend"
+      ],
+      "reason": "api probe test only"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "undeleted",
+      "strategies": [
+        "claude_acc_dist_trend"
+      ],
+      "reason": "从已删除恢复到归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "deleted",
+      "strategies": [
+        "gemini_anchored_vwap"
+      ],
+      "reason": "UI test"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "deleted",
+      "strategies": [
+        "gemini_anchored_vwap"
+      ],
+      "reason": "browser test"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "undeleted",
+      "strategies": [
+        "gemini_anchored_vwap"
+      ],
+      "reason": "从已删除恢复到归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "deleted",
+      "strategies": [
+        "gemini_anchored_vwap"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "undeleted",
+      "strategies": [
+        "gemini_anchored_vwap"
+      ],
+      "reason": "从已删除恢复到归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "deleted",
+      "strategies": [
+        "gemini_aroon_osc"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "undeleted",
+      "strategies": [
+        "gemini_aroon_osc"
+      ],
+      "reason": "从已删除恢复到归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "deleted",
+      "strategies": [
+        "gemini_fractal_dimension"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "undeleted",
+      "strategies": [
+        "gemini_fractal_dimension"
+      ],
+      "reason": "从已删除恢复到归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "deleted",
+      "strategies": [
+        "gemini_schaff_trend"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "undeleted",
+      "strategies": [
+        "gemini_schaff_trend"
+      ],
+      "reason": "从已删除恢复到归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "deleted",
+      "strategies": [
+        "gemini_fractal_dimension"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "undeleted",
+      "strategies": [
+        "gemini_fractal_dimension"
+      ],
+      "reason": "从已删除恢复到归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "deleted",
+      "strategies": [
+        "gemini_schaff_trend"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "undeleted",
+      "strategies": [
+        "gemini_schaff_trend"
+      ],
+      "reason": "从已删除恢复到归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "deleted",
+      "strategies": [
+        "chaikin_money_flow"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "undeleted",
+      "strategies": [
+        "chaikin_money_flow"
+      ],
+      "reason": "从已删除恢复到归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "deleted",
+      "strategies": [
+        "coppock_curve"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "undeleted",
+      "strategies": [
+        "coppock_curve"
+      ],
+      "reason": "从已删除恢复到归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "deleted",
+      "strategies": [
+        "donchian_breakout"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "undeleted",
+      "strategies": [
+        "donchian_breakout"
+      ],
+      "reason": "从已删除恢复到归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "deleted",
+      "strategies": [
+        "openai_chaikin_vol_break"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "undeleted",
+      "strategies": [
+        "openai_chaikin_vol_break"
+      ],
+      "reason": "从已删除恢复到归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "deleted",
+      "strategies": [
+        "gemini_bullish_engulfing"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "undeleted",
+      "strategies": [
+        "gemini_bullish_engulfing"
+      ],
+      "reason": "从已删除恢复到归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "activated",
+      "strategies": [
+        "claude_ehlers_fisher"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_ehlers_fisher"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "deleted",
+      "strategies": [
+        "claude_ehlers_fisher"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "undeleted",
+      "strategies": [
+        "claude_ehlers_fisher"
+      ],
+      "reason": "从已删除恢复到归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "deleted",
+      "strategies": [
+        "claude_pullback_buy"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "undeleted",
+      "strategies": [
+        "claude_pullback_buy"
+      ],
+      "reason": "从已删除恢复到归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "deleted",
+      "strategies": [
+        "claude_pullback_buy"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "undeleted",
+      "strategies": [
+        "claude_pullback_buy"
+      ],
+      "reason": "从已删除恢复到归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "deleted",
+      "strategies": [
+        "claude_ehlers_fisher"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "undeleted",
+      "strategies": [
+        "claude_ehlers_fisher"
+      ],
+      "reason": "从已删除恢复到归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "deleted",
+      "strategies": [
+        "claude_pullback_buy"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "deleted",
+      "strategies": [
+        "claude_ehlers_fisher"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "activated",
+      "strategies": [
+        "claude_adaptive_bollinger"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "archived",
+      "strategies": [
+        "claude_adaptive_bollinger"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "deleted",
+      "strategies": [
+        "claude_adaptive_bollinger"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-09-10",
+      "action": "undeleted",
+      "strategies": [
+        "claude_adaptive_bollinger"
+      ],
+      "reason": "从已删除恢复到归档"
+    },
+    {
+      "date": "2026-09-17",
+      "action": "archived",
+      "strategies": [
+        "claude_combo_meanrev_plus"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-17",
+      "action": "archived",
+      "strategies": [
+        "claude_rsi_divergence"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-17",
+      "action": "archived",
+      "strategies": [
+        "claude_mean_reversion"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-17",
+      "action": "archived",
+      "strategies": [
+        "claude_volatility_regime"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-17",
+      "action": "archived",
+      "strategies": [
+        "openai_three_bar_strength"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-17",
+      "action": "archived",
+      "strategies": [
+        "openai_intraday_intensity_breakout"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-17",
+      "action": "deleted",
+      "strategies": [
+        "gemini_aroon_osc"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-09-17",
+      "action": "undeleted",
+      "strategies": [
+        "gemini_aroon_osc"
+      ],
+      "reason": "从已删除恢复到归档"
+    },
+    {
+      "date": "2026-09-17",
+      "action": "deleted",
+      "strategies": [
+        "gemini_aroon_osc"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-09-17",
+      "action": "deleted",
+      "strategies": [
+        "gemini_fisher_transform"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-09-17",
+      "action": "deleted",
+      "strategies": [
+        "gemini_monday_reversal"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-09-17",
+      "action": "deleted",
+      "strategies": [
+        "gemini_macd_hist_div"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-09-17",
+      "action": "deleted",
+      "strategies": [
+        "gemini_morning_star"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-09-17",
+      "action": "deleted",
+      "strategies": [
+        "gemini_support_resistance_sva"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-09-17",
+      "action": "deleted",
+      "strategies": [
+        "gemini_bullish_engulfing"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-09-17",
+      "action": "deleted",
+      "strategies": [
+        "gemini_std_dev_channel"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-09-17",
+      "action": "deleted",
+      "strategies": [
+        "gemini_hammer_bounce"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-09-17",
+      "action": "deleted",
+      "strategies": [
+        "gemini_bollinger_impulse"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-09-17",
+      "action": "deleted",
+      "strategies": [
+        "gemini_zscore_spread"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-09-17",
+      "action": "deleted",
+      "strategies": [
+        "gemini_vortex_trend"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-09-17",
+      "action": "deleted",
+      "strategies": [
+        "gemini_keltner_meanrev"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-09-17",
+      "action": "deleted",
+      "strategies": [
+        "gemini_coppock"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-09-17",
+      "action": "deleted",
+      "strategies": [
+        "gemini_monthly_window"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-09-17",
+      "action": "deleted",
+      "strategies": [
+        "gemini_pead_momentum"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-09-17",
+      "action": "deleted",
+      "strategies": [
+        "gemini_garch_filter"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-09-18",
+      "action": "archived",
+      "strategies": [
+        "claude_momentum_reversion_hybrid"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-18",
+      "action": "archived",
+      "strategies": [
+        "claude_adaptive_regime"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-18",
+      "action": "archived",
+      "strategies": [
+        "openai_atr_ratio_trend"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-18",
+      "action": "archived",
+      "strategies": [
+        "gemini_price_action_liquidity"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-18",
+      "action": "archived",
+      "strategies": [
+        "gemini_supertrend_v2"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-18",
+      "action": "archived",
+      "strategies": [
+        "gemini_klinger_volume"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-18",
+      "action": "archived",
+      "strategies": [
+        "gemini_adaptive_alpha"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-18",
+      "action": "archived",
+      "strategies": [
+        "openai_keltner_band_pulse"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-18",
+      "action": "archived",
+      "strategies": [
+        "openai_bandwidth_expansion"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "claude_dual_ma_cross"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "claude_volatility_regime"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "deleted",
+      "strategies": [
+        "claude_adaptive_rsi_meanrev"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "deleted",
+      "strategies": [
+        "claude_range_expansion"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "deleted",
+      "strategies": [
+        "claude_range_expansion"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "deleted",
+      "strategies": [
+        "claude_short_term_reversal"
+      ],
+      "reason": "手动删除"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "claude_meanrev_bb_rsi"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "claude_mean_reversion_filtered"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "claude_trend_strength"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "claude_meanrev_bb_rsi"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "claude_adaptive_bollinger"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "claude_mean_reversion_filtered"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "claude_vwap_mean_reversion"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "claude_gap_and_go"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "claude_mean_reversion"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "claude_volume_climax"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "claude_rsi_divergence"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "claude_mass_index"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "claude_keltner_meanrev"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "claude_swing_failure"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "claude_williams_r_adx"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "claude_combo_meanrev_plus"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "claude_adaptive_regime"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "claude_price_channel_vol"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "claude_volatility_breakout"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "claude_supertrend"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "claude_trix_momentum"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "claude_parabolic_sar"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "claude_adaptive_ma"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "claude_double_bottom_rsi"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "claude_pivot_bounce"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "claude_adaptive_regime"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "claude_connors_rsi"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "claude_divergence_combo"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "claude_kdj_dmi"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "claude_williams_r_adx"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "claude_volume_climax"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "claude_ichimoku_cloud"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "archived",
+      "strategies": [
+        "claude_ichimoku_cloud"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "archived",
+      "strategies": [
+        "claude_mass_index"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "archived",
+      "strategies": [
+        "claude_trend_strength"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "archived",
+      "strategies": [
+        "claude_vwap_mean_reversion"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "archived",
+      "strategies": [
+        "claude_meanrev_bb_rsi"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "archived",
+      "strategies": [
+        "claude_mean_reversion_filtered"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "archived",
+      "strategies": [
+        "claude_volume_climax"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "claude_trend_strength"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "claude_meanrev_bb_rsi"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "claude_mean_reversion_filtered"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "claude_candle_pattern_vol"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "archived",
+      "strategies": [
+        "claude_meanrev_bb_rsi"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "archived",
+      "strategies": [
+        "claude_double_bottom_rsi"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "archived",
+      "strategies": [
+        "claude_divergence_combo"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "archived",
+      "strategies": [
+        "claude_combo_meanrev_plus"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "archived",
+      "strategies": [
+        "claude_swing_failure"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "archived",
+      "strategies": [
+        "claude_pivot_bounce"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "archived",
+      "strategies": [
+        "claude_williams_r_adx"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "archived",
+      "strategies": [
+        "claude_trend_strength"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "archived",
+      "strategies": [
+        "claude_mean_reversion_filtered"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "archived",
+      "strategies": [
+        "claude_adaptive_bollinger"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "archived",
+      "strategies": [
+        "claude_gap_and_go"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "archived",
+      "strategies": [
+        "claude_parabolic_sar"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "archived",
+      "strategies": [
+        "claude_mean_reversion"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "archived",
+      "strategies": [
+        "claude_keltner_meanrev"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "archived",
+      "strategies": [
+        "claude_rsi_divergence"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "archived",
+      "strategies": [
+        "claude_adaptive_regime"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "archived",
+      "strategies": [
+        "claude_connors_rsi"
+      ],
+      "reason": "手动归档"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "openai_ultimate_breakout"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "openai_force_trend_pop"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "openai_zscore_trend_snap"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "openai_atr_expansion_breakout"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "openai_chaikin_vol_break"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "openai_dema_reclaim"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "openai_rsi_range_shift"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "openai_schaff_cycle_trend"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "openai_ease_move_trend"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "openai_bandwidth_expansion"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "openai_relative_vigor_reversal"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "openai_vwma_breakout"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-21",
+      "action": "activated",
+      "strategies": [
+        "openai_ppo_trend_pulse"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-22",
+      "action": "activated",
+      "strategies": [
+        "gemini_triple_screen_pulse"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-22",
+      "action": "activated",
+      "strategies": [
+        "gemini_klinger_volume"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-22",
+      "action": "activated",
+      "strategies": [
+        "gemini_heikin_ashi_balance"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-22",
+      "action": "activated",
+      "strategies": [
+        "gemini_volume_sva"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-22",
+      "action": "activated",
+      "strategies": [
+        "gemini_ehlers_cycle"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-22",
+      "action": "activated",
+      "strategies": [
+        "gemini_fractal_dimension"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-22",
+      "action": "activated",
+      "strategies": [
+        "gemini_hull_ma"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-22",
+      "action": "activated",
+      "strategies": [
+        "claude_mass_index"
+      ],
+      "reason": "手动激活"
+    },
+    {
+      "date": "2026-09-22",
+      "action": "archived",
+      "strategies": [
+        "claude_mass_index"
+      ],
+      "reason": "手动归档"
+    }
+  ]
+}

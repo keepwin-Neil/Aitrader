@@ -1,0 +1,104 @@
+{
+  "mean_reversion": {
+    "rsi_period": 8,
+    "rsi_oversold": 42,
+    "rsi_overbought": 83,
+    "bb_std": 2.0,
+    "atr_stop_mul": 4.0
+  },
+  "adaptive_ma": {
+    "er_period": 21,
+    "fast_sc": 8,
+    "slow_sc": 60,
+    "threshold": 0.0003,
+    "atr_stop_mul": 4.0
+  },
+  "ensemble_voting": {
+    "buy_threshold": 1,
+    "sell_threshold": 3,
+    "mr_rsi_oversold": 40,
+    "mr_rsi_overbought": 69,
+    "dm_fast": 3,
+    "dm_slow": 21
+  },
+  "turtle_trading": {
+    "entry_period": 5,
+    "exit_period": 20,
+    "atr_stop_mul": 3.0
+  },
+  "elder_triple_screen": {
+    "weekly_ema_period": 6,
+    "force_period": 3,
+    "ema_short": 25,
+    "atr_stop_mul": 3.5
+  },
+  "multi_indicator": {
+    "ema_fast": 10,
+    "ema_slow": 30,
+    "rsi_buy_min": 48,
+    "rsi_sell": 70,
+    "atr_stop_mul": 4.0
+  },
+  "volatility_breakout": {
+    "k_factor": 0.6500000000000001,
+    "ema_period": 75,
+    "min_range": 0.05,
+    "atr_stop_mul": 4.0
+  },
+  "momentum_breakout": {
+    "breakout_period": 10,
+    "exit_period": 19,
+    "vol_ratio_min": 1.1,
+    "atr_stop_mul": 4.0
+  },
+  "kdj_dmi": {
+    "kdj_period": 8,
+    "kdj_oversold": 23,
+    "kdj_overbought": 75,
+    "adx_threshold": 33,
+    "atr_stop_mul": 3.0
+  },
+  "vwap_breakout": {
+    "vwap_period": 39,
+    "atr_band_mul": 2.2,
+    "vol_ratio_min": 0.9000000000000001,
+    "atr_stop_mul": 3.5
+  },
+  "rsi_macd_trend": {
+    "rsi_entry": 20,
+    "rsi_exit": 92,
+    "ema_trend": 40,
+    "atr_stop_mul": 2.5
+  },
+  "ross_hook": {
+    "fractal_n": 2,
+    "ema_period": 65,
+    "atr_stop_mul": 2.0
+  },
+  "supertrend": {
+    "st_period": 14,
+    "st_multiplier": 5.0,
+    "atr_stop_mul": 3.0
+  },
+  "dual_ma_cross": {
+    "fast_period": 18,
+    "slow_period": 16,
+    "ma_type": "sma",
+    "atr_stop_mul": 3.0
+  },
+  "macd_divergence": {
+    "macd_fast": 5,
+    "macd_slow": 30,
+    "lookback": 17,
+    "rsi_sell": 78,
+    "atr_stop_mul": 1.0
+  },
+  "divergence_combo": {
+    "pivot_n": 2,
+    "max_pivot_dist": 30,
+    "div_confirm": 1,
+    "rsi_zone_low": 45,
+    "rsi_zone_high": 70,
+    "atr_stop_mul": 1.5
+  }
+}

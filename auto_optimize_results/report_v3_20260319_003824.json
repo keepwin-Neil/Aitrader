@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-03-19T00:38:24.238736",
+  "elapsed_minutes": 90.2,
+  "total_rounds": 2,
+  "convergence_curve": [
+    [
+      1,
+      0
+    ],
+    [
+      2,
+      0
+    ]
+  ],
+  "total_upgrades": 0,
+  "final_params": {},
+  "final_baseline": {
+    "heikin_ashi": {
+      "avg_score": 0.3833,
+      "avg_sharpe": -0.0104
+    },
+    "obv_momentum": {
+      "avg_score": 0.3978,
+      "avg_sharpe": 0.0529
+    }
+  },
+  "all_upgrade_log": []
+}

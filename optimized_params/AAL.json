@@ -1,0 +1,399 @@
+{
+  "symbol": "AAL",
+  "market": "US",
+  "period": "1y",
+  "dynamic_position": false,
+  "optimized_at": "2026-03-14T20:47:44.622362",
+  "total_combos_tested": 3421,
+  "strategies": {
+    "claude_multi_indicator": {
+      "params": {
+        "ema_fast": 8,
+        "ema_mid": 20,
+        "ema_slow": 80,
+        "macd_fast": 12,
+        "macd_slow": 26,
+        "macd_signal": 9,
+        "rsi_period": 14,
+        "rsi_buy_min": 40,
+        "rsi_buy_max": 70,
+        "rsi_sell": 75,
+        "bb_period": 20,
+        "bb_std": 2,
+        "vol_ma": 20,
+        "vol_ratio_min": 1.2,
+        "atr_stop_mul": 1.5
+      },
+      "optimized_keys": [
+        "ema_fast",
+        "ema_slow",
+        "rsi_buy_min",
+        "rsi_sell",
+        "atr_stop_mul"
+      ],
+      "sharpe": 0.79,
+      "total_return": 14.27,
+      "max_drawdown": -13.76,
+      "win_rate": 50.0,
+      "total_trades": 4,
+      "combos_tested": 243
+    },
+    "claude_dual_ma_cross": {
+      "params": {
+        "fast_period": 5,
+        "slow_period": 25,
+        "ma_type": "sma",
+        "atr_stop_mul": 1.5
+      },
+      "optimized_keys": [
+        "fast_period",
+        "slow_period",
+        "ma_type",
+        "atr_stop_mul"
+      ],
+      "sharpe": 0.79,
+      "total_return": 20.8,
+      "max_drawdown": -14.87,
+      "win_rate": 66.67,
+      "total_trades": 6,
+      "combos_tested": 200
+    },
+    "claude_momentum_breakout": {
+      "params": {
+        "breakout_period": 10,
+        "exit_period": 8,
+        "vol_ma": 20,
+        "vol_ratio_min": 0.5,
+        "atr_stop_mul": 1.5
+      },
+      "optimized_keys": [
+        "breakout_period",
+        "exit_period",
+        "vol_ratio_min",
+        "atr_stop_mul"
+      ],
+      "sharpe": 0.06,
+      "total_return": -2.87,
+      "max_drawdown": -16.24,
+      "win_rate": 33.33,
+      "total_trades": 6,
+      "combos_tested": 320
+    },
+    "claude_mean_reversion": {
+      "params": {
+        "rsi_period": 10,
+        "rsi_oversold": 25,
+        "rsi_overbought": 70,
+        "bb_period": 25,
+        "bb_std": 2.5,
+        "atr_stop_mul": 1.5
+      },
+      "optimized_keys": [
+        "rsi_period",
+        "rsi_oversold",
+        "rsi_overbought",
+        "bb_std",
+        "atr_stop_mul"
+      ],
+      "sharpe": 1.58,
+      "total_return": 19.7,
+      "max_drawdown": -4.89,
+      "win_rate": 100.0,
+      "total_trades": 1,
+      "combos_tested": 243
+    },
+    "claude_turtle_trading": {
+      "params": {
+        "entry_period": 10,
+        "exit_period": 8,
+        "atr_stop_mul": 1.0
+      },
+      "optimized_keys": [
+        "entry_period",
+        "exit_period",
+        "atr_stop_mul"
+      ],
+      "sharpe": 0.12,
+      "total_return": -0.91,
+      "max_drawdown": -16.11,
+      "win_rate": 33.33,
+      "total_trades": 6,
+      "combos_tested": 80
+    },
+    "claude_macd_divergence": {
+      "params": {
+        "macd_fast": 12,
+        "macd_slow": 30,
+        "macd_signal_w": 9,
+        "lookback": 40,
+        "rsi_period": 14,
+        "rsi_sell": 75,
+        "atr_stop_mul": 2.0
+      },
+      "optimized_keys": [
+        "macd_fast",
+        "macd_slow",
+        "lookback",
+        "rsi_sell",
+        "atr_stop_mul"
+      ],
+      "sharpe": 1.11,
+      "total_return": 1.62,
+      "max_drawdown": -0.1,
+      "win_rate": 100.0,
+      "total_trades": 1,
+      "combos_tested": 243
+    },
+    "claude_kdj_dmi": {
+      "params": {
+        "kdj_period": 14,
+        "kdj_oversold": 25,
+        "kdj_overbought": 75,
+        "adx_period": 14,
+        "adx_threshold": 15,
+        "atr_stop_mul": 1.5
+      },
+      "optimized_keys": [
+        "kdj_period",
+        "kdj_oversold",
+        "kdj_overbought",
+        "adx_threshold",
+        "atr_stop_mul"
+      ],
+      "sharpe": -0.48,
+      "total_return": -3.61,
+      "max_drawdown": -6.85,
+      "win_rate": 40.0,
+      "total_trades": 10,
+      "combos_tested": 243
+    },
+    "claude_vwap_breakout": {
+      "params": {
+        "vwap_period": 10,
+        "atr_period": 14,
+        "atr_band_mul": 1.0,
+        "atr_stop_mul": 1.5,
+        "vol_ma": 20,
+        "vol_ratio_min": 1.0
+      },
+      "optimized_keys": [
+        "vwap_period",
+        "atr_band_mul",
+        "vol_ratio_min",
+        "atr_stop_mul"
+      ],
+      "sharpe": 1.05,
+      "total_return": 18.51,
+      "max_drawdown": -8.2,
+      "win_rate": 50.0,
+      "total_trades": 4,
+      "combos_tested": 144
+    },
+    "claude_adaptive_ma": {
+      "params": {
+        "er_period": 15,
+        "fast_sc": 2,
+        "slow_sc": 20,
+        "atr_stop_mul": 1.5,
+        "threshold": 0.003
+      },
+      "optimized_keys": [
+        "er_period",
+        "fast_sc",
+        "slow_sc",
+        "threshold",
+        "atr_stop_mul"
+      ],
+      "sharpe": 0.75,
+      "total_return": 18.49,
+      "max_drawdown": -15.33,
+      "win_rate": 60.0,
+      "total_trades": 5,
+      "combos_tested": 324
+    },
+    "claude_rsi_macd_trend": {
+      "params": {
+        "rsi_period": 14,
+        "rsi_entry": 25,
+        "rsi_exit": 70,
+        "macd_fast": 12,
+        "macd_slow": 26,
+        "macd_signal": 9,
+        "ema_trend": 40,
+        "atr_stop_mul": 1.5
+      },
+      "optimized_keys": [
+        "rsi_entry",
+        "rsi_exit",
+        "ema_trend",
+        "atr_stop_mul"
+      ],
+      "sharpe": 0.71,
+      "total_return": 10.95,
+      "max_drawdown": -7.68,
+      "win_rate": 50.0,
+      "total_trades": 4,
+      "combos_tested": 256
+    },
+    "claude_ensemble_voting": {
+      "params": {
+        "atr_stop_mul": 2.0,
+        "mr_rsi_period": 14,
+        "mr_rsi_oversold": 30,
+        "mr_rsi_overbought": 65,
+        "mr_bb_period": 25,
+        "mr_bb_std": 2.0,
+        "dm_fast": 13,
+        "dm_slow": 30,
+        "rm_rsi_entry": 30,
+        "rm_rsi_exit": 80,
+        "rm_ema_trend": 40,
+        "vw_period": 15,
+        "vw_band_mul": 1.0,
+        "buy_threshold": 1,
+        "sell_threshold": 3
+      },
+      "optimized_keys": [
+        "buy_threshold",
+        "sell_threshold",
+        "mr_rsi_oversold",
+        "mr_rsi_overbought",
+        "dm_fast",
+        "dm_slow"
+      ],
+      "sharpe": 0.74,
+      "total_return": 18.37,
+      "max_drawdown": -23.6,
+      "win_rate": 50.0,
+      "total_trades": 4,
+      "combos_tested": 324
+    },
+    "claude_ichimoku_cloud": {
+      "params": {
+        "tenkan_period": 7,
+        "kijun_period": 22,
+        "senkou_b_period": 60,
+        "atr_stop_mul": 2.0
+      },
+      "optimized_keys": [
+        "tenkan_period",
+        "kijun_period",
+        "senkou_b_period",
+        "atr_stop_mul"
+      ],
+      "sharpe": 0.48,
+      "total_return": 7.31,
+      "max_drawdown": -12.9,
+      "win_rate": 33.33,
+      "total_trades": 3,
+      "combos_tested": 81
+    },
+    "claude_volatility_breakout": {
+      "params": {
+        "k_factor": 0.2,
+        "ema_period": 50,
+        "min_range": 0.5,
+        "atr_stop_mul": 1.5
+      },
+      "optimized_keys": [
+        "k_factor",
+        "ema_period",
+        "min_range",
+        "atr_stop_mul"
+      ],
+      "sharpe": 0.5,
+      "total_return": 9.96,
+      "max_drawdown": -14.66,
+      "win_rate": 57.14,
+      "total_trades": 7,
+      "combos_tested": 108
+    },
+    "claude_elder_triple_screen": {
+      "params": {
+        "weekly_ema_period": 13,
+        "force_period": 2,
+        "ema_short": 10,
+        "atr_stop_mul": 2.0
+      },
+      "optimized_keys": [
+        "weekly_ema_period",
+        "force_period",
+        "ema_short",
+        "atr_stop_mul"
+      ],
+      "sharpe": 1.23,
+      "total_return": 18.92,
+      "max_drawdown": -11.0,
+      "win_rate": 50.0,
+      "total_trades": 24,
+      "combos_tested": 54
+    },
+    "claude_supertrend": {
+      "params": {
+        "st_period": 20,
+        "st_multiplier": 3.5,
+        "vol_ma": 20,
+        "atr_stop_mul": 2.5
+      },
+      "optimized_keys": [
+        "st_period",
+        "st_multiplier",
+        "atr_stop_mul"
+      ],
+      "sharpe": 0.4,
+      "total_return": 7.72,
+      "max_drawdown": -16.08,
+      "win_rate": 100.0,
+      "total_trades": 2,
+      "combos_tested": 36
+    },
+    "claude_ross_hook": {
+      "params": {
+        "fractal_n": 3,
+        "ema_period": 20,
+        "atr_stop_mul": 1.5
+      },
+      "optimized_keys": [
+        "fractal_n",
+        "ema_period",
+        "atr_stop_mul"
+      ],
+      "sharpe": -0.33,
+      "total_return": -5.27,
+      "max_drawdown": -7.82,
+      "win_rate": 0.0,
+      "total_trades": 2,
+      "combos_tested": 36
+    },
+    "claude_divergence_combo": {
+      "params": {
+        "rsi_period": 14,
+        "macd_fast": 12,
+        "macd_slow": 26,
+        "macd_signal_w": 9,
+        "stoch_period": 14,
+        "pivot_n": 3,
+        "max_pivot_dist": 40,
+        "ema_period": 30,
+        "div_confirm": 2,
+        "rsi_zone_low": 60,
+        "rsi_zone_high": 55,
+        "atr_stop_mul": 1.5
+      },
+      "optimized_keys": [
+        "pivot_n",
+        "max_pivot_dist",
+        "div_confirm",
+        "rsi_zone_low",
+        "rsi_zone_high",
+        "atr_stop_mul"
+      ],
+      "sharpe": 1.2,
+      "total_return": 36.52,
+      "max_drawdown": -16.34,
+      "win_rate": 100.0,
+      "total_trades": 1,
+      "combos_tested": 486
+    }
+  }
+}

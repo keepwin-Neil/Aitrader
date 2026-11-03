@@ -1,0 +1,17 @@
+{
+  "claude_aroon_oscillator": {
+    "params": {
+      "aroon_period": 20,
+      "buy_threshold": 30,
+      "sell_threshold": -50,
+      "atr_stop_mul": 1.5
+    },
+    "promoted_at": "2026-03-22T16:52:13.666638",
+    "source_sharpe": 1.5,
+    "source_return": 161.43,
+    "std_return": 122.3,
+    "delta_return": 39.13,
+    "source_method": "bayesian",
+    "wf_consistency": 55.6
+  }
+}

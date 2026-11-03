@@ -1,0 +1,68 @@
+{
+  "claude_adaptive_ma": {
+    "params": {
+      "er_period": 21,
+      "fast_sc": 2,
+      "slow_sc": 15,
+      "atr_stop_mul": 4.0,
+      "threshold": 0.0053
+    },
+    "promoted_at": "2026-03-22T16:52:37.698427",
+    "source_sharpe": 0.84,
+    "source_return": 15.11,
+    "std_return": 4.14,
+    "delta_return": 10.97,
+    "source_method": "bayesian",
+    "wf_consistency": 66.7
+  },
+  "claude_trix_momentum": {
+    "params": {
+      "trix_period": 20,
+      "signal_period": 15,
+      "atr_stop_mul": 2.0
+    },
+    "promoted_at": "2026-03-22T16:52:37.728272",
+    "source_sharpe": 0.35,
+    "source_return": 8.12,
+    "std_return": -13.83,
+    "delta_return": 21.95,
+    "source_method": "bayesian",
+    "wf_consistency": 66.7
+  },
+  "claude_momentum_reversion_hybrid": {
+    "params": {
+      "adx_period": 20,
+      "adx_threshold": 30,
+      "ema_fast": 16,
+      "ema_slow": 60,
+      "rsi_period": 14,
+      "rsi_oversold": 40,
+      "rsi_overbought": 65,
+      "bb_period": 20,
+      "bb_std": 1.5,
+      "atr_stop_mul": 2.0
+    },
+    "promoted_at": "2026-03-22T16:52:37.773650",
+    "source_sharpe": 1.04,
+    "source_return": 35.1,
+    "std_return": -6.41,
+    "delta_return": 41.51,
+    "source_method": "bayesian",
+    "wf_consistency": 66.7
+  },
+  "claude_dual_thrust": {
+    "params": {
+      "lookback": 2,
+      "k1": 0.45,
+      "k2": 0.8,
+      "atr_stop_mul": 3.0
+    },
+    "promoted_at": "2026-03-22T16:52:37.804311",
+    "source_sharpe": 0.61,
+    "source_return": 19.92,
+    "std_return": -9.93,
+    "delta_return": 29.85,
+    "source_method": "bayesian",
+    "wf_consistency": 66.7
+  }
+}

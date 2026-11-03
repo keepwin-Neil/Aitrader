@@ -1,0 +1,17 @@
+{
+  "claude_dual_thrust": {
+    "params": {
+      "lookback": 5,
+      "k1": 0.45,
+      "k2": 0.4,
+      "atr_stop_mul": 2.5
+    },
+    "promoted_at": "2026-03-23T10:59:22.597931",
+    "source_sharpe": 1.52,
+    "source_return": 523.52,
+    "std_return": 337.16,
+    "delta_return": 186.36,
+    "source_method": "bayesian",
+    "wf_consistency": 100.0
+  }
+}

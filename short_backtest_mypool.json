@@ -1,0 +1,116 @@
+{
+  "claude_multi_indicator": {
+    "long_return": 14.1,
+    "short_return": -39.0,
+    "long_sharpe": 0.29,
+    "short_sharpe": -0.47
+  },
+  "claude_dual_ma_cross": {
+    "long_return": 81.4,
+    "short_return": -16.7,
+    "long_sharpe": 0.57,
+    "short_sharpe": -0.12
+  },
+  "claude_momentum_breakout": {
+    "long_return": 59.1,
+    "short_return": 3.9,
+    "long_sharpe": 0.64,
+    "short_sharpe": 0.22
+  },
+  "claude_mean_reversion": {
+    "long_return": 28.8,
+    "short_return": -36.4,
+    "long_sharpe": 0.47,
+    "short_sharpe": -0.38
+  },
+  "claude_turtle_trading": {
+    "long_return": 44.1,
+    "short_return": 2.0,
+    "long_sharpe": 0.56,
+    "short_sharpe": 0.24
+  },
+  "claude_vwap_breakout": {
+    "long_return": 40.4,
+    "short_return": -23.8,
+    "long_sharpe": 0.48,
+    "short_sharpe": -0.2
+  },
+  "claude_adaptive_ma": {
+    "long_return": 57.8,
+    "short_return": -2.2,
+    "long_sharpe": 0.63,
+    "short_sharpe": 0.19
+  },
+  "claude_rsi_macd_trend": {
+    "long_return": 31.6,
+    "short_return": -23.7,
+    "long_sharpe": 0.47,
+    "short_sharpe": -0.19
+  },
+  "claude_ensemble_voting": {
+    "long_return": 55.2,
+    "short_return": -14.9,
+    "long_sharpe": 0.54,
+    "short_sharpe": -0.09
+  },
+  "claude_ichimoku_cloud": {
+    "long_return": 16.4,
+    "short_return": -31.0,
+    "long_sharpe": 0.14,
+    "short_sharpe": -0.39
+  },
+  "claude_volatility_breakout": {
+    "long_return": 70.2,
+    "short_return": 22.0,
+    "long_sharpe": 0.59,
+    "short_sharpe": 0.35
+  },
+  "claude_supertrend": {
+    "long_return": 60.4,
+    "short_return": -18.7,
+    "long_sharpe": 0.38,
+    "short_sharpe": -0.22
+  },
+  "claude_ross_hook": {
+    "long_return": 48.6,
+    "short_return": -24.9,
+    "long_sharpe": 0.54,
+    "short_sharpe": -0.23
+  },
+  "claude_divergence_combo": {
+    "long_return": 26.1,
+    "short_return": -12.2,
+    "long_sharpe": 0.39,
+    "short_sharpe": -0.15
+  },
+  "claude_trend_hold": {
+    "long_return": 33.5,
+    "short_return": 4.2,
+    "long_sharpe": 0.51,
+    "short_sharpe": 0.17
+  },
+  "claude_momentum_reversion_hybrid": {
+    "long_return": 54.4,
+    "short_return": 0.2,
+    "long_sharpe": 0.43,
+    "short_sharpe": 0.02
+  },
+  "claude_breakout_trailing": {
+    "long_return": 59.7,
+    "short_return": 2.7,
+    "long_sharpe": 0.6,
+    "short_sharpe": 0.22
+  },
+  "claude_multi_timeframe_trend": {
+    "long_return": 53.4,
+    "short_return": -0.8,
+    "long_sharpe": 0.48,
+    "short_sharpe": 0.12
+  },
+  "claude_adaptive_regime": {
+    "long_return": 61.0,
+    "short_return": -7.0,
+    "long_sharpe": 0.65,
+    "short_sharpe": 0.12
+  }
+}

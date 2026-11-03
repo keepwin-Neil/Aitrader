@@ -1,0 +1,47 @@
+{
+  "claude_volatility_breakout": {
+    "params": {
+      "k_factor": 1.0,
+      "ema_period": 30,
+      "min_range": 0.9500000000000001,
+      "atr_stop_mul": 1.0
+    },
+    "promoted_at": "2026-03-22T16:51:46.346444",
+    "source_sharpe": 1.13,
+    "source_return": 76.69,
+    "std_return": 31.01,
+    "delta_return": 45.68,
+    "source_method": "bayesian",
+    "wf_consistency": 73.3
+  },
+  "claude_supertrend": {
+    "params": {
+      "st_period": 10,
+      "st_multiplier": 1.0,
+      "vol_ma": 20,
+      "atr_stop_mul": 0.5
+    },
+    "promoted_at": "2026-03-22T16:51:46.398238",
+    "source_sharpe": 1.2,
+    "source_return": 75.7,
+    "std_return": 11.66,
+    "delta_return": 64.04,
+    "source_method": "bayesian",
+    "wf_consistency": 60.0
+  },
+  "claude_dual_thrust": {
+    "params": {
+      "lookback": 6,
+      "k1": 0.5,
+      "k2": 0.3,
+      "atr_stop_mul": 2.0
+    },
+    "promoted_at": "2026-03-22T16:51:46.428624",
+    "source_sharpe": 0.99,
+    "source_return": 59.09,
+    "std_return": 1.05,
+    "delta_return": 58.04,
+    "source_method": "bayesian",
+    "wf_consistency": 73.3
+  }
+}

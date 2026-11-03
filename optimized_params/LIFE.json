@@ -1,0 +1,595 @@
+{
+  "intervals": {
+    "1d": {
+      "symbol": "LIFE",
+      "market": "US",
+      "period": "1y",
+      "interval": "1d",
+      "dynamic_position": false,
+      "method": "bayesian",
+      "optimized_at": "2026-09-18T15:07:22.196289",
+      "total_combos_tested": 1400,
+      "elapsed_seconds": 6215.1,
+      "strategies": {
+        "claude_fft_cycle_trend": {
+          "params": {
+            "fft_window": 55,
+            "min_period": 6,
+            "max_period": 22,
+            "ema_period": 15,
+            "buy_threshold": -0.09999999999999998,
+            "sell_threshold": 0.9000000000000001,
+            "atr_stop_mul": 1.5
+          },
+          "optimized_keys": [
+            "fft_window",
+            "min_period",
+            "max_period",
+            "ema_period",
+            "buy_threshold",
+            "sell_threshold",
+            "atr_stop_mul"
+          ],
+          "combos_tested": 200,
+          "method": "buy_and_sell",
+          "signal_type": "buy_and_sell",
+          "capital": 100000,
+          "final_equity": 197662.28,
+          "total_return": 97.66,
+          "bh_return": 127.5,
+          "max_drawdown": -12.86,
+          "sharpe": 2.96,
+          "win_rate": 100.0,
+          "profit_factor": 0,
+          "total_trades": 2,
+          "win_trades": 2,
+          "lose_trades": 0,
+          "avg_win": 48831.14,
+          "avg_loss": 0,
+          "buy_params": {
+            "fft_window": 50,
+            "min_period": 7,
+            "max_period": 18,
+            "ema_period": 20,
+            "buy_threshold": -0.8,
+            "sell_threshold": 1.2,
+            "atr_stop_mul": 3.5
+          },
+          "sell_params": {
+            "fft_window": 55,
+            "min_period": 6,
+            "max_period": 22,
+            "ema_period": 15,
+            "buy_threshold": -0.09999999999999998,
+            "sell_threshold": 0.9000000000000001,
+            "atr_stop_mul": 1.5
+          },
+          "buy_metrics": {
+            "total_buy_points": 2,
+            "success_rate": 100.0,
+            "avg_mfe": 66.5,
+            "avg_mae": -2.88,
+            "avg_r_ratio": 139.86,
+            "best_window": 20
+          },
+          "sell_metrics": {
+            "total_sell_points": 1,
+            "success_rate": 100.0,
+            "avg_mfe": 45.4,
+            "avg_mae": 0.87,
+            "avg_r_ratio": 52.18,
+            "best_window": 20
+          }
+        },
+        "claude_vol_adj_momentum": {
+          "params": {
+            "mom_period": 20,
+            "vol_period": 30,
+            "signal_ema": 20,
+            "buy_threshold": 1.5,
+            "sell_threshold": 0.5,
+            "ema_period": 50,
+            "atr_stop_mul": 4.0
+          },
+          "optimized_keys": [
+            "mom_period",
+            "vol_period",
+            "signal_ema",
+            "buy_threshold",
+            "sell_threshold",
+            "ema_period",
+            "atr_stop_mul"
+          ],
+          "combos_tested": 200,
+          "method": "buy_and_sell",
+          "signal_type": "buy_and_sell",
+          "capital": 100000,
+          "final_equity": 141906.14,
+          "total_return": 41.91,
+          "bh_return": 163.58,
+          "max_drawdown": -41.09,
+          "sharpe": 1.49,
+          "win_rate": 100.0,
+          "profit_factor": 0,
+          "total_trades": 1,
+          "win_trades": 1,
+          "lose_trades": 0,
+          "avg_win": 41906.14,
+          "avg_loss": 0,
+          "buy_params": {
+            "mom_period": 30,
+            "vol_period": 15,
+            "signal_ema": 13,
+            "buy_threshold": 0.1,
+            "sell_threshold": -0.3,
+            "ema_period": 35,
+            "atr_stop_mul": 1.5
+          },
+          "sell_params": {
+            "mom_period": 20,
+            "vol_period": 30,
+            "signal_ema": 20,
+            "buy_threshold": 1.5,
+            "sell_threshold": 0.5,
+            "ema_period": 50,
+            "atr_stop_mul": 4.0
+          },
+          "buy_metrics": {
+            "total_buy_points": 1,
+            "success_rate": 100.0,
+            "avg_mfe": 119.45,
+            "avg_mae": -1.28,
+            "avg_r_ratio": 93.32,
+            "best_window": 20
+          },
+          "sell_metrics": {
+            "total_sell_points": 2,
+            "success_rate": 100.0,
+            "avg_mfe": 19.84,
+            "avg_mae": 1.71,
+            "avg_r_ratio": 11.03,
+            "best_window": 20
+          }
+        },
+        "claude_entropy_momentum": {
+          "params": {
+            "entropy_window": 18,
+            "entropy_bins": 10,
+            "entropy_smooth": 7,
+            "entropy_low": 2.375,
+            "entropy_high": 1.9100000000000001,
+            "mom_period": 14,
+            "mom_exit": 6.245000000000001,
+            "ema_period": 11,
+            "rsi_period": 10,
+            "rsi_sell": 55,
+            "atr_stop_mul": 3.4350000000000005
+          },
+          "optimized_keys": [
+            "entropy_window",
+            "entropy_bins",
+            "entropy_smooth",
+            "entropy_low",
+            "entropy_high",
+            "mom_period",
+            "mom_exit",
+            "ema_period",
+            "rsi_period",
+            "rsi_sell",
+            "atr_stop_mul"
+          ],
+          "combos_tested": 200,
+          "method": "buy_and_sell",
+          "signal_type": "buy_and_sell",
+          "capital": 100000,
+          "final_equity": 229600.36,
+          "total_return": 129.6,
+          "bh_return": 176.6,
+          "max_drawdown": -21.79,
+          "sharpe": 2.97,
+          "win_rate": 67.44,
+          "profit_factor": 2.37,
+          "total_trades": 43,
+          "win_trades": 29,
+          "lose_trades": 14,
+          "avg_win": 7721.89,
+          "avg_loss": -6738.16,
+          "buy_params": {
+            "entropy_window": 17,
+            "entropy_bins": 9,
+            "entropy_smooth": 4,
+            "entropy_low": 3.075,
+            "entropy_high": 3.8100000000000005,
+            "mom_period": 14,
+            "mom_exit": 4.345000000000001,
+            "ema_period": 19,
+            "rsi_period": 6,
+            "rsi_sell": 85,
+            "atr_stop_mul": 1.8350000000000002
+          },
+          "sell_params": {
+            "entropy_window": 18,
+            "entropy_bins": 10,
+            "entropy_smooth": 7,
+            "entropy_low": 2.375,
+            "entropy_high": 1.9100000000000001,
+            "mom_period": 14,
+            "mom_exit": 6.245000000000001,
+            "ema_period": 11,
+            "rsi_period": 10,
+            "rsi_sell": 55,
+            "atr_stop_mul": 3.4350000000000005
+          },
+          "buy_metrics": {
+            "total_buy_points": 6,
+            "success_rate": 83.3,
+            "avg_mfe": 69.7,
+            "avg_mae": -6.84,
+            "avg_r_ratio": 19.99,
+            "best_window": 20
+          },
+          "sell_metrics": {
+            "total_sell_points": 1,
+            "success_rate": 100.0,
+            "avg_mfe": 26.37,
+            "avg_mae": 3.19,
+            "avg_r_ratio": 8.27,
+            "best_window": 20
+          }
+        },
+        "claude_hurst_exponent": {
+          "params": {
+            "hurst_window": 35,
+            "hurst_trend": 0.7675,
+            "hurst_mr": 0.515,
+            "ema_fast": 26,
+            "ema_slow": 20,
+            "bb_period": 39,
+            "bb_std": 1.815,
+            "rsi_period": 14,
+            "rsi_oversold": 55,
+            "rsi_overbought": 82,
+            "atr_stop_mul": 1.68
+          },
+          "optimized_keys": [
+            "hurst_window",
+            "hurst_trend",
+            "hurst_mr",
+            "ema_fast",
+            "ema_slow",
+            "bb_period",
+            "bb_std",
+            "rsi_period",
+            "rsi_oversold",
+            "rsi_overbought",
+            "atr_stop_mul"
+          ],
+          "combos_tested": 200,
+          "method": "buy_and_sell",
+          "signal_type": "buy_and_sell",
+          "capital": 100000,
+          "final_equity": 222685.59,
+          "total_return": 122.69,
+          "bh_return": 240.82,
+          "max_drawdown": -2.8,
+          "sharpe": 3.43,
+          "win_rate": 100.0,
+          "profit_factor": 0,
+          "total_trades": 1,
+          "win_trades": 1,
+          "lose_trades": 0,
+          "avg_win": 122685.59,
+          "avg_loss": 0,
+          "buy_params": {
+            "hurst_window": 30,
+            "hurst_trend": 0.6175,
+            "hurst_mr": 0.5650000000000001,
+            "ema_fast": 10,
+            "ema_slow": 24,
+            "bb_period": 24,
+            "bb_std": 2.415,
+            "rsi_period": 9,
+            "rsi_oversold": 43,
+            "rsi_overbought": 122,
+            "atr_stop_mul": 1.98
+          },
+          "sell_params": {
+            "hurst_window": 35,
+            "hurst_trend": 0.7675,
+            "hurst_mr": 0.515,
+            "ema_fast": 26,
+            "ema_slow": 20,
+            "bb_period": 39,
+            "bb_std": 1.815,
+            "rsi_period": 14,
+            "rsi_oversold": 55,
+            "rsi_overbought": 82,
+            "atr_stop_mul": 1.68
+          },
+          "buy_metrics": {
+            "total_buy_points": 1,
+            "success_rate": 100.0,
+            "avg_mfe": 150.77,
+            "avg_mae": -3.24,
+            "avg_r_ratio": 46.53,
+            "best_window": 20
+          },
+          "sell_metrics": {
+            "total_sell_points": 1,
+            "success_rate": 100.0,
+            "avg_mfe": 46.36,
+            "avg_mae": 4.45,
+            "avg_r_ratio": 10.42,
+            "best_window": 20
+          }
+        },
+        "claude_adaptive_ensemble_v2": {
+          "params": {
+            "rolling_window": 80,
+            "min_weight": 0.15,
+            "buy_threshold": 0.45,
+            "sell_threshold": 0.35,
+            "atr_stop_mul": 4.0
+          },
+          "optimized_keys": [
+            "rolling_window",
+            "min_weight",
+            "buy_threshold",
+            "sell_threshold",
+            "atr_stop_mul"
+          ],
+          "combos_tested": 200,
+          "method": "buy_and_sell",
+          "signal_type": "buy_and_sell",
+          "capital": 100000,
+          "final_equity": 98526.94,
+          "total_return": -1.47,
+          "bh_return": 170.63,
+          "max_drawdown": -12.79,
+          "sharpe": -0.02,
+          "win_rate": 0.0,
+          "profit_factor": 0.0,
+          "total_trades": 1,
+          "win_trades": 0,
+          "lose_trades": 1,
+          "avg_win": 0,
+          "avg_loss": -1473.06,
+          "buy_params": {
+            "rolling_window": 30,
+            "min_weight": 0.05,
+            "buy_threshold": 0.4,
+            "sell_threshold": 0.45,
+            "atr_stop_mul": 2.0
+          },
+          "sell_params": {
+            "rolling_window": 80,
+            "min_weight": 0.15,
+            "buy_threshold": 0.45,
+            "sell_threshold": 0.35,
+            "atr_stop_mul": 4.0
+          },
+          "buy_metrics": {
+            "total_buy_points": 1,
+            "success_rate": 100.0,
+            "avg_mfe": 15.12,
+            "avg_mae": -5.76,
+            "avg_r_ratio": 2.62,
+            "best_window": 20
+          },
+          "sell_metrics": {
+            "total_sell_points": 1,
+            "success_rate": 100.0,
+            "avg_mfe": 33.47,
+            "avg_mae": 1.27,
+            "avg_r_ratio": 26.35,
+            "best_window": 20
+          }
+        },
+        "gemini_mcginley_dynamic": {
+          "params": {
+            "window": 19,
+            "atr_stop_mul": 1.75
+          },
+          "optimized_keys": [
+            "window",
+            "atr_stop_mul"
+          ],
+          "combos_tested": 200,
+          "method": "buy_and_sell",
+          "signal_type": "buy_and_sell",
+          "capital": 100000,
+          "final_equity": 326315.99,
+          "total_return": 226.32,
+          "bh_return": 116.02,
+          "max_drawdown": -49.18,
+          "sharpe": 2.69,
+          "win_rate": 100.0,
+          "profit_factor": 0,
+          "total_trades": 2,
+          "win_trades": 2,
+          "lose_trades": 0,
+          "avg_win": 113158.0,
+          "avg_loss": 0,
+          "buy_params": {
+            "window": 11,
+            "atr_stop_mul": 2.55
+          },
+          "sell_params": {
+            "window": 19,
+            "atr_stop_mul": 1.75
+          },
+          "buy_metrics": {
+            "total_buy_points": 5,
+            "success_rate": 80.0,
+            "avg_mfe": 33.42,
+            "avg_mae": -6.69,
+            "avg_r_ratio": 19.45,
+            "best_window": 20
+          },
+          "sell_metrics": {
+            "total_sell_points": 2,
+            "success_rate": 0.0,
+            "avg_mfe": 28.7,
+            "avg_mae": 12.85,
+            "avg_r_ratio": 3.38,
+            "best_window": 20
+          }
+        },
+        "openai_percent_b_trend": {
+          "params": {
+            "bb_period": 30,
+            "bb_std": 2.1,
+            "buy_level": 0.47500000000000003,
+            "exit_level": 0.175,
+            "bandwidth_min": 0.1,
+            "atr_stop_mul": 2.75
+          },
+          "optimized_keys": [
+            "bb_period",
+            "bb_std",
+            "buy_level",
+            "exit_level",
+            "bandwidth_min",
+            "atr_stop_mul"
+          ],
+          "combos_tested": 200,
+          "method": "buy_and_sell",
+          "signal_type": "buy_and_sell",
+          "capital": 100000,
+          "final_equity": 309013.19,
+          "total_return": 209.01,
+          "bh_return": 191.2,
+          "max_drawdown": -36.87,
+          "sharpe": 3.25,
+          "win_rate": 100.0,
+          "profit_factor": 0,
+          "total_trades": 2,
+          "win_trades": 2,
+          "lose_trades": 0,
+          "avg_win": 104506.59,
+          "avg_loss": 0,
+          "buy_params": {
+            "bb_period": 21,
+            "bb_std": 2.7,
+            "buy_level": 0.525,
+            "exit_level": 0.425,
+            "bandwidth_min": 0.1,
+            "atr_stop_mul": 1.45
+          },
+          "sell_params": {
+            "bb_period": 30,
+            "bb_std": 2.1,
+            "buy_level": 0.47500000000000003,
+            "exit_level": 0.175,
+            "bandwidth_min": 0.1,
+            "atr_stop_mul": 2.75
+          },
+          "buy_metrics": {
+            "total_buy_points": 6,
+            "success_rate": 100.0,
+            "avg_mfe": 81.43,
+            "avg_mae": -3.81,
+            "avg_r_ratio": 22.17,
+            "best_window": 20
+          },
+          "sell_metrics": {
+            "total_sell_points": 4,
+            "success_rate": 25.0,
+            "avg_mfe": 18.99,
+            "avg_mae": 15.19,
+            "avg_r_ratio": 8.12,
+            "best_window": 20
+          }
+        }
+      },
+      "wf_validation": {
+        "best": {
+          "claude_fft_cycle_trend": {
+            "verdict": "overfit",
+            "consistency": 0.0,
+            "avg_test_sharpe": 0.0,
+            "avg_test_return": 0.0,
+            "avg_test_max_dd": 0.0,
+            "num_windows": 2,
+            "promoted": false,
+            "window_mode": "anchored_micro",
+            "reliability": "low",
+            "note": "历史仅161条，WF改为anchored_micro模式，训练119天 / 测试21天 / 2个窗口；样本偏短，结果只用于排除明显过拟合，不建议直接升级标准参数"
+          },
+          "gemini_mcginley_dynamic": {
+            "verdict": "fair",
+            "consistency": 100.0,
+            "avg_test_sharpe": 5.3,
+            "avg_test_return": 40.49,
+            "avg_test_max_dd": -9.63,
+            "num_windows": 2,
+            "promoted": false,
+            "window_mode": "anchored_micro",
+            "reliability": "low",
+            "note": "历史仅161条，WF改为anchored_micro模式，训练119天 / 测试21天 / 2个窗口；样本偏短，结果只用于排除明显过拟合，不建议直接升级标准参数"
+          },
+          "openai_percent_b_trend": {
+            "verdict": "overfit",
+            "consistency": 0.0,
+            "avg_test_sharpe": 0.0,
+            "avg_test_return": 0.0,
+            "avg_test_max_dd": 0.0,
+            "num_windows": 2,
+            "promoted": false,
+            "window_mode": "anchored_micro",
+            "reliability": "low",
+            "note": "历史仅161条，WF改为anchored_micro模式，训练119天 / 测试21天 / 2个窗口；样本偏短，结果只用于排除明显过拟合，不建议直接升级标准参数"
+          },
+          "claude_hurst_exponent": {
+            "verdict": "overfit",
+            "consistency": 0.0,
+            "avg_test_sharpe": 0.0,
+            "avg_test_return": 0.0,
+            "avg_test_max_dd": 0.0,
+            "num_windows": 2,
+            "promoted": false,
+            "window_mode": "anchored_micro",
+            "reliability": "low",
+            "note": "历史仅161条，WF改为anchored_micro模式，训练119天 / 测试21天 / 2个窗口；样本偏短，结果只用于排除明显过拟合，不建议直接升级标准参数"
+          },
+          "claude_vol_adj_momentum": {
+            "verdict": "overfit",
+            "consistency": 0.0,
+            "avg_test_sharpe": 0.0,
+            "avg_test_return": 0.0,
+            "avg_test_max_dd": 0.0,
+            "num_windows": 2,
+            "promoted": false,
+            "window_mode": "anchored_micro",
+            "reliability": "low",
+            "note": "历史仅161条，WF改为anchored_micro模式，训练119天 / 测试21天 / 2个窗口；样本偏短，结果只用于排除明显过拟合，不建议直接升级标准参数"
+          },
+          "claude_entropy_momentum": {
+            "verdict": "overfit",
+            "consistency": 0.0,
+            "avg_test_sharpe": 0.0,
+            "avg_test_return": 0.0,
+            "avg_test_max_dd": 0.0,
+            "num_windows": 2,
+            "promoted": false,
+            "window_mode": "anchored_micro",
+            "reliability": "low",
+            "note": "历史仅161条，WF改为anchored_micro模式，训练119天 / 测试21天 / 2个窗口；样本偏短，结果只用于排除明显过拟合，不建议直接升级标准参数"
+          },
+          "claude_adaptive_ensemble_v2": {
+            "verdict": "overfit",
+            "consistency": 0.0,
+            "avg_test_sharpe": 0.0,
+            "avg_test_return": 0.0,
+            "avg_test_max_dd": 0.0,
+            "num_windows": 2,
+            "promoted": false,
+            "window_mode": "anchored_micro",
+            "reliability": "low",
+            "note": "历史仅161条，WF改为anchored_micro模式，训练119天 / 测试21天 / 2个窗口；样本偏短，结果只用于排除明显过拟合，不建议直接升级标准参数"
+          }
+        }
+      }
+    }
+  }
+}

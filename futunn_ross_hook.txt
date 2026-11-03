@@ -1,0 +1,51 @@
+{Ross Hook 策略 - 简化版}
+{用纯历史数据实现，避免未来引用}
+
+EMA_N:=30;
+N:=20;
+
+{===== 分形识别（仅用历史数据，延迟2根确认） =====}
+{2根前是分形高点：它比前后各2根都高}
+IS_FH:=REF(HIGH,2)>REF(HIGH,4) AND REF(HIGH,2)>REF(HIGH,3) AND REF(HIGH,2)>REF(HIGH,1) AND REF(HIGH,2)>HIGH;
+{2根前是分形低点：它比前后各2根都低}
+IS_FL:=REF(LOW,2)<REF(LOW,4) AND REF(LOW,2)<REF(LOW,3) AND REF(LOW,2)<REF(LOW,1) AND REF(LOW,2)<LOW;
+
+{分形高点值、低点值（前向填充）}
+FH_VAL:=IF(IS_FH,REF(HIGH,2),REF(HIGH,BARSLAST(IS_FH)+2));
+FL_VAL:=IF(IS_FL,REF(LOW,2),REF(LOW,BARSLAST(IS_FL)+2));
+
+{画线}
+SWING_H:FH_VAL,COLORF44336,LINETHICK1,DOTLINE;
+SWING_L:FL_VAL,COLOR4CAF50,LINETHICK1,DOTLINE;
+
+{===== 简化Ross Hook =====}
+{核心思路：价格创N日新低后反弹，形成更高低点，突破反弹高点入场}
+
+{N日最低价和最高价}
+LOW_N:=LLV(LOW,N);
+HIGH_N:=HHV(HIGH,N);
+
+{从最低点反弹的幅度}
+BOUNCE:=(CLOSE-LOW_N)/(HIGH_N-LOW_N+0.001);
+
+{更高低点：最近分形低点 高于 上上个分形低点}
+HIGHER_LOW:=FL_VAL>REF(FL_VAL,1);
+
+{EMA趋势}
+EMA_F:EMA(CLOSE,EMA_N),COLOR9C27B0,LINETHICK2;
+
+{Hook Level = 最近分形高点}
+HOOK_LV:FH_VAL,COLORFF9800,LINETHICK2;
+
+{===== 买入条件 =====}
+{1. 收盘突破最近分形高点（Hook Level）}
+{2. 形成更高低点（1-2-3形态核心）}
+{3. 价格在EMA之上}
+BUY_COND:=CLOSE>FH_VAL AND HIGHER_LOW AND CLOSE>EMA_F;
+
+{===== 卖出条件 =====}
+{跌破最近分形低点 或 跌破EMA}
+SELL_COND:=CLOSE<FL_VAL OR CLOSE<EMA_F;
+
+DRAWICON(BUY_COND AND REF(BUY_COND,1)=0,LOW*0.99,1);
+DRAWICON(SELL_COND AND REF(SELL_COND,1)=0,HIGH*1.01,2);

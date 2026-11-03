@@ -1,0 +1,91 @@
+{
+  "intervals": {
+    "1d": {
+      "symbol": "USAR",
+      "market": "US",
+      "period": "1y",
+      "interval": "1d",
+      "dynamic_position": false,
+      "method": "bayesian",
+      "optimized_at": "2026-09-21T07:00:11.478592",
+      "total_combos_tested": 100,
+      "elapsed_seconds": 3.3,
+      "strategies": {
+        "claude_dual_ma_cross": {
+          "params": {
+            "fast_period": 13,
+            "slow_period": 52,
+            "ma_type": "sma",
+            "atr_stop_mul": 2.0
+          },
+          "optimized_keys": [
+            "fast_period",
+            "slow_period",
+            "ma_type",
+            "atr_stop_mul"
+          ],
+          "combos_tested": 100,
+          "method": "buy_and_sell",
+          "signal_type": "buy_and_sell",
+          "capital": 100000,
+          "final_equity": 98294.86,
+          "total_return": -1.71,
+          "bh_return": 9.63,
+          "max_drawdown": -37.44,
+          "sharpe": 0.35,
+          "win_rate": 66.67,
+          "profit_factor": 0.9,
+          "total_trades": 3,
+          "win_trades": 2,
+          "lose_trades": 1,
+          "avg_win": 7751.94,
+          "avg_loss": -17209.04,
+          "buy_params": {
+            "fast_period": 14,
+            "slow_period": 21,
+            "ma_type": "ema",
+            "atr_stop_mul": 2.0
+          },
+          "sell_params": {
+            "fast_period": 13,
+            "slow_period": 52,
+            "ma_type": "sma",
+            "atr_stop_mul": 2.0
+          },
+          "buy_metrics": {
+            "total_buy_points": 3,
+            "success_rate": 66.7,
+            "avg_mfe": 44.36,
+            "avg_mae": -8.73,
+            "avg_r_ratio": 7.87,
+            "best_window": 20
+          },
+          "sell_metrics": {
+            "total_sell_points": 3,
+            "success_rate": 66.7,
+            "avg_mfe": 23.62,
+            "avg_mae": 3.97,
+            "avg_r_ratio": 6.22,
+            "best_window": 20
+          }
+        }
+      },
+      "wf_validation": {
+        "best": {
+          "claude_dual_ma_cross": {
+            "verdict": "fair",
+            "consistency": 50.0,
+            "avg_test_sharpe": -0.82,
+            "avg_test_return": -3.41,
+            "avg_test_max_dd": -26.62,
+            "num_windows": 2,
+            "promoted": false,
+            "window_mode": "anchored_compact",
+            "reliability": "low",
+            "note": "历史仅798条，WF改为anchored_compact模式，训练546天 / 测试126天 / 2个窗口；样本偏短，结果只用于排除明显过拟合，不建议直接升级标准参数"
+          }
+        }
+      }
+    }
+  }
+}

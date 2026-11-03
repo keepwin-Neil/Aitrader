@@ -1,0 +1,54 @@
+{
+  "intervals": {
+    "1d": {
+      "symbol": "BILI",
+      "market": "US",
+      "period": "1y",
+      "interval": "1d",
+      "dynamic_position": false,
+      "method": "bayesian",
+      "optimized_at": "2026-03-26T19:22:26.142422",
+      "total_combos_tested": 60,
+      "elapsed_seconds": 9.6,
+      "strategies": {
+        "gemini_volume_price_div": {
+          "params": {
+            "vwm_period": 21,
+            "signal_period": 6,
+            "ema_period": 25,
+            "atr_stop_mul": 2.45
+          },
+          "optimized_keys": [
+            "vwm_period",
+            "signal_period",
+            "ema_period",
+            "atr_stop_mul"
+          ],
+          "sharpe": 1.58,
+          "total_return": 63.15,
+          "max_drawdown": -16.54,
+          "win_rate": 100.0,
+          "total_trades": 4,
+          "combos_tested": 60,
+          "method": "bayesian"
+        }
+      },
+      "wf_validation": {
+        "best": {
+          "gemini_volume_price_div": {
+            "verdict": "overfit",
+            "consistency": 0.0,
+            "avg_test_sharpe": 0.0,
+            "avg_test_return": 0.0,
+            "avg_test_max_dd": 0.0,
+            "num_windows": 2,
+            "promoted": false,
+            "window_mode": "anchored_micro",
+            "reliability": "low",
+            "note": "历史仅252条，WF改为anchored_micro模式，训练210天 / 测试21天 / 2个窗口；样本偏短，结果只用于排除明显过拟合，不建议直接升级标准参数"
+          }
+        }
+      }
+    }
+  }
+}

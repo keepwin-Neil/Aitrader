@@ -1,0 +1,47 @@
+{
+  "claude_momentum_breakout": {
+    "params": {
+      "breakout_period": 7,
+      "exit_period": 14,
+      "vol_ma": 20,
+      "vol_ratio_min": 1.1,
+      "atr_stop_mul": 3.5
+    },
+    "promoted_at": "2026-03-22T16:51:06.955869",
+    "source_sharpe": 0.71,
+    "source_return": 41.5,
+    "std_return": 0.02,
+    "delta_return": 41.48,
+    "source_method": "bayesian",
+    "wf_consistency": 64.9
+  },
+  "claude_trix_momentum": {
+    "params": {
+      "trix_period": 15,
+      "signal_period": 7,
+      "atr_stop_mul": 1.5
+    },
+    "promoted_at": "2026-03-22T16:51:06.985388",
+    "source_sharpe": 0.84,
+    "source_return": 46.39,
+    "std_return": 27.75,
+    "delta_return": 18.64,
+    "source_method": "bayesian",
+    "wf_consistency": 59.5
+  },
+  "claude_chandelier_exit": {
+    "params": {
+      "lookback": 15,
+      "atr_mult": 2.5,
+      "atr_period": 28,
+      "atr_stop_mul": 1.5
+    },
+    "promoted_at": "2026-03-22T16:51:07.014991",
+    "source_sharpe": 1.08,
+    "source_return": 63.7,
+    "std_return": 32.57,
+    "delta_return": 31.13,
+    "source_method": "bayesian",
+    "wf_consistency": 59.5
+  }
+}

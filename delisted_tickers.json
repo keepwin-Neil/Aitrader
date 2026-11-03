@@ -1,0 +1,50 @@
+{
+  "US:CFX": {
+    "delisted_at": "2022-04-04",
+    "detected_at": "2026-09-17T06:18:10Z",
+    "last_bar_date": "2022-04-04",
+    "reason": "no new 1d bars for 1627d (last=2022-04-04)"
+  },
+  "US:CTRA": {
+    "delisted_at": "2026-05-07",
+    "detected_at": "2026-09-09T09:01:24Z",
+    "last_bar_date": "2026-05-07",
+    "reason": "no new 1d bars for 125d (last=2026-05-07)"
+  },
+  "US:CUK": {
+    "delisted_at": "2026-05-07",
+    "detected_at": "2026-11-02T21:26:38Z",
+    "last_bar_date": "2026-05-07",
+    "reason": "no new 1d bars for 179d (last=2026-05-07)"
+  },
+  "US:EA": {
+    "delisted_at": "2026-08-10",
+    "detected_at": "2026-11-02T21:25:38Z",
+    "last_bar_date": "2026-08-10",
+    "reason": "no new 1d bars for 84d (last=2026-08-10)"
+  },
+  "US:EB": {
+    "delisted_at": "2026-03-09",
+    "detected_at": "2026-11-02T21:26:50Z",
+    "last_bar_date": "2026-03-09",
+    "reason": "no new 1d bars for 238d (last=2026-03-09)"
+  },
+  "US:GPS": {
+    "delisted_at": "2024-08-21",
+    "detected_at": "2026-10-01T07:51:56Z",
+    "last_bar_date": "2024-08-21",
+    "reason": "no new 1d bars for 771d (last=2024-08-21)"
+  },
+  "US:HFC": {
+    "delisted_at": "2022-03-14",
+    "detected_at": "2026-09-17T06:18:11Z",
+    "last_bar_date": "2022-03-14",
+    "reason": "no new 1d bars for 1648d (last=2022-03-14)"
+  },
+  "US:STRP": {
+    "delisted_at": "2018-02-27",
+    "detected_at": "2026-09-17T06:18:08Z",
+    "last_bar_date": "2018-02-27",
+    "reason": "no new 1d bars for 3124d (last=2018-02-27)"
+  }
+}

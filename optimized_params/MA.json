@@ -1,0 +1,94 @@
+{
+  "symbol": "MA",
+  "market": "US",
+  "period": "2y",
+  "dynamic_position": false,
+  "method": "all",
+  "optimized_at": "2026-03-15T17:34:06.776995",
+  "total_combos_tested": 494,
+  "elapsed_seconds": 26.7,
+  "strategies": {
+    "claude_supertrend": {
+      "params": {
+        "st_period": 6,
+        "st_multiplier": 4.5,
+        "vol_ma": 20,
+        "atr_stop_mul": 0.5
+      },
+      "optimized_keys": [
+        "st_period",
+        "st_multiplier",
+        "atr_stop_mul"
+      ],
+      "sharpe": 0.56,
+      "total_return": 9.28,
+      "max_drawdown": -10.42,
+      "win_rate": 25.0,
+      "total_trades": 4,
+      "combos_tested": 200,
+      "method": "bayesian",
+      "best_of": "all"
+    }
+  },
+  "method_comparison": {
+    "claude_supertrend": {
+      "bayesian": {
+        "params": {
+          "st_period": 6,
+          "st_multiplier": 4.5,
+          "vol_ma": 20,
+          "atr_stop_mul": 0.5
+        },
+        "optimized_keys": [
+          "st_period",
+          "st_multiplier",
+          "atr_stop_mul"
+        ],
+        "sharpe": 0.56,
+        "total_return": 9.28,
+        "max_drawdown": -10.42,
+        "win_rate": 25.0,
+        "total_trades": 4,
+        "combos_tested": 200
+      },
+      "grid": {
+        "params": {
+          "st_period": 19,
+          "st_multiplier": 2.0,
+          "vol_ma": 20,
+          "atr_stop_mul": 1.0
+        },
+        "optimized_keys": [
+          "st_period",
+          "st_multiplier",
+          "atr_stop_mul"
+        ],
+        "sharpe": 0.36,
+        "total_return": 7.27,
+        "max_drawdown": -11.12,
+        "win_rate": 40.0,
+        "total_trades": 10,
+        "combos_tested": 210
+      },
+      "coarse_fine": {
+        "params": {
+          "st_period": 13,
+          "st_multiplier": 3.0,
+          "vol_ma": 20,
+          "atr_stop_mul": 2.5
+        },
+        "optimized_keys": [
+          "st_period",
+          "st_multiplier",
+          "atr_stop_mul"
+        ],
+        "sharpe": 0.34,
+        "total_return": 6.77,
+        "max_drawdown": -13.85,
+        "win_rate": 50.0,
+        "total_trades": 6,
+        "combos_tested": 84
+      }
+    }
+  }
+}

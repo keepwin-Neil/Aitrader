@@ -1,0 +1,54 @@
+{
+  "intervals": {
+    "1d": {
+      "symbol": "UEC",
+      "market": "US",
+      "period": "1y",
+      "interval": "1d",
+      "dynamic_position": false,
+      "method": "bayesian",
+      "optimized_at": "2026-03-26T19:22:31.159967",
+      "total_combos_tested": 60,
+      "elapsed_seconds": 14.6,
+      "strategies": {
+        "gemini_volume_price_div": {
+          "params": {
+            "vwm_period": 16,
+            "signal_period": 8,
+            "ema_period": 50,
+            "atr_stop_mul": 1.55
+          },
+          "optimized_keys": [
+            "vwm_period",
+            "signal_period",
+            "ema_period",
+            "atr_stop_mul"
+          ],
+          "sharpe": 2.0,
+          "total_return": 123.39,
+          "max_drawdown": -26.59,
+          "win_rate": 100.0,
+          "total_trades": 2,
+          "combos_tested": 60,
+          "method": "bayesian"
+        }
+      },
+      "wf_validation": {
+        "best": {
+          "gemini_volume_price_div": {
+            "verdict": "overfit",
+            "consistency": 0.0,
+            "avg_test_sharpe": 0.0,
+            "avg_test_return": 0.0,
+            "avg_test_max_dd": 0.0,
+            "num_windows": 2,
+            "promoted": false,
+            "window_mode": "anchored_micro",
+            "reliability": "low",
+            "note": "历史仅252条，WF改为anchored_micro模式，训练210天 / 测试21天 / 2个窗口；样本偏短，结果只用于排除明显过拟合，不建议直接升级标准参数"
+          }
+        }
+      }
+    }
+  }
+}

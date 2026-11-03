@@ -1,0 +1,17 @@
+{
+  "claude_dual_ma_cross": {
+    "params": {
+      "fast_period": 6,
+      "slow_period": 15,
+      "ma_type": "sma",
+      "atr_stop_mul": 1.0
+    },
+    "promoted_at": "2026-03-23T10:56:41.581137",
+    "source_sharpe": 1.09,
+    "source_return": 40.85,
+    "std_return": 4.43,
+    "delta_return": 36.42,
+    "source_method": "bayesian",
+    "wf_consistency": 55.4
+  }
+}

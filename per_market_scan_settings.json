@@ -1,0 +1,68 @@
+{
+  "_schema": "Per-market scan-monitor settings. Each CORE market has its own scan parameters: pools (which stock pools to scan; empty = skip), owners (strategy owners), interval, refresh_sec, top_n. Read by core_engine's scan daemon on each tick; edited via PUT /scan/monitor/settings/{market}.",
+  "markets": {
+    "US": {
+      "enabled": true,
+      "interval": "1d",
+      "refresh_sec": 300,
+      "top_n": 5,
+      "owners": [
+        "claude"
+      ],
+      "pools": [
+        "NASDAQ 100",
+        "🔥 US Hot Stocks",
+        "MYPOOL",
+        "美国稀土"
+      ]
+    },
+    "HK": {
+      "enabled": true,
+      "interval": "1d",
+      "refresh_sec": 300,
+      "top_n": 5,
+      "owners": [
+        "claude",
+        "gpt",
+        "gemini"
+      ],
+      "pools": []
+    },
+    "CN": {
+      "enabled": true,
+      "interval": "1d",
+      "refresh_sec": 300,
+      "top_n": 5,
+      "owners": [
+        "claude",
+        "gpt",
+        "gemini"
+      ],
+      "pools": []
+    },
+    "CRYPTO": {
+      "enabled": true,
+      "interval": "1d",
+      "refresh_sec": 300,
+      "top_n": 5,
+      "owners": [
+        "claude",
+        "gpt",
+        "gemini"
+      ],
+      "pools": []
+    },
+    "UK": {
+      "enabled": true,
+      "interval": "1d",
+      "refresh_sec": 300,
+      "top_n": 5,
+      "owners": [
+        "claude",
+        "gpt",
+        "gemini"
+      ],
+      "pools": []
+    }
+  }
+}

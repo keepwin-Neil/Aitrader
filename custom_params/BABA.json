@@ -1,0 +1,52 @@
+{
+  "claude_fft_cycle_trend": {
+    "params": {
+      "fft_window": 45,
+      "min_period": 3,
+      "max_period": 8,
+      "ema_period": 20,
+      "buy_threshold": -0.30000000000000004,
+      "sell_threshold": 0.2,
+      "atr_stop_mul": 2.0
+    },
+    "promoted_at": "2026-03-22T21:01:28.701724",
+    "source_sharpe": 1.7,
+    "source_return": 99.71,
+    "std_return": 25.52,
+    "delta_return": 74.19,
+    "source_method": "bayesian",
+    "wf_consistency": 62.5
+  },
+  "claude_momentum_breakout": {
+    "params": {
+      "breakout_period": 6,
+      "exit_period": 5,
+      "vol_ma": 20,
+      "vol_ratio_min": 0.5,
+      "atr_stop_mul": 3.0
+    },
+    "promoted_at": "2026-03-23T10:53:41.001343",
+    "source_sharpe": 1.75,
+    "source_return": 174.9,
+    "std_return": 70.19,
+    "delta_return": 104.71,
+    "source_method": "bayesian",
+    "wf_consistency": 56.2
+  },
+  "claude_adaptive_ensemble_v2": {
+    "params": {
+      "rolling_window": 30,
+      "min_weight": 0.11,
+      "buy_threshold": 0.30000000000000004,
+      "sell_threshold": 0.35,
+      "atr_stop_mul": 3.5
+    },
+    "promoted_at": "2026-03-23T10:53:41.151216",
+    "source_sharpe": 1.93,
+    "source_return": 188.11,
+    "std_return": 9.28,
+    "delta_return": 178.83,
+    "source_method": "bayesian",
+    "wf_consistency": 68.8
+  }
+}

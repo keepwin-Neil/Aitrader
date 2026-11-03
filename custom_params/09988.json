@@ -1,0 +1,14 @@
+{
+  "claude_volatility_breakout": {
+    "params": {
+      "k_factor": 0.35000000000000003,
+      "ema_period": 20,
+      "min_range": 0.9000000000000001,
+      "atr_stop_mul": 0.5
+    },
+    "promoted_at": "2026-03-22T12:23:11.837876",
+    "source_sharpe": 0.89,
+    "source_method": "bayesian",
+    "wf_consistency": 66.7
+  }
+}

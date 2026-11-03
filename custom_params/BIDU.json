@@ -1,0 +1,38 @@
+{
+  "claude_dual_ma_cross": {
+    "params": {
+      "fast_period": 20,
+      "slow_period": 18,
+      "ma_type": "sma",
+      "atr_stop_mul": 3.0
+    },
+    "promoted_at": "2026-03-23T10:53:59.351780",
+    "source_sharpe": 1.05,
+    "source_return": 54.17,
+    "std_return": -17.59,
+    "delta_return": 71.76,
+    "source_method": "bayesian",
+    "wf_consistency": 71.4
+  },
+  "claude_momentum_reversion_hybrid": {
+    "params": {
+      "adx_period": 10,
+      "adx_threshold": 35,
+      "ema_fast": 20,
+      "ema_slow": 65,
+      "rsi_period": 14,
+      "rsi_oversold": 35,
+      "rsi_overbought": 75,
+      "bb_period": 30,
+      "bb_std": 1.5,
+      "atr_stop_mul": 2.5
+    },
+    "promoted_at": "2026-03-23T10:53:59.424489",
+    "source_sharpe": 1.12,
+    "source_return": 74.22,
+    "std_return": 15.86,
+    "delta_return": 58.36,
+    "source_method": "bayesian",
+    "wf_consistency": 57.1
+  }
+}

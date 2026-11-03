@@ -1,0 +1,80 @@
+{
+  "generated_at": "2026-03-19T13:51:19.492942",
+  "elapsed_minutes": 120.8,
+  "total_rounds": 2,
+  "convergence_curve": [
+    [
+      1,
+      0
+    ],
+    [
+      2,
+      0
+    ]
+  ],
+  "total_upgrades": 0,
+  "final_params": {},
+  "final_baseline": {
+    "adaptive_ma": {
+      "avg_score": 0.4195,
+      "avg_sharpe": 0.1239
+    },
+    "dual_ma_cross": {
+      "avg_score": 0.4484,
+      "avg_sharpe": 0.2282
+    },
+    "momentum_breakout": {
+      "avg_score": 0.432,
+      "avg_sharpe": 0.1651
+    },
+    "supertrend": {
+      "avg_score": 0.4359,
+      "avg_sharpe": 0.2021
+    },
+    "ross_hook": {
+      "avg_score": 0.4356,
+      "avg_sharpe": 0.1943
+    },
+    "turtle_trading": {
+      "avg_score": 0.418,
+      "avg_sharpe": 0.1222
+    },
+    "price_channel_vol": {
+      "avg_score": 0.4097,
+      "avg_sharpe": 0.0666
+    },
+    "breakout_trailing": {
+      "avg_score": 0.4479,
+      "avg_sharpe": 0.2159
+    },
+    "vol_weighted_mom": {
+      "avg_score": 0.4377,
+      "avg_sharpe": 0.184
+    },
+    "heikin_ashi": {
+      "avg_score": 0.3832,
+      "avg_sharpe": -0.0109
+    },
+    "ensemble_voting": {
+      "avg_score": 0.4352,
+      "avg_sharpe": 0.1788
+    },
+    "combo_meanrev_plus": {
+      "avg_score": 0.444,
+      "avg_sharpe": 0.1984
+    },
+    "divergence_combo": {
+      "avg_score": 0.4356,
+      "avg_sharpe": 0.2137
+    },
+    "mean_reversion": {
+      "avg_score": 0.4925,
+      "avg_sharpe": 0.3667
+    },
+    "keltner_meanrev": {
+      "avg_score": 0.4356,
+      "avg_sharpe": 0.2127
+    }
+  },
+  "all_upgrade_log": []
+}

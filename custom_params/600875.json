@@ -1,0 +1,47 @@
+{
+  "claude_trix_momentum": {
+    "params": {
+      "trix_period": 9,
+      "signal_period": 15,
+      "atr_stop_mul": 3.0
+    },
+    "promoted_at": "2026-03-22T16:52:21.759261",
+    "source_sharpe": 1.05,
+    "source_return": 75.38,
+    "std_return": 43.6,
+    "delta_return": 31.78,
+    "source_method": "bayesian",
+    "wf_consistency": 61.1
+  },
+  "claude_dual_thrust": {
+    "params": {
+      "lookback": 6,
+      "k1": 0.3,
+      "k2": 0.8,
+      "atr_stop_mul": 1.5
+    },
+    "promoted_at": "2026-03-22T16:52:21.789292",
+    "source_sharpe": 1.37,
+    "source_return": 138.74,
+    "std_return": 23.22,
+    "delta_return": 115.52,
+    "source_method": "bayesian",
+    "wf_consistency": 64.8
+  },
+  "claude_momentum_quality": {
+    "params": {
+      "mom_period": 15,
+      "quality_days": 9,
+      "quality_threshold": 2,
+      "ema_trend": 25,
+      "atr_stop_mul": 1.5
+    },
+    "promoted_at": "2026-03-22T16:52:21.819711",
+    "source_sharpe": 1.32,
+    "source_return": 115.91,
+    "std_return": 56.37,
+    "delta_return": 59.54,
+    "source_method": "bayesian",
+    "wf_consistency": 57.4
+  }
+}

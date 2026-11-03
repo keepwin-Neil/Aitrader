@@ -1,0 +1,31 @@
+{
+  "claude_trix_momentum": {
+    "params": {
+      "trix_period": 25,
+      "signal_period": 9,
+      "atr_stop_mul": 3.0
+    },
+    "promoted_at": "2026-03-22T16:51:01.022552",
+    "source_sharpe": 1.9,
+    "source_return": 346.82,
+    "std_return": 171.62,
+    "delta_return": 175.2,
+    "source_method": "bayesian",
+    "wf_consistency": 65.0
+  },
+  "claude_dual_thrust": {
+    "params": {
+      "lookback": 3,
+      "k1": 0.35,
+      "k2": 0.5,
+      "atr_stop_mul": 3.5
+    },
+    "promoted_at": "2026-03-22T16:51:01.053430",
+    "source_sharpe": 1.52,
+    "source_return": 306.86,
+    "std_return": 96.56,
+    "delta_return": 210.3,
+    "source_method": "bayesian",
+    "wf_consistency": 55.0
+  }
+}

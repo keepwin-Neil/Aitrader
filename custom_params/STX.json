@@ -1,0 +1,47 @@
+{
+  "claude_dual_thrust": {
+    "params": {
+      "lookback": 3,
+      "k1": 0.65,
+      "k2": 0.8,
+      "atr_stop_mul": 3.0
+    },
+    "promoted_at": "2026-03-23T10:55:30.879276",
+    "source_sharpe": 2.3,
+    "source_return": 410.53,
+    "std_return": 149.84,
+    "delta_return": 260.69,
+    "source_method": "bayesian",
+    "wf_consistency": 62.5
+  },
+  "claude_trix_momentum": {
+    "params": {
+      "trix_period": 18,
+      "signal_period": 5,
+      "atr_stop_mul": 3.0
+    },
+    "promoted_at": "2026-03-23T10:55:30.946025",
+    "source_sharpe": 1.96,
+    "source_return": 217.22,
+    "std_return": 180.88,
+    "delta_return": 36.34,
+    "source_method": "bayesian",
+    "wf_consistency": 62.5
+  },
+  "claude_adaptive_ensemble_v2": {
+    "params": {
+      "rolling_window": 50,
+      "min_weight": 0.13,
+      "buy_threshold": 0.2,
+      "sell_threshold": 0.35,
+      "atr_stop_mul": 2.0
+    },
+    "promoted_at": "2026-03-23T10:55:31.054788",
+    "source_sharpe": 2.25,
+    "source_return": 383.26,
+    "std_return": 35.4,
+    "delta_return": 347.86,
+    "source_method": "bayesian",
+    "wf_consistency": 67.5
+  }
+}

@@ -1,0 +1,586 @@
+{
+  "intervals": {
+    "1d": {
+      "symbol": "RIVN",
+      "market": "US",
+      "period": "1y",
+      "interval": "1d",
+      "data_len": 251,
+      "data_start": "2025-03-24T00:00:00",
+      "data_end": "2026-03-23T00:00:00",
+      "dynamic_position": false,
+      "method": "bayesian",
+      "optimized_at": "2026-03-24T21:44:24.088318",
+      "total_combos_tested": 3200,
+      "elapsed_seconds": 15.1,
+      "strategies": {
+        "claude_dual_ma_cross": {
+          "params": {
+            "fast_period": 15,
+            "slow_period": 21,
+            "ma_type": "sma",
+            "atr_stop_mul": 1.5
+          },
+          "optimized_keys": [
+            "fast_period",
+            "slow_period",
+            "ma_type",
+            "atr_stop_mul"
+          ],
+          "sharpe": 0.92,
+          "total_return": 35.14,
+          "max_drawdown": -28.53,
+          "win_rate": 57.14,
+          "total_trades": 7,
+          "combos_tested": 200,
+          "method": "bayesian"
+        },
+        "claude_trix_momentum": {
+          "params": {
+            "trix_period": 13,
+            "signal_period": 7,
+            "atr_stop_mul": 3.5
+          },
+          "optimized_keys": [
+            "trix_period",
+            "signal_period",
+            "atr_stop_mul"
+          ],
+          "sharpe": 1.17,
+          "total_return": 60.12,
+          "max_drawdown": -20.69,
+          "win_rate": 71.43,
+          "total_trades": 7,
+          "combos_tested": 200,
+          "method": "bayesian"
+        },
+        "claude_ross_hook": {
+          "params": {
+            "fractal_n": 3,
+            "ema_period": 30,
+            "atr_stop_mul": 3.5
+          },
+          "optimized_keys": [
+            "fractal_n",
+            "ema_period",
+            "atr_stop_mul"
+          ],
+          "sharpe": 0.58,
+          "total_return": 13.21,
+          "max_drawdown": -24.18,
+          "win_rate": 33.33,
+          "total_trades": 3,
+          "combos_tested": 200,
+          "method": "bayesian"
+        },
+        "claude_dual_thrust": {
+          "params": {
+            "lookback": 6,
+            "k1": 0.5,
+            "k2": 0.3,
+            "atr_stop_mul": 2.5
+          },
+          "optimized_keys": [
+            "lookback",
+            "k1",
+            "k2",
+            "atr_stop_mul"
+          ],
+          "sharpe": 0.86,
+          "total_return": 24.1,
+          "max_drawdown": -17.84,
+          "win_rate": 83.33,
+          "total_trades": 6,
+          "combos_tested": 200,
+          "method": "bayesian"
+        },
+        "claude_aroon_oscillator": {
+          "params": {
+            "aroon_period": 15,
+            "buy_threshold": 70,
+            "sell_threshold": -30,
+            "atr_stop_mul": 3.5
+          },
+          "optimized_keys": [
+            "aroon_period",
+            "buy_threshold",
+            "sell_threshold",
+            "atr_stop_mul"
+          ],
+          "sharpe": 1.29,
+          "total_return": 52.34,
+          "max_drawdown": -17.93,
+          "win_rate": 100.0,
+          "total_trades": 4,
+          "combos_tested": 200,
+          "method": "bayesian"
+        },
+        "claude_momentum_breakout": {
+          "params": {
+            "breakout_period": 24,
+            "exit_period": 12,
+            "vol_ma": 20,
+            "vol_ratio_min": 1.8,
+            "atr_stop_mul": 3.5
+          },
+          "optimized_keys": [
+            "breakout_period",
+            "exit_period",
+            "vol_ratio_min",
+            "atr_stop_mul"
+          ],
+          "sharpe": 0.57,
+          "total_return": 12.6,
+          "max_drawdown": -21.35,
+          "win_rate": 100.0,
+          "total_trades": 1,
+          "combos_tested": 200,
+          "method": "bayesian"
+        },
+        "claude_ma_ribbon": {
+          "params": {
+            "ema_1": 5,
+            "ema_2": 10,
+            "ema_3": 18,
+            "ema_4": 40,
+            "ema_5": 65,
+            "atr_stop_mul": 3.5
+          },
+          "optimized_keys": [
+            "ema_1",
+            "ema_2",
+            "ema_3",
+            "ema_4",
+            "ema_5",
+            "atr_stop_mul"
+          ],
+          "sharpe": 0.96,
+          "total_return": 22.42,
+          "max_drawdown": -17.85,
+          "win_rate": 100.0,
+          "total_trades": 1,
+          "combos_tested": 200,
+          "method": "bayesian"
+        },
+        "claude_adaptive_ma": {
+          "params": {
+            "er_period": 16,
+            "fast_sc": 4,
+            "slow_sc": 15,
+            "atr_stop_mul": 4.0,
+            "threshold": 0.0048000000000000004
+          },
+          "optimized_keys": [
+            "er_period",
+            "fast_sc",
+            "slow_sc",
+            "threshold",
+            "atr_stop_mul"
+          ],
+          "sharpe": 0.61,
+          "total_return": 15.82,
+          "max_drawdown": -22.1,
+          "win_rate": 66.67,
+          "total_trades": 3,
+          "combos_tested": 200,
+          "method": "bayesian"
+        },
+        "claude_supertrend": {
+          "params": {
+            "st_period": 20,
+            "st_multiplier": 1.5,
+            "vol_ma": 20,
+            "atr_stop_mul": 1.0
+          },
+          "optimized_keys": [
+            "st_period",
+            "st_multiplier",
+            "atr_stop_mul"
+          ],
+          "sharpe": 0.27,
+          "total_return": 3.14,
+          "max_drawdown": -24.33,
+          "win_rate": 50.0,
+          "total_trades": 8,
+          "combos_tested": 200,
+          "method": "bayesian"
+        },
+        "claude_momentum_reversion_hybrid": {
+          "params": {
+            "adx_period": 18,
+            "adx_threshold": 35,
+            "ema_fast": 12,
+            "ema_slow": 65,
+            "rsi_period": 14,
+            "rsi_oversold": 40,
+            "rsi_overbought": 80,
+            "bb_period": 15,
+            "bb_std": 1.5,
+            "atr_stop_mul": 2.0
+          },
+          "optimized_keys": [
+            "adx_period",
+            "adx_threshold",
+            "ema_fast",
+            "ema_slow",
+            "rsi_oversold",
+            "rsi_overbought",
+            "bb_period",
+            "bb_std",
+            "atr_stop_mul"
+          ],
+          "sharpe": 1.46,
+          "total_return": 51.69,
+          "max_drawdown": -14.83,
+          "win_rate": 83.33,
+          "total_trades": 6,
+          "combos_tested": 200,
+          "method": "bayesian"
+        },
+        "claude_chandelier_exit": {
+          "params": {
+            "lookback": 15,
+            "atr_mult": 2.5,
+            "atr_period": 21,
+            "atr_stop_mul": 2.0
+          },
+          "optimized_keys": [
+            "lookback",
+            "atr_mult",
+            "atr_period",
+            "atr_stop_mul"
+          ],
+          "sharpe": 0.88,
+          "total_return": 28.27,
+          "max_drawdown": -22.58,
+          "win_rate": 50.0,
+          "total_trades": 6,
+          "combos_tested": 200,
+          "method": "bayesian"
+        },
+        "claude_atr_channel_trend": {
+          "params": {
+            "ema_period": 30,
+            "atr_period": 14,
+            "atr_mult": 2.0,
+            "atr_stop_mul": 4.0
+          },
+          "optimized_keys": [
+            "ema_period",
+            "atr_period",
+            "atr_mult",
+            "atr_stop_mul"
+          ],
+          "sharpe": -0.03,
+          "total_return": -10.69,
+          "max_drawdown": -38.91,
+          "win_rate": 50.0,
+          "total_trades": 2,
+          "combos_tested": 200,
+          "method": "bayesian"
+        },
+        "claude_vol_adj_momentum": {
+          "params": {
+            "mom_period": 30,
+            "vol_period": 10,
+            "signal_ema": 7,
+            "buy_threshold": 0.1,
+            "sell_threshold": 0.5,
+            "ema_period": 65,
+            "atr_stop_mul": 1.0
+          },
+          "optimized_keys": [
+            "mom_period",
+            "vol_period",
+            "signal_ema",
+            "buy_threshold",
+            "sell_threshold",
+            "ema_period",
+            "atr_stop_mul"
+          ],
+          "sharpe": 2.14,
+          "total_return": 55.64,
+          "max_drawdown": -8.66,
+          "win_rate": 100.0,
+          "total_trades": 2,
+          "combos_tested": 200,
+          "method": "bayesian"
+        },
+        "claude_fft_cycle_trend": {
+          "params": {
+            "fft_window": 30,
+            "min_period": 4,
+            "max_period": 10,
+            "ema_period": 55,
+            "buy_threshold": 0.09999999999999998,
+            "sell_threshold": 0.2,
+            "atr_stop_mul": 1.5
+          },
+          "optimized_keys": [
+            "fft_window",
+            "min_period",
+            "max_period",
+            "ema_period",
+            "buy_threshold",
+            "sell_threshold",
+            "atr_stop_mul"
+          ],
+          "sharpe": 2.44,
+          "total_return": 61.45,
+          "max_drawdown": -5.83,
+          "win_rate": 80.0,
+          "total_trades": 5,
+          "combos_tested": 200,
+          "method": "bayesian"
+        },
+        "claude_linreg_trend": {
+          "params": {
+            "linreg_period": 15,
+            "slope_min": 0.01,
+            "r2_min": 0.6000000000000001,
+            "band_std": 1.0,
+            "ema_period": 75,
+            "rsi_period": 14,
+            "rsi_max": 85,
+            "atr_stop_mul": 4.0
+          },
+          "optimized_keys": [
+            "linreg_period",
+            "slope_min",
+            "r2_min",
+            "band_std",
+            "ema_period",
+            "rsi_max",
+            "atr_stop_mul"
+          ],
+          "sharpe": 0.55,
+          "total_return": 7.38,
+          "max_drawdown": -12.98,
+          "win_rate": 100.0,
+          "total_trades": 1,
+          "combos_tested": 200,
+          "method": "bayesian"
+        },
+        "claude_adaptive_ensemble_v2": {
+          "params": {
+            "rolling_window": 30,
+            "min_weight": 0.03,
+            "buy_threshold": 0.6,
+            "sell_threshold": 0.45,
+            "atr_stop_mul": 4.0
+          },
+          "optimized_keys": [
+            "rolling_window",
+            "min_weight",
+            "buy_threshold",
+            "sell_threshold",
+            "atr_stop_mul"
+          ],
+          "sharpe": 0.9,
+          "total_return": 26.17,
+          "max_drawdown": -21.35,
+          "win_rate": 100.0,
+          "total_trades": 3,
+          "combos_tested": 200,
+          "method": "bayesian"
+        }
+      },
+      "wf_validation": {
+        "best": {
+          "claude_dual_ma_cross": {
+            "verdict": "overfit",
+            "consistency": 0.0,
+            "avg_test_sharpe": 0.0,
+            "avg_test_return": 0.0,
+            "avg_test_max_dd": 0.0,
+            "num_windows": 2,
+            "promoted": false,
+            "window_mode": "anchored_micro",
+            "reliability": "low",
+            "note": "历史仅251条，WF改为anchored_micro模式，训练209天 / 测试21天 / 2个窗口；样本偏短，结果只用于排除明显过拟合，不建议直接升级标准参数"
+          },
+          "claude_ross_hook": {
+            "verdict": "overfit",
+            "consistency": 0.0,
+            "avg_test_sharpe": 0.0,
+            "avg_test_return": 0.0,
+            "avg_test_max_dd": 0.0,
+            "num_windows": 2,
+            "promoted": false,
+            "window_mode": "anchored_micro",
+            "reliability": "low",
+            "note": "历史仅251条，WF改为anchored_micro模式，训练209天 / 测试21天 / 2个窗口；样本偏短，结果只用于排除明显过拟合，不建议直接升级标准参数"
+          },
+          "claude_trix_momentum": {
+            "verdict": "fair",
+            "consistency": 50.0,
+            "avg_test_sharpe": -1.67,
+            "avg_test_return": -2.76,
+            "avg_test_max_dd": -10.58,
+            "num_windows": 2,
+            "promoted": false,
+            "window_mode": "anchored_micro",
+            "reliability": "low",
+            "note": "历史仅251条，WF改为anchored_micro模式，训练209天 / 测试21天 / 2个窗口；样本偏短，结果只用于排除明显过拟合，不建议直接升级标准参数"
+          },
+          "claude_dual_thrust": {
+            "verdict": "fair",
+            "consistency": 50.0,
+            "avg_test_sharpe": -2.17,
+            "avg_test_return": -0.2,
+            "avg_test_max_dd": -4.36,
+            "num_windows": 2,
+            "promoted": false,
+            "window_mode": "anchored_micro",
+            "reliability": "low",
+            "note": "历史仅251条，WF改为anchored_micro模式，训练209天 / 测试21天 / 2个窗口；样本偏短，结果只用于排除明显过拟合，不建议直接升级标准参数"
+          },
+          "claude_momentum_breakout": {
+            "verdict": "overfit",
+            "consistency": 0.0,
+            "avg_test_sharpe": 0.0,
+            "avg_test_return": 0.0,
+            "avg_test_max_dd": 0.0,
+            "num_windows": 2,
+            "promoted": false,
+            "window_mode": "anchored_micro",
+            "reliability": "low",
+            "note": "历史仅251条，WF改为anchored_micro模式，训练209天 / 测试21天 / 2个窗口；样本偏短，结果只用于排除明显过拟合，不建议直接升级标准参数"
+          },
+          "claude_aroon_oscillator": {
+            "verdict": "overfit",
+            "consistency": 0.0,
+            "avg_test_sharpe": 0.0,
+            "avg_test_return": 0.0,
+            "avg_test_max_dd": 0.0,
+            "num_windows": 2,
+            "promoted": false,
+            "window_mode": "anchored_micro",
+            "reliability": "low",
+            "note": "历史仅251条，WF改为anchored_micro模式，训练209天 / 测试21天 / 2个窗口；样本偏短，结果只用于排除明显过拟合，不建议直接升级标准参数"
+          },
+          "claude_ma_ribbon": {
+            "verdict": "overfit",
+            "consistency": 0.0,
+            "avg_test_sharpe": 0.0,
+            "avg_test_return": 0.0,
+            "avg_test_max_dd": 0.0,
+            "num_windows": 2,
+            "promoted": false,
+            "window_mode": "anchored_micro",
+            "reliability": "low",
+            "note": "历史仅251条，WF改为anchored_micro模式，训练209天 / 测试21天 / 2个窗口；样本偏短，结果只用于排除明显过拟合，不建议直接升级标准参数"
+          },
+          "claude_adaptive_ma": {
+            "verdict": "overfit",
+            "consistency": 0.0,
+            "avg_test_sharpe": 0.0,
+            "avg_test_return": 0.0,
+            "avg_test_max_dd": 0.0,
+            "num_windows": 2,
+            "promoted": false,
+            "window_mode": "anchored_micro",
+            "reliability": "low",
+            "note": "历史仅251条，WF改为anchored_micro模式，训练209天 / 测试21天 / 2个窗口；样本偏短，结果只用于排除明显过拟合，不建议直接升级标准参数"
+          },
+          "claude_chandelier_exit": {
+            "verdict": "overfit",
+            "consistency": 0.0,
+            "avg_test_sharpe": 0.0,
+            "avg_test_return": 0.0,
+            "avg_test_max_dd": 0.0,
+            "num_windows": 2,
+            "promoted": false,
+            "window_mode": "anchored_micro",
+            "reliability": "low",
+            "note": "历史仅251条，WF改为anchored_micro模式，训练209天 / 测试21天 / 2个窗口；样本偏短，结果只用于排除明显过拟合，不建议直接升级标准参数"
+          },
+          "claude_momentum_reversion_hybrid": {
+            "verdict": "overfit",
+            "consistency": 0.0,
+            "avg_test_sharpe": 0.0,
+            "avg_test_return": 0.0,
+            "avg_test_max_dd": 0.0,
+            "num_windows": 2,
+            "promoted": false,
+            "window_mode": "anchored_micro",
+            "reliability": "low",
+            "note": "历史仅251条，WF改为anchored_micro模式，训练209天 / 测试21天 / 2个窗口；样本偏短，结果只用于排除明显过拟合，不建议直接升级标准参数"
+          },
+          "claude_supertrend": {
+            "verdict": "overfit",
+            "consistency": 0.0,
+            "avg_test_sharpe": 0.0,
+            "avg_test_return": 0.0,
+            "avg_test_max_dd": 0.0,
+            "num_windows": 2,
+            "promoted": false,
+            "window_mode": "anchored_micro",
+            "reliability": "low",
+            "note": "历史仅251条，WF改为anchored_micro模式，训练209天 / 测试21天 / 2个窗口；样本偏短，结果只用于排除明显过拟合，不建议直接升级标准参数"
+          },
+          "claude_atr_channel_trend": {
+            "verdict": "overfit",
+            "consistency": 0.0,
+            "avg_test_sharpe": 0.0,
+            "avg_test_return": 0.0,
+            "avg_test_max_dd": 0.0,
+            "num_windows": 2,
+            "promoted": false,
+            "window_mode": "anchored_micro",
+            "reliability": "low",
+            "note": "历史仅251条，WF改为anchored_micro模式，训练209天 / 测试21天 / 2个窗口；样本偏短，结果只用于排除明显过拟合，不建议直接升级标准参数"
+          },
+          "claude_vol_adj_momentum": {
+            "verdict": "overfit",
+            "consistency": 0.0,
+            "avg_test_sharpe": 0.0,
+            "avg_test_return": 0.0,
+            "avg_test_max_dd": 0.0,
+            "num_windows": 2,
+            "promoted": false,
+            "window_mode": "anchored_micro",
+            "reliability": "low",
+            "note": "历史仅251条，WF改为anchored_micro模式，训练209天 / 测试21天 / 2个窗口；样本偏短，结果只用于排除明显过拟合，不建议直接升级标准参数"
+          },
+          "claude_fft_cycle_trend": {
+            "verdict": "overfit",
+            "consistency": 0.0,
+            "avg_test_sharpe": 0.0,
+            "avg_test_return": 0.0,
+            "avg_test_max_dd": 0.0,
+            "num_windows": 2,
+            "promoted": false,
+            "window_mode": "anchored_micro",
+            "reliability": "low",
+            "note": "历史仅251条，WF改为anchored_micro模式，训练209天 / 测试21天 / 2个窗口；样本偏短，结果只用于排除明显过拟合，不建议直接升级标准参数"
+          },
+          "claude_linreg_trend": {
+            "verdict": "overfit",
+            "consistency": 0.0,
+            "avg_test_sharpe": 0.0,
+            "avg_test_return": 0.0,
+            "avg_test_max_dd": 0.0,
+            "num_windows": 2,
+            "promoted": false,
+            "window_mode": "anchored_micro",
+            "reliability": "low",
+            "note": "历史仅251条，WF改为anchored_micro模式，训练209天 / 测试21天 / 2个窗口；样本偏短，结果只用于排除明显过拟合，不建议直接升级标准参数"
+          },
+          "claude_adaptive_ensemble_v2": {
+            "verdict": "overfit",
+            "consistency": 0.0,
+            "avg_test_sharpe": 0.0,
+            "avg_test_return": 0.0,
+            "avg_test_max_dd": 0.0,
+            "num_windows": 2,
+            "promoted": false,
+            "window_mode": "anchored_micro",
+            "reliability": "low",
+            "note": "历史仅251条，WF改为anchored_micro模式，训练209天 / 测试21天 / 2个窗口；样本偏短，结果只用于排除明显过拟合，不建议直接升级标准参数"
+          }
+        }
+      }
+    }
+  }
+}

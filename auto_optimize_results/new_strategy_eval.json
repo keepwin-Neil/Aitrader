@@ -1,0 +1,185 @@
+{
+  "ranked": [
+    [
+      "ensemble_voting",
+      {
+        "trimmed_mean": 8.771,
+        "avg": 8.9155,
+        "pos_count": 97,
+        "total": 97
+      }
+    ],
+    [
+      "heikin_ashi",
+      {
+        "trimmed_mean": 8.5663,
+        "avg": 8.6567,
+        "pos_count": 97,
+        "total": 97
+      }
+    ],
+    [
+      "dual_ma_cross",
+      {
+        "trimmed_mean": 8.1914,
+        "avg": 8.303,
+        "pos_count": 97,
+        "total": 97
+      }
+    ],
+    [
+      "multi_timeframe_trend",
+      {
+        "trimmed_mean": 8.1111,
+        "avg": 8.2802,
+        "pos_count": 97,
+        "total": 97
+      }
+    ],
+    [
+      "adaptive_regime",
+      {
+        "trimmed_mean": 7.9962,
+        "avg": 8.1718,
+        "pos_count": 97,
+        "total": 97
+      }
+    ],
+    [
+      "momentum_reversion_hybrid",
+      {
+        "trimmed_mean": 7.4112,
+        "avg": 7.6371,
+        "pos_count": 97,
+        "total": 97
+      }
+    ],
+    [
+      "mean_reversion",
+      {
+        "trimmed_mean": 7.3976,
+        "avg": 7.5779,
+        "pos_count": 97,
+        "total": 97
+      }
+    ],
+    [
+      "trend_hold",
+      {
+        "trimmed_mean": 7.392,
+        "avg": 7.4846,
+        "pos_count": 97,
+        "total": 97
+      }
+    ],
+    [
+      "supertrend",
+      {
+        "trimmed_mean": 7.3547,
+        "avg": 7.45,
+        "pos_count": 97,
+        "total": 97
+      }
+    ],
+    [
+      "breakout_trailing",
+      {
+        "trimmed_mean": 7.3011,
+        "avg": 7.4281,
+        "pos_count": 97,
+        "total": 97
+      }
+    ],
+    [
+      "divergence_combo",
+      {
+        "trimmed_mean": 6.9777,
+        "avg": 7.0891,
+        "pos_count": 97,
+        "total": 97
+      }
+    ],
+    [
+      "momentum_breakout",
+      {
+        "trimmed_mean": 6.6983,
+        "avg": 6.8125,
+        "pos_count": 97,
+        "total": 97
+      }
+    ],
+    [
+      "turtle_trading",
+      {
+        "trimmed_mean": 6.5915,
+        "avg": 6.7089,
+        "pos_count": 97,
+        "total": 97
+      }
+    ],
+    [
+      "adaptive_ma",
+      {
+        "trimmed_mean": 6.4408,
+        "avg": 6.5564,
+        "pos_count": 97,
+        "total": 97
+      }
+    ],
+    [
+      "obv_momentum",
+      {
+        "trimmed_mean": 6.3925,
+        "avg": 6.4841,
+        "pos_count": 97,
+        "total": 97
+      }
+    ],
+    [
+      "parabolic_sar",
+      {
+        "trimmed_mean": 5.7896,
+        "avg": 5.9778,
+        "pos_count": 97,
+        "total": 97
+      }
+    ],
+    [
+      "donchian_breakout",
+      {
+        "trimmed_mean": 5.6894,
+        "avg": 5.8469,
+        "pos_count": 97,
+        "total": 97
+      }
+    ],
+    [
+      "keltner_breakout",
+      {
+        "trimmed_mean": 5.1417,
+        "avg": 5.2839,
+        "pos_count": 97,
+        "total": 97
+      }
+    ],
+    [
+      "zscore_reversion",
+      {
+        "trimmed_mean": 2.3798,
+        "avg": 2.4795,
+        "pos_count": 94,
+        "total": 97
+      }
+    ],
+    [
+      "williams_r_adx",
+      {
+        "trimmed_mean": 1.8487,
+        "avg": 2.0207,
+        "pos_count": 96,
+        "total": 97
+      }
+    ]
+  ],
+  "timestamp": "2026-03-18 15:10:28"
+}

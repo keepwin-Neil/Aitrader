@@ -1,0 +1,99 @@
+{
+  "intervals": {
+    "1d": {
+      "symbol": "UPST",
+      "market": "US",
+      "period": "1y",
+      "interval": "1d",
+      "dynamic_position": false,
+      "method": "bayesian",
+      "optimized_at": "2026-09-10T08:14:06.954935",
+      "total_combos_tested": 100,
+      "elapsed_seconds": 7.9,
+      "strategies": {
+        "claude_rsi_divergence": {
+          "params": {
+            "rsi_period": 10,
+            "lookback": 16,
+            "ema_period": 50,
+            "rsi_buy_zone": 40,
+            "rsi_sell_zone": 60,
+            "atr_stop_mul": 3.5
+          },
+          "optimized_keys": [
+            "rsi_period",
+            "lookback",
+            "ema_period",
+            "rsi_buy_zone",
+            "rsi_sell_zone",
+            "atr_stop_mul"
+          ],
+          "combos_tested": 100,
+          "method": "buy_and_sell",
+          "signal_type": "buy_and_sell",
+          "capital": 100000,
+          "final_equity": 141337.99,
+          "total_return": 41.34,
+          "bh_return": -28.21,
+          "max_drawdown": -10.97,
+          "sharpe": 1.84,
+          "win_rate": 100.0,
+          "profit_factor": 0,
+          "total_trades": 1,
+          "win_trades": 1,
+          "lose_trades": 0,
+          "avg_win": 41337.99,
+          "avg_loss": 0,
+          "buy_params": {
+            "rsi_period": 18,
+            "lookback": 10,
+            "ema_period": 40,
+            "rsi_buy_zone": 30,
+            "rsi_sell_zone": 60,
+            "atr_stop_mul": 3.0
+          },
+          "sell_params": {
+            "rsi_period": 10,
+            "lookback": 16,
+            "ema_period": 50,
+            "rsi_buy_zone": 40,
+            "rsi_sell_zone": 60,
+            "atr_stop_mul": 3.5
+          },
+          "buy_metrics": {
+            "total_buy_points": 1,
+            "success_rate": 100.0,
+            "avg_mfe": 41.96,
+            "avg_mae": -3.74,
+            "avg_r_ratio": 11.22,
+            "best_window": 20
+          },
+          "sell_metrics": {
+            "total_sell_points": 1,
+            "success_rate": 100.0,
+            "avg_mfe": 25.78,
+            "avg_mae": 2.76,
+            "avg_r_ratio": 9.34,
+            "best_window": 20
+          }
+        }
+      },
+      "wf_validation": {
+        "best": {
+          "claude_rsi_divergence": {
+            "verdict": "overfit",
+            "consistency": 0.0,
+            "avg_test_sharpe": 0.0,
+            "avg_test_return": 0.0,
+            "avg_test_max_dd": 0.0,
+            "num_windows": 2,
+            "promoted": false,
+            "window_mode": "anchored_micro",
+            "reliability": "low",
+            "note": "历史仅252条，WF改为anchored_micro模式，训练210天 / 测试21天 / 2个窗口；样本偏短，结果只用于排除明显过拟合，不建议直接升级标准参数"
+          }
+        }
+      }
+    }
+  }
+}

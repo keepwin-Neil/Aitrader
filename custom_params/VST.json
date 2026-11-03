@@ -1,0 +1,20 @@
+{
+  "claude_fft_cycle_trend": {
+    "params": {
+      "fft_window": 40,
+      "min_period": 8,
+      "max_period": 14,
+      "ema_period": 35,
+      "buy_threshold": -0.6000000000000001,
+      "sell_threshold": 0.9000000000000001,
+      "atr_stop_mul": 4.5
+    },
+    "promoted_at": "2026-03-22T21:02:17.216209",
+    "source_sharpe": 2.39,
+    "source_return": 263.03,
+    "std_return": 39.79,
+    "delta_return": 223.24,
+    "source_method": "bayesian",
+    "wf_consistency": 58.3
+  }
+}

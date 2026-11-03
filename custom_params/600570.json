@@ -1,0 +1,76 @@
+{
+  "claude_dual_ma_cross": {
+    "params": {
+      "fast_period": 9,
+      "slow_period": 18,
+      "ma_type": "sma",
+      "atr_stop_mul": 3.0
+    },
+    "promoted_at": "2026-03-22T16:51:40.797070",
+    "source_sharpe": 1.68,
+    "source_return": 165.91,
+    "std_return": 109.47,
+    "delta_return": 56.44,
+    "source_method": "bayesian",
+    "wf_consistency": 56.8
+  },
+  "claude_volatility_breakout": {
+    "params": {
+      "k_factor": 0.4,
+      "ema_period": 30,
+      "min_range": 0.5,
+      "atr_stop_mul": 3.5
+    },
+    "promoted_at": "2026-03-22T16:51:40.828314",
+    "source_sharpe": 1.36,
+    "source_return": 111.05,
+    "std_return": 48.53,
+    "delta_return": 62.52,
+    "source_method": "bayesian",
+    "wf_consistency": 56.8
+  },
+  "claude_elder_force": {
+    "params": {
+      "short_period": 2,
+      "long_period": 14,
+      "ema_period": 30,
+      "atr_stop_mul": 2.5
+    },
+    "promoted_at": "2026-03-22T16:51:40.858574",
+    "source_sharpe": 1.5,
+    "source_return": 124.81,
+    "std_return": 73.69,
+    "delta_return": 51.12,
+    "source_method": "bayesian",
+    "wf_consistency": 59.5
+  },
+  "claude_trix_momentum": {
+    "params": {
+      "trix_period": 15,
+      "signal_period": 15,
+      "atr_stop_mul": 2.0
+    },
+    "promoted_at": "2026-03-22T16:51:40.888714",
+    "source_sharpe": 1.49,
+    "source_return": 118.73,
+    "std_return": 83.64,
+    "delta_return": 35.09,
+    "source_method": "bayesian",
+    "wf_consistency": 62.2
+  },
+  "claude_chandelier_exit": {
+    "params": {
+      "lookback": 25,
+      "atr_mult": 2.5,
+      "atr_period": 28,
+      "atr_stop_mul": 2.0
+    },
+    "promoted_at": "2026-03-22T16:51:40.919294",
+    "source_sharpe": 1.49,
+    "source_return": 89.75,
+    "std_return": 32.0,
+    "delta_return": 57.75,
+    "source_method": "bayesian",
+    "wf_consistency": 56.8
+  }
+}

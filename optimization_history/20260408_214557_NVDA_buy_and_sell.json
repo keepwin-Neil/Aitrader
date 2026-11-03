@@ -1,0 +1,58 @@
+{
+  "run_id": "20260408_214557",
+  "scope": "symbol",
+  "pool_name": null,
+  "symbol": "NVDA",
+  "symbols": [
+    "NVDA"
+  ],
+  "signal_type": "buy_and_sell",
+  "method": "bayesian",
+  "interval": "1d",
+  "n_trials": 50,
+  "total_combos": 100,
+  "elapsed_seconds": 4.0,
+  "summary": {
+    "total_strategies": 1,
+    "robust_count": 0,
+    "fair_count": 0,
+    "overfit_count": 1
+  },
+  "per_stock": {
+    "dual_thrust": {
+      "combos_tested": 100,
+      "method": "buy_and_sell",
+      "signal_type": "buy_and_sell",
+      "capital": 100000,
+      "final_equity": 132920.46,
+      "total_return": 32.92,
+      "bh_return": 60.59,
+      "max_drawdown": -6.63,
+      "sharpe": 1.98,
+      "win_rate": 50.0,
+      "profit_factor": 17.41,
+      "total_trades": 4,
+      "win_trades": 2,
+      "lose_trades": 2,
+      "avg_win": 17463.16,
+      "avg_loss": -1002.94,
+      "buy_metrics": {
+        "total_buy_points": 6,
+        "success_rate": 66.7,
+        "avg_mfe": 14.38,
+        "avg_mae": -3.38,
+        "avg_r_ratio": 18.57,
+        "best_window": 20
+      },
+      "sell_metrics": {
+        "total_sell_points": 21,
+        "success_rate": 4.8,
+        "avg_mfe": 5.7,
+        "avg_mae": 7.08,
+        "avg_r_ratio": 1.37,
+        "best_window": 20
+      }
+    }
+  },
+  "created_at": "2026-04-08 21:45:57"
+}

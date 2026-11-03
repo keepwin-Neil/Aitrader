@@ -1,0 +1,148 @@
+{
+  "updated_at": "2026-03-16T11:55:14.225219",
+  "updates": {
+    "multi_indicator": {
+      "old_params": {
+        "ema_fast": 10,
+        "ema_mid": 20,
+        "ema_slow": 60,
+        "macd_fast": 12,
+        "macd_slow": 26,
+        "macd_signal": 9,
+        "rsi_period": 14,
+        "rsi_buy_min": 45,
+        "rsi_buy_max": 70,
+        "rsi_sell": 78,
+        "bb_period": 20,
+        "bb_std": 2,
+        "vol_ma": 20,
+        "vol_ratio_min": 1.2,
+        "atr_stop_mul": 2.0
+      },
+      "new_params": {
+        "ema_fast": 12,
+        "ema_slow": 35,
+        "rsi_buy_min": 52,
+        "rsi_sell": 74,
+        "atr_stop_mul": 1.5
+      },
+      "delta_sharpe": 0.019
+    },
+    "momentum_breakout": {
+      "old_params": {
+        "breakout_period": 25,
+        "exit_period": 10,
+        "vol_ma": 20,
+        "vol_ratio_min": 0.8,
+        "atr_stop_mul": 2.5
+      },
+      "new_params": {
+        "breakout_period": 12,
+        "exit_period": 11,
+        "vol_ratio_min": 0.9,
+        "atr_stop_mul": 2.5
+      },
+      "delta_sharpe": 0.0414
+    },
+    "turtle_trading": {
+      "old_params": {
+        "entry_period": 30,
+        "exit_period": 10,
+        "atr_stop_mul": 1.5
+      },
+      "new_params": {
+        "entry_period": 13,
+        "exit_period": 13,
+        "atr_stop_mul": 2.5
+      },
+      "delta_sharpe": 0.065
+    },
+    "macd_divergence": {
+      "old_params": {
+        "macd_fast": 12,
+        "macd_slow": 26,
+        "macd_signal_w": 9,
+        "lookback": 30,
+        "rsi_period": 14,
+        "rsi_sell": 80,
+        "atr_stop_mul": 3.0
+      },
+      "new_params": {
+        "macd_fast": 10,
+        "macd_slow": 28,
+        "lookback": 18,
+        "rsi_sell": 75,
+        "atr_stop_mul": 2.5
+      },
+      "delta_sharpe": 0.0518
+    },
+    "ensemble_voting": {
+      "old_params": {
+        "atr_stop_mul": 2.0,
+        "mr_rsi_period": 14,
+        "mr_rsi_oversold": 30,
+        "mr_rsi_overbought": 65,
+        "mr_bb_period": 25,
+        "mr_bb_std": 2.0,
+        "dm_fast": 10,
+        "dm_slow": 25,
+        "rm_rsi_entry": 30,
+        "rm_rsi_exit": 80,
+        "rm_ema_trend": 40,
+        "vw_period": 15,
+        "vw_band_mul": 1.0,
+        "buy_threshold": 1,
+        "sell_threshold": 2
+      },
+      "new_params": {
+        "buy_threshold": 1,
+        "sell_threshold": 3,
+        "mr_rsi_oversold": 31,
+        "mr_rsi_overbought": 76,
+        "dm_fast": 8,
+        "dm_slow": 33
+      },
+      "delta_sharpe": 0.1789
+    },
+    "elder_triple_screen": {
+      "old_params": {
+        "weekly_ema_period": 13,
+        "force_period": 2,
+        "ema_short": 13,
+        "atr_stop_mul": 2.5
+      },
+      "new_params": {
+        "weekly_ema_period": 8,
+        "force_period": 3,
+        "ema_short": 19,
+        "atr_stop_mul": 3.0
+      },
+      "delta_sharpe": 0.1498
+    },
+    "divergence_combo": {
+      "old_params": {
+        "rsi_period": 14,
+        "macd_fast": 12,
+        "macd_slow": 26,
+        "macd_signal_w": 9,
+        "stoch_period": 14,
+        "pivot_n": 3,
+        "max_pivot_dist": 60,
+        "ema_period": 30,
+        "div_confirm": 1,
+        "rsi_zone_low": 50,
+        "rsi_zone_high": 50,
+        "atr_stop_mul": 2.0
+      },
+      "new_params": {
+        "pivot_n": 2,
+        "max_pivot_dist": 60,
+        "div_confirm": 1,
+        "rsi_zone_low": 42,
+        "rsi_zone_high": 61,
+        "atr_stop_mul": 3.0
+      },
+      "delta_sharpe": 0.0985
+    }
+  }
+}

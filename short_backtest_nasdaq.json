@@ -1,0 +1,173 @@
+{
+  "claude_multi_indicator": {
+    "long_return": -0.35,
+    "short_return": -24.62,
+    "long_sharpe": -0.046,
+    "short_sharpe": -0.503,
+    "long_trades": 759,
+    "short_trades": 1739,
+    "stocks": 100
+  },
+  "claude_dual_ma_cross": {
+    "long_return": 12.76,
+    "short_return": -11.34,
+    "long_sharpe": 0.296,
+    "short_sharpe": -0.195,
+    "long_trades": 1071,
+    "short_trades": 1243,
+    "stocks": 100
+  },
+  "claude_momentum_breakout": {
+    "long_return": 7.31,
+    "short_return": -17.74,
+    "long_sharpe": 0.202,
+    "short_sharpe": -0.263,
+    "long_trades": 705,
+    "short_trades": 1390,
+    "stocks": 100
+  },
+  "claude_mean_reversion": {
+    "long_return": 17.33,
+    "short_return": -2.45,
+    "long_sharpe": 0.424,
+    "short_sharpe": -0.009,
+    "long_trades": 762,
+    "short_trades": 1932,
+    "stocks": 100
+  },
+  "claude_turtle_trading": {
+    "long_return": 5.43,
+    "short_return": -16.01,
+    "long_sharpe": 0.125,
+    "short_sharpe": -0.253,
+    "long_trades": 745,
+    "short_trades": 1574,
+    "stocks": 100
+  },
+  "claude_vwap_breakout": {
+    "long_return": 2.57,
+    "short_return": -21.43,
+    "long_sharpe": 0.064,
+    "short_sharpe": -0.433,
+    "long_trades": 784,
+    "short_trades": 1475,
+    "stocks": 100
+  },
+  "claude_adaptive_ma": {
+    "long_return": 5.28,
+    "short_return": -18.64,
+    "long_sharpe": 0.155,
+    "short_sharpe": -0.257,
+    "long_trades": 578,
+    "short_trades": 1261,
+    "stocks": 100
+  },
+  "claude_rsi_macd_trend": {
+    "long_return": 5.24,
+    "short_return": -17.38,
+    "long_sharpe": 0.097,
+    "short_sharpe": -0.337,
+    "long_trades": 851,
+    "short_trades": 1365,
+    "stocks": 100
+  },
+  "claude_ensemble_voting": {
+    "long_return": 9.26,
+    "short_return": -15.91,
+    "long_sharpe": 0.227,
+    "short_sharpe": -0.25,
+    "long_trades": 1877,
+    "short_trades": 3048,
+    "stocks": 100
+  },
+  "claude_ichimoku_cloud": {
+    "long_return": 3.09,
+    "short_return": -16.88,
+    "long_sharpe": 0.053,
+    "short_sharpe": -0.342,
+    "long_trades": 459,
+    "short_trades": 882,
+    "stocks": 100
+  },
+  "claude_volatility_breakout": {
+    "long_return": 7.02,
+    "short_return": -12.04,
+    "long_sharpe": 0.157,
+    "short_sharpe": -0.159,
+    "long_trades": 1655,
+    "short_trades": 2669,
+    "stocks": 100
+  },
+  "claude_supertrend": {
+    "long_return": 7.6,
+    "short_return": -10.04,
+    "long_sharpe": 0.197,
+    "short_sharpe": -0.153,
+    "long_trades": 605,
+    "short_trades": 890,
+    "stocks": 100
+  },
+  "claude_ross_hook": {
+    "long_return": 7.79,
+    "short_return": -16.66,
+    "long_sharpe": 0.142,
+    "short_sharpe": -0.302,
+    "long_trades": 847,
+    "short_trades": 1327,
+    "stocks": 100
+  },
+  "claude_divergence_combo": {
+    "long_return": 8.21,
+    "short_return": -5.49,
+    "long_sharpe": 0.325,
+    "short_sharpe": -0.052,
+    "long_trades": 461,
+    "short_trades": 959,
+    "stocks": 100
+  },
+  "claude_trend_hold": {
+    "long_return": 6.1,
+    "short_return": -0.46,
+    "long_sharpe": 0.188,
+    "short_sharpe": 0.086,
+    "long_trades": 300,
+    "short_trades": 581,
+    "stocks": 100
+  },
+  "claude_momentum_reversion_hybrid": {
+    "long_return": 6.77,
+    "short_return": -10.38,
+    "long_sharpe": 0.199,
+    "short_sharpe": -0.12,
+    "long_trades": 768,
+    "short_trades": 1573,
+    "stocks": 100
+  },
+  "claude_breakout_trailing": {
+    "long_return": 11.17,
+    "short_return": -8.55,
+    "long_sharpe": 0.269,
+    "short_sharpe": -0.086,
+    "long_trades": 608,
+    "short_trades": 1170,
+    "stocks": 100
+  },
+  "claude_multi_timeframe_trend": {
+    "long_return": 8.51,
+    "short_return": -7.38,
+    "long_sharpe": 0.194,
+    "short_sharpe": -0.067,
+    "long_trades": 653,
+    "short_trades": 1257,
+    "stocks": 100
+  },
+  "claude_adaptive_regime": {
+    "long_return": 13.69,
+    "short_return": -2.94,
+    "long_sharpe": 0.304,
+    "short_sharpe": 0.029,
+    "long_trades": 647,
+    "short_trades": 1287,
+    "stocks": 100
+  }
+}

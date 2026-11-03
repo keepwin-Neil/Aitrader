@@ -1,0 +1,156 @@
+{
+  "generated_at": "2026-03-18T01:01:05.744183",
+  "elapsed_minutes": 156.5,
+  "total_rounds": 3,
+  "convergence_curve": [
+    [
+      1,
+      5
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      3,
+      0
+    ]
+  ],
+  "total_upgrades": 5,
+  "final_params": {
+    "keltner_breakout": {
+      "kelt_period": 30,
+      "kelt_atr_mul": 1.5,
+      "atr_period": 10,
+      "ema_trend_period": 80,
+      "atr_filter_period": 15,
+      "stop_atr_mul": 3.0,
+      "trail_atr_mul": 2.0
+    },
+    "obv_momentum": {
+      "obv_ema_period": 40,
+      "ema_trend_period": 60,
+      "obv_slope_len": 10,
+      "rsi_period": 10,
+      "rsi_overbought": 80,
+      "rsi_oversold": 40,
+      "volume_ratio_min": 0.8
+    }
+  },
+  "final_baseline": {
+    "obv_momentum": {
+      "avg_score": 0.4111,
+      "avg_sharpe": 0.0493
+    },
+    "keltner_breakout": {
+      "avg_score": 0.4319,
+      "avg_sharpe": 0.0851
+    },
+    "zscore_reversion": {
+      "avg_score": 0.4416,
+      "avg_sharpe": 0.1894
+    }
+  },
+  "all_upgrade_log": [
+    {
+      "round": 1,
+      "stock": "AAPL",
+      "strategy": "keltner_breakout",
+      "old_score": 0.4105,
+      "new_score": 0.4163,
+      "delta": 0.0058,
+      "params": {
+        "kelt_period": 35,
+        "kelt_atr_mul": 2.5,
+        "atr_period": 18,
+        "ema_trend_period": 30,
+        "atr_filter_period": 30,
+        "stop_atr_mul": 3.5,
+        "trail_atr_mul": 2.5
+      },
+      "wf_consistency": 60.0,
+      "wf_overfit_ratio": 1.084,
+      "timestamp": "2026-03-17T22:26:25.934955"
+    },
+    {
+      "round": 1,
+      "stock": "GOOG",
+      "strategy": "obv_momentum",
+      "old_score": 0.3971,
+      "new_score": 0.4039,
+      "delta": 0.0068,
+      "params": {
+        "obv_ema_period": 35,
+        "ema_trend_period": 60,
+        "obv_slope_len": 10,
+        "rsi_period": 14,
+        "rsi_overbought": 70,
+        "rsi_oversold": 35,
+        "volume_ratio_min": 1.0
+      },
+      "wf_consistency": 80.0,
+      "wf_overfit_ratio": 2.038,
+      "timestamp": "2026-03-17T22:27:51.497732"
+    },
+    {
+      "round": 1,
+      "stock": "AMGN",
+      "strategy": "keltner_breakout",
+      "old_score": 0.4163,
+      "new_score": 0.4216,
+      "delta": 0.0053,
+      "params": {
+        "kelt_period": 20,
+        "kelt_atr_mul": 1.0,
+        "atr_period": 14,
+        "ema_trend_period": 30,
+        "atr_filter_period": 15,
+        "stop_atr_mul": 3.0,
+        "trail_atr_mul": 2.5
+      },
+      "wf_consistency": 80.0,
+      "wf_overfit_ratio": 0.987,
+      "timestamp": "2026-03-17T22:38:21.220228"
+    },
+    {
+      "round": 1,
+      "stock": "DASH",
+      "strategy": "keltner_breakout",
+      "old_score": 0.4216,
+      "new_score": 0.4319,
+      "delta": 0.0103,
+      "params": {
+        "kelt_period": 30,
+        "kelt_atr_mul": 1.5,
+        "atr_period": 10,
+        "ema_trend_period": 80,
+        "atr_filter_period": 15,
+        "stop_atr_mul": 3.0,
+        "trail_atr_mul": 2.0
+      },
+      "wf_consistency": 60.0,
+      "wf_overfit_ratio": 0.374,
+      "timestamp": "2026-03-17T22:57:59.937421"
+    },
+    {
+      "round": 1,
+      "stock": "AXON",
+      "strategy": "obv_momentum",
+      "old_score": 0.4039,
+      "new_score": 0.4111,
+      "delta": 0.0072,
+      "params": {
+        "obv_ema_period": 40,
+        "ema_trend_period": 60,
+        "obv_slope_len": 10,
+        "rsi_period": 10,
+        "rsi_overbought": 80,
+        "rsi_oversold": 40,
+        "volume_ratio_min": 0.8
+      },
+      "wf_consistency": 100.0,
+      "wf_overfit_ratio": 0.906,
+      "timestamp": "2026-03-17T23:08:31.394483"
+    }
+  ]
+}

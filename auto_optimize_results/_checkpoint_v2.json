@@ -1,0 +1,90 @@
+{
+  "current_params": {},
+  "current_round": 2,
+  "current_stock_idx": 49,
+  "round_upgrades": 0,
+  "round_log": [],
+  "baseline_snapshot": {
+    "aroon_oscillator": {
+      "avg_score": 0.4513,
+      "avg_sharpe": 0.2326
+    },
+    "dual_ma_cross": {
+      "avg_score": 0.4474,
+      "avg_sharpe": 0.2256
+    },
+    "chandelier_exit": {
+      "avg_score": 0.4262,
+      "avg_sharpe": 0.17
+    },
+    "adaptive_ma": {
+      "avg_score": 0.4192,
+      "avg_sharpe": 0.1219
+    },
+    "atr_channel_trend": {
+      "avg_score": 0.4575,
+      "avg_sharpe": 0.2418
+    },
+    "adaptive_regime": {
+      "avg_score": 0.4474,
+      "avg_sharpe": 0.1947
+    },
+    "momentum_breakout": {
+      "avg_score": 0.431,
+      "avg_sharpe": 0.161
+    },
+    "vol_weighted_mom": {
+      "avg_score": 0.4372,
+      "avg_sharpe": 0.1823
+    },
+    "breakout_trailing": {
+      "avg_score": 0.4474,
+      "avg_sharpe": 0.2144
+    },
+    "ma_ribbon": {
+      "avg_score": 0.4311,
+      "avg_sharpe": 0.1626
+    },
+    "elder_force": {
+      "avg_score": 0.433,
+      "avg_sharpe": 0.1807
+    },
+    "momentum_reversion_hybrid": {
+      "avg_score": 0.4418,
+      "avg_sharpe": 0.1808
+    },
+    "ross_hook": {
+      "avg_score": 0.4355,
+      "avg_sharpe": 0.1927
+    },
+    "ensemble_voting": {
+      "avg_score": 0.4348,
+      "avg_sharpe": 0.1764
+    },
+    "dual_thrust": {
+      "avg_score": 0.4098,
+      "avg_sharpe": 0.1173
+    },
+    "volatility_breakout": {
+      "avg_score": 0.4121,
+      "avg_sharpe": 0.16
+    },
+    "supertrend": {
+      "avg_score": 0.4349,
+      "avg_sharpe": 0.1986
+    },
+    "price_channel_vol": {
+      "avg_score": 0.4097,
+      "avg_sharpe": 0.0666
+    },
+    "trix_momentum": {
+      "avg_score": 0.4406,
+      "avg_sharpe": 0.2347
+    },
+    "multi_timeframe_trend": {
+      "avg_score": 0.4305,
+      "avg_sharpe": 0.1871
+    }
+  },
+  "timestamp": "2026-03-19T20:58:57.248043"
+}

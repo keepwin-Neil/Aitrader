@@ -1,0 +1,510 @@
+{
+  "intervals": {
+    "1d": {
+      "openai_atr_ratio_trend": {
+        "params": {
+          "ema_fast": 23,
+          "ema_slow": 28,
+          "atr_period": 20,
+          "atr_ma_period": 34,
+          "breakout_period": 12,
+          "atr_ratio_min": 0.625,
+          "atr_ratio_exit": 0.49,
+          "atr_stop_mul": 1.4
+        },
+        "promoted_at": "2026-03-26T17:53:55.443218",
+        "source_symbol": "META",
+        "interval": "1d",
+        "pool": "NASDAQ 100",
+        "period": "1y",
+        "candidate_avg_return": 17.61,
+        "baseline_avg_return": 8.46,
+        "delta_avg_return": 9.15,
+        "replaced_promoted_at": null
+      },
+      "openai_bandwidth_expansion": {
+        "params": {
+          "bb_period": 26,
+          "bb_std": 2.9000000000000004,
+          "bandwidth_min": 0.15000000000000002,
+          "bandwidth_exit": 0.1,
+          "ema_period": 23,
+          "breakout_period": 24,
+          "atr_stop_mul": 2.75
+        },
+        "promoted_at": "2026-03-26T17:55:11.910116",
+        "source_symbol": "MSFT",
+        "interval": "1d",
+        "pool": "NASDAQ 100",
+        "period": "1y",
+        "candidate_avg_return": 8.75,
+        "baseline_avg_return": 8.73,
+        "delta_avg_return": 0.02,
+        "replaced_promoted_at": null
+      },
+      "openai_hammer_trend_confirm": {
+        "params": {
+          "ema_period": 17,
+          "lower_shadow_min": 0.325,
+          "body_max": 0.375,
+          "atr_stop_mul": 2.35
+        },
+        "promoted_at": "2026-03-26T17:59:36.453471",
+        "source_symbol": "META",
+        "interval": "1d",
+        "pool": "NASDAQ 100",
+        "period": "1y",
+        "candidate_avg_return": 1.15,
+        "baseline_avg_return": -0.53,
+        "delta_avg_return": 1.68,
+        "replaced_promoted_at": "2026-03-26T17:59:30.133461"
+      },
+      "openai_intraday_intensity_breakout": {
+        "params": {
+          "ii_period": 11,
+          "ii_min": 0.02,
+          "ii_exit": -0.01999999999999999,
+          "breakout_period": 8,
+          "ema_period": 26,
+          "atr_stop_mul": 2.6500000000000004
+        },
+        "promoted_at": "2026-03-26T18:01:06.525172",
+        "source_symbol": "NVDA",
+        "interval": "1d",
+        "pool": "NASDAQ 100",
+        "period": "1y",
+        "candidate_avg_return": 4.66,
+        "baseline_avg_return": 3.48,
+        "delta_avg_return": 1.18,
+        "replaced_promoted_at": null
+      },
+      "openai_rsi_failure_swing": {
+        "params": {
+          "rsi_period": 15,
+          "oversold": 46,
+          "rebound": 23,
+          "exit_level": 32,
+          "ema_period": 17,
+          "atr_stop_mul": 1.85
+        },
+        "promoted_at": "2026-03-26T18:16:50.558060",
+        "source_symbol": "NVDA",
+        "interval": "1d",
+        "pool": "NASDAQ 100",
+        "period": "1y",
+        "candidate_avg_return": 9.53,
+        "baseline_avg_return": 0.37,
+        "delta_avg_return": 9.16,
+        "replaced_promoted_at": "2026-03-26T18:16:48.915462"
+      },
+      "openai_three_bar_strength": {
+        "params": {
+          "vol_period": 12,
+          "vol_ratio_min": 0.5750000000000001,
+          "ema_period": 17,
+          "atr_stop_mul": 1.7
+        },
+        "promoted_at": "2026-03-26T18:18:21.382776",
+        "source_symbol": "NVDA",
+        "interval": "1d",
+        "pool": "NASDAQ 100",
+        "period": "1y",
+        "candidate_avg_return": 6.6,
+        "baseline_avg_return": 0.97,
+        "delta_avg_return": 5.63,
+        "replaced_promoted_at": "2026-03-26T18:18:18.380262"
+      },
+      "openai_true_range_pop": {
+        "params": {
+          "tr_period": 11,
+          "tr_ratio_min": 0.75,
+          "tr_ratio_exit": 0.4,
+          "ema_period": 20,
+          "breakout_period": 11,
+          "atr_stop_mul": 4.05
+        },
+        "promoted_at": "2026-03-26T18:19:41.695845",
+        "source_symbol": "MSFT",
+        "interval": "1d",
+        "pool": "NASDAQ 100",
+        "period": "1y",
+        "candidate_avg_return": 13.18,
+        "baseline_avg_return": 12.18,
+        "delta_avg_return": 1.0,
+        "replaced_promoted_at": "2026-03-26T18:19:40.004262"
+      },
+      "gemini_adaptive_alpha": {
+        "params": {
+          "er_period": 10,
+          "fast_sc": 5,
+          "slow_sc": 42,
+          "atr_stop_mul": 1.75,
+          "threshold": -0.097
+        },
+        "promoted_at": "2026-03-26T18:26:30.845150",
+        "source_symbol": "AAPL",
+        "interval": "1d",
+        "pool": "NASDAQ 100",
+        "period": "1y",
+        "candidate_avg_return": 38.3,
+        "baseline_avg_return": 13.97,
+        "delta_avg_return": 24.33,
+        "replaced_promoted_at": null
+      },
+      "gemini_atr_volatility_stop": {
+        "params": {
+          "lookback": 21,
+          "atr_mult": 3.0,
+          "atr_period": 18,
+          "atr_stop_mul": 2.05
+        },
+        "promoted_at": "2026-03-26T19:07:55.256290",
+        "source_symbol": "MSFT",
+        "interval": "1d",
+        "pool": "NASDAQ 100",
+        "period": "1y",
+        "candidate_avg_return": 11.39,
+        "baseline_avg_return": 8.06,
+        "delta_avg_return": 3.33,
+        "replaced_promoted_at": null
+      },
+      "gemini_fractal_trend": {
+        "params": {
+          "window": 24,
+          "threshold": 0.2,
+          "atr_stop_mul": 2.45
+        },
+        "promoted_at": "2026-03-26T19:10:31.505980",
+        "source_symbol": "AMZN",
+        "interval": "1d",
+        "pool": "NASDAQ 100",
+        "period": "1y",
+        "candidate_avg_return": 11.9,
+        "baseline_avg_return": 8.89,
+        "delta_avg_return": 3.01,
+        "replaced_promoted_at": "2026-03-26T19:10:26.492759"
+      },
+      "gemini_heikin_ashi_balance": {
+        "params": {
+          "ema_period": 30,
+          "rsi_period": 16,
+          "rsi_min": 30,
+          "rsi_overbought": 96,
+          "consec_bull": 3,
+          "consec_bear": 3,
+          "atr_stop_mul": 2.85
+        },
+        "promoted_at": "2026-03-26T19:11:54.181656",
+        "source_symbol": "TSLA",
+        "interval": "1d",
+        "pool": "NASDAQ 100",
+        "period": "1y",
+        "candidate_avg_return": 12.41,
+        "baseline_avg_return": 8.52,
+        "delta_avg_return": 3.89,
+        "replaced_promoted_at": "2026-03-26T19:11:46.506240"
+      },
+      "gemini_klinger_volume": {
+        "params": {
+          "short_period": 4,
+          "long_period": 14,
+          "ema_period": 25,
+          "atr_stop_mul": 3.05
+        },
+        "promoted_at": "2026-03-26T19:13:34.041477",
+        "source_symbol": "META",
+        "interval": "1d",
+        "pool": "NASDAQ 100",
+        "period": "1y",
+        "candidate_avg_return": 14.27,
+        "baseline_avg_return": 14.12,
+        "delta_avg_return": 0.15,
+        "replaced_promoted_at": "2026-03-26T19:13:28.364427"
+      },
+      "gemini_supertrend_v2": {
+        "params": {
+          "st_period": 9,
+          "st_multiplier": 3.9000000000000004,
+          "vol_ma": 18,
+          "atr_stop_mul": 2.8
+        },
+        "promoted_at": "2026-03-26T19:18:05.269213",
+        "source_symbol": "NVDA",
+        "interval": "1d",
+        "pool": "NASDAQ 100",
+        "period": "1y",
+        "candidate_avg_return": 16.68,
+        "baseline_avg_return": 9.4,
+        "delta_avg_return": 7.28,
+        "replaced_promoted_at": null
+      },
+      "gemini_triple_screen_pulse": {
+        "params": {
+          "roc_period": 10,
+          "accel_period": 6,
+          "ema_period": 25,
+          "atr_stop_mul": 1.25
+        },
+        "promoted_at": "2026-03-26T19:20:09.211454",
+        "source_symbol": "NVDA",
+        "interval": "1d",
+        "pool": "NASDAQ 100",
+        "period": "1y",
+        "candidate_avg_return": 9.87,
+        "baseline_avg_return": 8.4,
+        "delta_avg_return": 1.47,
+        "replaced_promoted_at": null
+      },
+      "gemini_volume_price_div": {
+        "params": {
+          "vwm_period": 9,
+          "signal_period": 6,
+          "ema_period": 25,
+          "atr_stop_mul": 3.45
+        },
+        "promoted_at": "2026-03-26T19:21:41.250001",
+        "source_symbol": "MSFT",
+        "interval": "1d",
+        "pool": "NASDAQ 100",
+        "period": "1y",
+        "candidate_avg_return": 19.03,
+        "baseline_avg_return": 14.11,
+        "delta_avg_return": 4.92,
+        "replaced_promoted_at": "2026-03-26T19:21:39.569264"
+      },
+      "claude_acc_dist_trend": {
+        "params": {
+          "ad_ema_fast": 9,
+          "ad_ema_slow": 45,
+          "ema_period": 40,
+          "atr_stop_mul": 3.0
+        },
+        "promoted_at": "2026-09-09T20:21:09.764519",
+        "source_symbol": "TSLA",
+        "interval": "1d",
+        "pool": "NASDAQ 100",
+        "period": "1y",
+        "candidate_avg_return": 9.86,
+        "baseline_avg_return": 9.55,
+        "delta_avg_return": 0.31,
+        "replaced_promoted_at": null
+      },
+      "claude_adaptive_regime": {
+        "params": {
+          "adx_period": 18,
+          "adx_trend_threshold": 30,
+          "ema_long": 100,
+          "rsi_period": 14,
+          "rsi_oversold": 35,
+          "rsi_overbought": 60,
+          "bb_period": 25,
+          "bb_std": 2.0,
+          "bull_rsi_floor": 35,
+          "atr_stop_mul": 5.0
+        },
+        "promoted_at": "2026-09-10T07:39:37.551792",
+        "source_symbol": "NVDA",
+        "interval": "1d",
+        "pool": "NASDAQ 100",
+        "period": "1y",
+        "candidate_avg_return": 7.29,
+        "baseline_avg_return": 5.66,
+        "delta_avg_return": 1.63,
+        "replaced_promoted_at": null
+      },
+      "claude_combo_meanrev_plus": {
+        "params": {
+          "bb_period": 15,
+          "bb_std": 2.5,
+          "rsi_period": 20,
+          "stoch_period": 16,
+          "rsi_oversold": 25,
+          "rsi_overbought": 75,
+          "stoch_oversold": 15,
+          "adx_max": 25,
+          "atr_stop_mul": 3.5
+        },
+        "promoted_at": "2026-09-10T07:47:32.422578",
+        "source_symbol": "NVDA",
+        "interval": "1d",
+        "pool": "NASDAQ 100",
+        "period": "1y",
+        "candidate_avg_return": 7.64,
+        "baseline_avg_return": 5.98,
+        "delta_avg_return": 1.66,
+        "replaced_promoted_at": null
+      },
+      "claude_ensemble_voting": {
+        "params": {
+          "atr_stop_mul": 2.0,
+          "mr_rsi_period": 14,
+          "mr_rsi_oversold": 37,
+          "mr_rsi_overbought": 76,
+          "mr_bb_period": 25,
+          "mr_bb_std": 2.0,
+          "dm_fast": 11,
+          "dm_slow": 19,
+          "rm_rsi_entry": 30,
+          "rm_rsi_exit": 80,
+          "rm_ema_trend": 40,
+          "vw_period": 15,
+          "vw_band_mul": 1.0,
+          "buy_threshold": 1,
+          "sell_threshold": 3
+        },
+        "promoted_at": "2026-09-10T07:53:21.881242",
+        "source_symbol": "NVDA",
+        "interval": "1d",
+        "pool": "NASDAQ 100",
+        "period": "1y",
+        "candidate_avg_return": 15.06,
+        "baseline_avg_return": 8.64,
+        "delta_avg_return": 6.42,
+        "replaced_promoted_at": "2026-09-10T07:53:19.107215"
+      },
+      "claude_rsi_divergence": {
+        "params": {
+          "rsi_period": 18,
+          "lookback": 10,
+          "ema_period": 50,
+          "rsi_buy_zone": 45,
+          "rsi_sell_zone": 65,
+          "atr_stop_mul": 3.5
+        },
+        "promoted_at": "2026-09-10T08:13:12.942006",
+        "source_symbol": "AAPL",
+        "interval": "1d",
+        "pool": "NASDAQ 100",
+        "period": "1y",
+        "candidate_avg_return": 4.89,
+        "baseline_avg_return": 0.94,
+        "delta_avg_return": 3.95,
+        "replaced_promoted_at": null
+      },
+      "openai_percent_b_trend": {
+        "params": {
+          "bb_period": 30,
+          "bb_std": 2.1,
+          "buy_level": 0.47500000000000003,
+          "exit_level": 0.175,
+          "bandwidth_min": 0.1,
+          "atr_stop_mul": 2.75
+        },
+        "promoted_at": "2026-09-18T13:30:42.368808",
+        "source_symbol": "BE",
+        "interval": "1d",
+        "pool": "NASDAQ 100",
+        "period": "1y",
+        "candidate_avg_return": 13.03,
+        "baseline_avg_return": 7.47,
+        "delta_avg_return": 5.56,
+        "replaced_promoted_at": null
+      },
+      "claude_adaptive_ensemble_v2": {
+        "params": {
+          "rolling_window": 80,
+          "min_weight": 0.06999999999999999,
+          "buy_threshold": 0.2,
+          "sell_threshold": 0.65,
+          "atr_stop_mul": 3.0
+        },
+        "promoted_at": "2026-09-21T08:13:50.347685",
+        "source_symbol": "META",
+        "interval": "1d",
+        "pool": "NASDAQ 100",
+        "period": "1y",
+        "candidate_avg_return": 9.56,
+        "baseline_avg_return": 7.71,
+        "delta_avg_return": 1.85,
+        "replaced_promoted_at": "2026-09-18T15:18:40.416826"
+      },
+      "claude_hurst_exponent": {
+        "params": {
+          "hurst_window": 45,
+          "hurst_trend": 0.36750000000000005,
+          "hurst_mr": 0.365,
+          "ema_fast": 20,
+          "ema_slow": 56,
+          "bb_period": 30,
+          "bb_std": 2.015,
+          "rsi_period": 9,
+          "rsi_oversold": 39,
+          "rsi_overbought": 66,
+          "atr_stop_mul": 3.48
+        },
+        "promoted_at": "2026-09-18T13:53:28.825558",
+        "source_symbol": "AEHR",
+        "interval": "1d",
+        "pool": "NASDAQ 100",
+        "period": "1y",
+        "candidate_avg_return": 10.9,
+        "baseline_avg_return": 7.72,
+        "delta_avg_return": 3.18,
+        "replaced_promoted_at": null
+      },
+      "claude_fft_cycle_trend": {
+        "params": {
+          "fft_window": 40,
+          "min_period": 8,
+          "max_period": 10,
+          "ema_period": 45,
+          "buy_threshold": -0.19999999999999996,
+          "sell_threshold": 1.2,
+          "atr_stop_mul": 3.5
+        },
+        "promoted_at": "2026-09-18T14:39:24.775452",
+        "source_symbol": "MSFT",
+        "interval": "1d",
+        "pool": "NASDAQ 100",
+        "period": "1y",
+        "candidate_avg_return": 11.03,
+        "baseline_avg_return": 9.58,
+        "delta_avg_return": 1.45,
+        "replaced_promoted_at": null
+      },
+      "claude_entropy_momentum": {
+        "params": {
+          "entropy_window": 12,
+          "entropy_bins": 4,
+          "entropy_smooth": 3,
+          "entropy_low": 2.6750000000000003,
+          "entropy_high": 1.81,
+          "mom_period": 14,
+          "mom_exit": 8.745000000000001,
+          "ema_period": 21,
+          "rsi_period": 11,
+          "rsi_sell": 92,
+          "atr_stop_mul": 3.535
+        },
+        "promoted_at": "2026-09-21T12:41:42.059643",
+        "source_symbol": "RKLB",
+        "interval": "1d",
+        "pool": "NASDAQ 100",
+        "period": "1y",
+        "candidate_avg_return": 7.12,
+        "baseline_avg_return": 6.37,
+        "delta_avg_return": 0.75,
+        "replaced_promoted_at": "2026-09-21T08:24:48.318460"
+      }
+    },
+    "1h": {
+      "claude_dual_ma_cross": {
+        "params": {
+          "fast_period": 4,
+          "slow_period": 18,
+          "ma_type": "sma",
+          "atr_stop_mul": 0.5
+        },
+        "promoted_at": "2026-03-24T13:54:55.722826",
+        "source_symbol": "AUR",
+        "interval": "1h",
+        "pool": "NASDAQ 100",
+        "period": "60d",
+        "candidate_avg_return": -3.45,
+        "baseline_avg_return": -4.55,
+        "delta_avg_return": 1.1,
+        "replaced_promoted_at": null
+      }
+    }
+  }
+}

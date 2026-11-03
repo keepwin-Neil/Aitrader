@@ -1,0 +1,10 @@
+{
+  "chaikin_money_flow": {
+    "cmf_period": 30,
+    "ema_fast": 15,
+    "ema_slow": 30,
+    "cmf_buy_threshold": 0.15,
+    "cmf_sell_threshold": -0.039999999999999994,
+    "atr_stop_mul": 3.5
+  }
+}

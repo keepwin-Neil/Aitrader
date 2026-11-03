@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<title>AITrader Ops · 系统健康</title>
+<style>
+  :root { --bg:#0d1117; --card:#161b22; --border:#30363d; --text:#c9d1d9; --muted:#8b949e;
+          --green:#56d364; --yellow:#e3b341; --red:#f85149; }
+  body { background:var(--bg); color:var(--text); margin:0; padding:24px;
+         font-family:-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif; }
+  h1 { font-size:18px; display:flex; align-items:center; gap:12px; }
+  #overall { padding:4px 14px; border-radius:14px; font-size:14px; font-weight:600; }
+  #overall.green  { background:rgba(86,211,100,.15); color:var(--green); }
+  #overall.yellow { background:rgba(227,179,65,.15); color:var(--yellow); }
+  #overall.red    { background:rgba(248,81,73,.18); color:var(--red); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:14px; margin-top:18px; }
+  .card { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:14px 16px; }
+  .card.yellow { border-color:var(--yellow); }
+  .card.red    { border-color:var(--red); box-shadow:0 0 12px rgba(248,81,73,.25); }
+  .card h3 { margin:0 0 8px; font-size:14px; display:flex; justify-content:space-between; }
+  .dot { width:10px; height:10px; border-radius:50%; display:inline-block; }
+  .dot.green{background:var(--green);} .dot.yellow{background:var(--yellow);} .dot.red{background:var(--red);}
+  .kv { font-size:12.5px; color:var(--muted); line-height:1.8; font-family:ui-monospace,monospace; }
+  .kv b { color:var(--text); font-weight:600; }
+  #meta { color:var(--muted); font-size:12px; margin-top:16px; }
+  #err { color:var(--red); font-size:13px; }
+</style>
+</head>
+<body>
+<h1>AITrader 系统健康 <span id="overall">…</span></h1>
+<div id="err"></div>
+<div class="grid" id="grid"></div>
+<div id="meta"></div>
+<script>
+const NAMES = {
+  ib: "IB Gateway 行情池",
+  backtest_queue: "后台回测队列",
+  scan_audit: "扫描审计落盘",
+};
+async function refresh() {
+  try {
+    const r = await fetch("/ops/health");
+    if (!r.ok) throw new Error("HTTP " + r.status + "（非本机访问需 admin 登录 token)");
+    const d = await r.json();
+    document.getElementById("err").textContent = "";
+    const overall = document.getElementById("overall");
+    overall.textContent = {green:"正常", yellow:"注意", red:"故障"}[d.status] || d.status;
+    overall.className = d.status;
+    const grid = document.getElementById("grid");
+    grid.innerHTML = "";
+    for (const [key, c] of Object.entries(d.checks)) {
+      const card = document.createElement("div");
+      card.className = "card " + (c.status !== "green" ? c.status : "");
+      let rows = "";
+      for (const [k, v] of Object.entries(c)) {
+        if (k === "status") continue;
+        rows += `${k}: <b>${typeof v === "object" ? JSON.stringify(v) : v}</b><br>`;
+      }
+      card.innerHTML = `<h3>${NAMES[key] || key}<span class="dot ${c.status}"></span></h3>
+                        <div class="kv">${rows}</div>`;
+      grid.appendChild(card);
+    }
+    document.getElementById("meta").textContent =
+      "server ts: " + d.ts + " · 每 10 秒自动刷新";
+  } catch (e) {
+    document.getElementById("err").textContent = "加载失败: " + e.message;
+  }
+}
+refresh();
+setInterval(refresh, 10000);
+</script>
+<script src="/static/i18n.js?v=12"></script>
+</body>
+</html>

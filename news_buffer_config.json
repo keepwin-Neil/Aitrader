@@ -1,0 +1,17 @@
+{
+  "max_days": 30,
+  "max_records": 500000,
+  "auto_scan": {
+    "enabled": true,
+    "interval_minutes": 60,
+    "market": "US",
+    "news_mode": "weight",
+    "interval_bar": "1d",
+    "signal_side": "buy",
+    "last_run_at": "2026-10-03T21:55:38.627691",
+    "last_run_status": "ok",
+    "last_run_alerts": 3349,
+    "last_run_message": "task selector, 3349 alerts",
+    "next_run_at": "2026-10-03T22:55:38.627634"
+  }
+}

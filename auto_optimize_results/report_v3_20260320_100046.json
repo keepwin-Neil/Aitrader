@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-03-20T10:00:46.013197",
+  "elapsed_minutes": 19.0,
+  "total_rounds": 2,
+  "convergence_curve": [
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      0
+    ]
+  ],
+  "total_upgrades": 1,
+  "final_params": {
+    "volatility_regime": {
+      "vol_period": 15,
+      "vol_lookback": 40,
+      "high_vol_pct": 60,
+      "low_vol_pct": 25,
+      "ema_fast": 6,
+      "ema_slow": 45,
+      "rsi_oversold": 40,
+      "atr_stop_mul": 4.0
+    }
+  },
+  "final_baseline": {
+    "momentum_quality": {
+      "avg_score": 0.4133,
+      "avg_sharpe": 0.1128
+    },
+    "adaptive_ensemble_v2": {
+      "avg_score": 0.455,
+      "avg_sharpe": 0.2389
+    },
+    "volatility_regime": {
+      "avg_score": 0.49,
+      "avg_sharpe": 0.2512
+    }
+  },
+  "all_upgrade_log": [
+    {
+      "round": 1,
+      "stock": "NVDA",
+      "strategy": "volatility_regime",
+      "old_score": 0.4593,
+      "new_score": 0.49,
+      "delta": 0.0307,
+      "params": {
+        "vol_period": 15,
+        "vol_lookback": 40,
+        "high_vol_pct": 60,
+        "low_vol_pct": 25,
+        "ema_fast": 6,
+        "ema_slow": 45,
+        "rsi_oversold": 40,
+        "atr_stop_mul": 4.0
+      },
+      "wf_consistency": 60.0,
+      "wf_overfit_ratio": 0.528,
+      "timestamp": "2026-03-20T09:51:24.338941"
+    }
+  ]
+}

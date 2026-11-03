@@ -1,0 +1,70 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.venv/
+
+# Env & secrets (.env.example IS committed as a template)
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Claude Code
+.claude/
+
+# 未捕获异常落盘 (排查用, 每台机各自的现场)
+logs/
+
+# Results cache (regenerable)
+*_results.json
+.cache/
+
+# Market data (local, too large for git)
+market_data/
+.ohlcv_cache/
+_eval_tasks.pkl
+_eval_results.pkl
+
+# Scan audit segments (per-cycle JSONL, see SCAN_AUDIT_DIR)
+# Locally defaults to ./data/scan_audit/<date>/*.jsonl
+data/
+
+# Paper trading data (personal)
+paper_trades.json
+
+# Quant pool runtime state (per-machine: cash / positions / event log)
+quant_pools.json
+quant_events.json
+
+# Hot-stocks cache — 每台机各自维护，别跨机跟随 git / rsync（codex review fix）
+# main.py 启动时 12h TTL：如果这个文件从开发机跟到 prod，会让 prod 继续用 dev 快照 12h
+hot_stocks_cache.json
+
+# OS
+.DS_Store
+Thumbs.db
+.superpowers/
+
+# Local backups + archives (never commit)
+*.bak
+# 带后缀的备份, 如 strategy_warehouse.json.bak_before_dedupe
+*.bak_*
+*.zip
+
+# Atomic-write temp files (stock_pools.json.tmp 等)
+*.tmp
+
+# Strategy eval progress (regenerable)
+_eval_progress.json
+
+# ZCode session state
+.zcode/
+
+# 运行日志不进仓库
+auto_optimize_results/*.log

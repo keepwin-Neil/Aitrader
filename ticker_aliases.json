@@ -1,0 +1,35 @@
+{
+  "_comment": "Ticker aliases (data-source audit B1). old_symbol -> canonical. effective_date = date the NEW symbol became active on the exchange. Used by backtest.py::_download_yf to redirect queries for delisted/renamed tickers to their successor.",
+  "_version": 1,
+  "aliases": {
+    "US": {
+      "FB":    {"canonical": "META",  "effective_date": "2022-06-09", "note": "Facebook → Meta Platforms rebrand"},
+      "TWTR":  {"canonical": "X",     "effective_date": "2023-07-24", "note": "Twitter → X Corp (private, delisted from NYSE 2022-10-28 — included for legacy data)"},
+      "FISV":  {"canonical": "FI",    "effective_date": "2024-07-10", "note": "Fiserv ticker change"},
+      "VMW":   {"canonical": "AVGO",  "effective_date": "2023-11-22", "note": "VMware acquired by Broadcom"},
+      "ATVI":  {"canonical": "MSFT",  "effective_date": "2023-10-13", "note": "Activision Blizzard acquired by Microsoft"},
+      "CERN":  {"canonical": "ORCL",  "effective_date": "2022-06-08", "note": "Cerner acquired by Oracle"},
+      "XLNX":  {"canonical": "AMD",   "effective_date": "2022-02-14", "note": "Xilinx acquired by AMD"},
+      "LNKD":  {"canonical": "MSFT",  "effective_date": "2016-12-08", "note": "LinkedIn acquired by Microsoft"},
+      "WORK":  {"canonical": "CRM",   "effective_date": "2021-07-21", "note": "Slack acquired by Salesforce"},
+      "NUAN":  {"canonical": "MSFT",  "effective_date": "2022-03-04", "note": "Nuance acquired by Microsoft"},
+      "ANTM":  {"canonical": "ELV",   "effective_date": "2022-06-28", "note": "Anthem → Elevance Health rebrand"},
+      "FBHS":  {"canonical": "MBC",   "effective_date": "2022-12-14", "note": "Fortune Brands Home & Security → Masterbrand spinoff"},
+      "STOR":  {"canonical": null,    "effective_date": "2023-02-03", "note": "Store Capital taken private — no canonical successor"},
+      "TIF":   {"canonical": "MC.PA", "effective_date": "2021-01-07", "note": "Tiffany acquired by LVMH (different exchange)"},
+      "ABMD":  {"canonical": "JNJ",   "effective_date": "2022-12-22", "note": "Abiomed acquired by Johnson & Johnson"},
+      "DUK_old":{"canonical": "DUK",  "effective_date": "2006-04-03", "note": "Placeholder for legacy Duke Energy pre-merger"},
+      "WLTW":  {"canonical": "WTW",   "effective_date": "2022-01-10", "note": "Willis Towers Watson ticker change"},
+      "ESTC":  {"canonical": "ESTC",  "effective_date": "2018-10-05", "note": "Elastic NV — no rename, kept for completeness"},
+      "SQ":    {"canonical": "XYZ",   "effective_date": "2025-01-13", "note": "Block Inc ticker change from SQ to XYZ"},
+      "RDSA":  {"canonical": "SHEL",  "effective_date": "2022-01-28", "note": "Royal Dutch Shell consolidation → Shell plc"},
+      "FCAU":  {"canonical": "STLA",  "effective_date": "2021-01-18", "note": "Fiat Chrysler → Stellantis merger"}
+    },
+    "HK": {
+      "_comment": "HK has fewer ticker changes; code number stability is high. Add as needed."
+    },
+    "CN": {
+      "_comment": "A-shares don't typically change codes. Add when encountered."
+    }
+  }
+}

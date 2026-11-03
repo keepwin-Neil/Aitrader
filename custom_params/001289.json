@@ -1,0 +1,18 @@
+{
+  "claude_momentum_breakout": {
+    "params": {
+      "breakout_period": 7,
+      "exit_period": 13,
+      "vol_ma": 20,
+      "vol_ratio_min": 0.6000000000000001,
+      "atr_stop_mul": 2.5
+    },
+    "promoted_at": "2026-03-22T16:52:29.635141",
+    "source_sharpe": 0.83,
+    "source_return": 36.23,
+    "std_return": -14.92,
+    "delta_return": 51.15,
+    "source_method": "bayesian",
+    "wf_consistency": 58.3
+  }
+}

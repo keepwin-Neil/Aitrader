@@ -1,0 +1,16 @@
+{
+  "claude_trix_momentum": {
+    "params": {
+      "trix_period": 19,
+      "signal_period": 5,
+      "atr_stop_mul": 2.5
+    },
+    "promoted_at": "2026-03-22T16:51:19.507341",
+    "source_sharpe": 0.83,
+    "source_return": 32.71,
+    "std_return": 12.67,
+    "delta_return": 20.04,
+    "source_method": "bayesian",
+    "wf_consistency": 60.0
+  }
+}

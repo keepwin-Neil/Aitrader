@@ -1,0 +1,174 @@
+{
+  "claude_dual_ma_cross": {
+    "params": {
+      "fast_period": 16,
+      "slow_period": 19,
+      "ma_type": "sma",
+      "atr_stop_mul": 0.5
+    },
+    "promoted_at": "2026-03-22T16:51:21.631416",
+    "source_sharpe": 1.4,
+    "source_return": 159.88,
+    "std_return": 31.18,
+    "delta_return": 128.7,
+    "source_method": "bayesian",
+    "wf_consistency": 83.3
+  },
+  "claude_momentum_breakout": {
+    "params": {
+      "breakout_period": 11,
+      "exit_period": 5,
+      "vol_ma": 20,
+      "vol_ratio_min": 0.30000000000000004,
+      "atr_stop_mul": 3.5
+    },
+    "promoted_at": "2026-03-22T16:51:21.663291",
+    "source_sharpe": 1.15,
+    "source_return": 126.59,
+    "std_return": 13.88,
+    "delta_return": 112.71,
+    "source_method": "bayesian",
+    "wf_consistency": 83.3
+  },
+  "claude_volatility_breakout": {
+    "params": {
+      "k_factor": 0.8500000000000001,
+      "ema_period": 30,
+      "min_range": 0.2,
+      "atr_stop_mul": 1.0
+    },
+    "promoted_at": "2026-03-22T16:51:21.693716",
+    "source_sharpe": 1.17,
+    "source_return": 142.4,
+    "std_return": 78.79,
+    "delta_return": 63.61,
+    "source_method": "bayesian",
+    "wf_consistency": 66.7
+  },
+  "claude_elder_force": {
+    "params": {
+      "short_period": 2,
+      "long_period": 20,
+      "ema_period": 40,
+      "atr_stop_mul": 1.5
+    },
+    "promoted_at": "2026-03-22T16:51:21.724042",
+    "source_sharpe": 1.21,
+    "source_return": 151.82,
+    "std_return": 87.32,
+    "delta_return": 64.5,
+    "source_method": "bayesian",
+    "wf_consistency": 66.7
+  },
+  "claude_supertrend": {
+    "params": {
+      "st_period": 15,
+      "st_multiplier": 2.0,
+      "vol_ma": 20,
+      "atr_stop_mul": 0.5
+    },
+    "promoted_at": "2026-03-22T16:51:21.774515",
+    "source_sharpe": 1.13,
+    "source_return": 123.62,
+    "std_return": -15.05,
+    "delta_return": 138.67,
+    "source_method": "bayesian",
+    "wf_consistency": 66.7
+  },
+  "claude_trix_momentum": {
+    "params": {
+      "trix_period": 11,
+      "signal_period": 5,
+      "atr_stop_mul": 2.5
+    },
+    "promoted_at": "2026-03-22T16:51:21.804131",
+    "source_sharpe": 1.25,
+    "source_return": 173.09,
+    "std_return": 99.71,
+    "delta_return": 73.38,
+    "source_method": "bayesian",
+    "wf_consistency": 66.7
+  },
+  "claude_aroon_oscillator": {
+    "params": {
+      "aroon_period": 15,
+      "buy_threshold": 40,
+      "sell_threshold": -60,
+      "atr_stop_mul": 1.5
+    },
+    "promoted_at": "2026-03-22T16:51:21.835473",
+    "source_sharpe": 1.01,
+    "source_return": 100.73,
+    "std_return": 27.45,
+    "delta_return": 73.28,
+    "source_method": "bayesian",
+    "wf_consistency": 83.3
+  },
+  "claude_dual_thrust": {
+    "params": {
+      "lookback": 5,
+      "k1": 0.65,
+      "k2": 0.65,
+      "atr_stop_mul": 1.5
+    },
+    "promoted_at": "2026-03-22T16:51:21.865245",
+    "source_sharpe": 1.52,
+    "source_return": 262.83,
+    "std_return": 51.76,
+    "delta_return": 211.07,
+    "source_method": "bayesian",
+    "wf_consistency": 83.3
+  },
+  "claude_momentum_reversion_hybrid": {
+    "params": {
+      "adx_period": 20,
+      "adx_threshold": 25,
+      "ema_fast": 12,
+      "ema_slow": 30,
+      "rsi_period": 14,
+      "rsi_oversold": 35,
+      "rsi_overbought": 75,
+      "bb_period": 15,
+      "bb_std": 2.0,
+      "atr_stop_mul": 2.0
+    },
+    "promoted_at": "2026-03-22T16:51:21.909455",
+    "source_sharpe": 1.43,
+    "source_return": 186.16,
+    "std_return": 70.3,
+    "delta_return": 115.86,
+    "source_method": "bayesian",
+    "wf_consistency": 66.7
+  },
+  "claude_chandelier_exit": {
+    "params": {
+      "lookback": 20,
+      "atr_mult": 2.0,
+      "atr_period": 28,
+      "atr_stop_mul": 2.5
+    },
+    "promoted_at": "2026-03-22T16:51:21.938269",
+    "source_sharpe": 1.6,
+    "source_return": 187.31,
+    "std_return": 59.79,
+    "delta_return": 127.52,
+    "source_method": "bayesian",
+    "wf_consistency": 100.0
+  },
+  "claude_momentum_quality": {
+    "params": {
+      "mom_period": 24,
+      "quality_days": 6,
+      "quality_threshold": 2,
+      "ema_trend": 50,
+      "atr_stop_mul": 4.0
+    },
+    "promoted_at": "2026-03-22T16:51:21.968301",
+    "source_sharpe": 1.24,
+    "source_return": 154.63,
+    "std_return": 37.94,
+    "delta_return": 116.69,
+    "source_method": "bayesian",
+    "wf_consistency": 66.7
+  }
+}

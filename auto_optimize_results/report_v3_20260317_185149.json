@@ -1,0 +1,231 @@
+{
+  "generated_at": "2026-03-17T18:51:49.592990",
+  "elapsed_minutes": 1259.1,
+  "total_rounds": 3,
+  "convergence_curve": [
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      3,
+      0
+    ]
+  ],
+  "total_upgrades": 2,
+  "final_params": {
+    "mean_reversion": {
+      "rsi_period": 8,
+      "rsi_oversold": 42,
+      "rsi_overbought": 83,
+      "bb_std": 2.0,
+      "atr_stop_mul": 4.0
+    },
+    "adaptive_ma": {
+      "er_period": 21,
+      "fast_sc": 8,
+      "slow_sc": 60,
+      "threshold": 0.0003,
+      "atr_stop_mul": 4.0
+    },
+    "ensemble_voting": {
+      "buy_threshold": 1,
+      "sell_threshold": 3,
+      "mr_rsi_oversold": 40,
+      "mr_rsi_overbought": 69,
+      "dm_fast": 3,
+      "dm_slow": 21
+    },
+    "turtle_trading": {
+      "entry_period": 5,
+      "exit_period": 20,
+      "atr_stop_mul": 3.0
+    },
+    "elder_triple_screen": {
+      "weekly_ema_period": 6,
+      "force_period": 3,
+      "ema_short": 25,
+      "atr_stop_mul": 3.5
+    },
+    "multi_indicator": {
+      "ema_fast": 10,
+      "ema_slow": 30,
+      "rsi_buy_min": 48,
+      "rsi_sell": 70,
+      "atr_stop_mul": 4.0
+    },
+    "volatility_breakout": {
+      "k_factor": 0.6500000000000001,
+      "ema_period": 75,
+      "min_range": 0.05,
+      "atr_stop_mul": 4.0
+    },
+    "momentum_breakout": {
+      "breakout_period": 10,
+      "exit_period": 19,
+      "vol_ratio_min": 1.1,
+      "atr_stop_mul": 4.0
+    },
+    "kdj_dmi": {
+      "kdj_period": 8,
+      "kdj_oversold": 23,
+      "kdj_overbought": 75,
+      "adx_threshold": 33,
+      "atr_stop_mul": 3.0
+    },
+    "vwap_breakout": {
+      "vwap_period": 39,
+      "atr_band_mul": 2.2,
+      "vol_ratio_min": 0.9000000000000001,
+      "atr_stop_mul": 3.5
+    },
+    "rsi_macd_trend": {
+      "rsi_entry": 20,
+      "rsi_exit": 92,
+      "ema_trend": 40,
+      "atr_stop_mul": 2.5
+    },
+    "ross_hook": {
+      "fractal_n": 2,
+      "ema_period": 65,
+      "atr_stop_mul": 2.0
+    },
+    "supertrend": {
+      "st_period": 14,
+      "st_multiplier": 5.0,
+      "atr_stop_mul": 3.0
+    },
+    "dual_ma_cross": {
+      "fast_period": 18,
+      "slow_period": 16,
+      "ma_type": "sma",
+      "atr_stop_mul": 3.0
+    },
+    "macd_divergence": {
+      "macd_fast": 5,
+      "macd_slow": 30,
+      "lookback": 17,
+      "rsi_sell": 78,
+      "atr_stop_mul": 1.0
+    },
+    "divergence_combo": {
+      "pivot_n": 2,
+      "max_pivot_dist": 30,
+      "div_confirm": 1,
+      "rsi_zone_low": 45,
+      "rsi_zone_high": 70,
+      "atr_stop_mul": 1.5
+    }
+  },
+  "final_baseline": {
+    "multi_indicator": {
+      "avg_score": 0.4185,
+      "avg_sharpe": 0.1046
+    },
+    "dual_ma_cross": {
+      "avg_score": 0.4816,
+      "avg_sharpe": 0.2871
+    },
+    "momentum_breakout": {
+      "avg_score": 0.471,
+      "avg_sharpe": 0.2692
+    },
+    "mean_reversion": {
+      "avg_score": 0.5158,
+      "avg_sharpe": 0.3993
+    },
+    "turtle_trading": {
+      "avg_score": 0.4605,
+      "avg_sharpe": 0.2666
+    },
+    "macd_divergence": {
+      "avg_score": 0.3914,
+      "avg_sharpe": -0.0535
+    },
+    "kdj_dmi": {
+      "avg_score": 0.4006,
+      "avg_sharpe": -0.0532
+    },
+    "vwap_breakout": {
+      "avg_score": 0.4451,
+      "avg_sharpe": 0.206
+    },
+    "adaptive_ma": {
+      "avg_score": 0.4562,
+      "avg_sharpe": 0.2411
+    },
+    "rsi_macd_trend": {
+      "avg_score": 0.4225,
+      "avg_sharpe": 0.1167
+    },
+    "ensemble_voting": {
+      "avg_score": 0.5245,
+      "avg_sharpe": 0.4181
+    },
+    "ichimoku_cloud": {
+      "avg_score": 0.4331,
+      "avg_sharpe": 0.1869
+    },
+    "volatility_breakout": {
+      "avg_score": 0.4296,
+      "avg_sharpe": 0.1843
+    },
+    "elder_triple_screen": {
+      "avg_score": 0.4061,
+      "avg_sharpe": 0.1023
+    },
+    "supertrend": {
+      "avg_score": 0.4568,
+      "avg_sharpe": 0.2512
+    },
+    "ross_hook": {
+      "avg_score": 0.4435,
+      "avg_sharpe": 0.2081
+    },
+    "divergence_combo": {
+      "avg_score": 0.4776,
+      "avg_sharpe": 0.3478
+    }
+  },
+  "all_upgrade_log": [
+    {
+      "round": 1,
+      "stock": "TMUS",
+      "strategy": "momentum_breakout",
+      "old_score": 0.4624,
+      "new_score": 0.471,
+      "delta": 0.0086,
+      "params": {
+        "breakout_period": 10,
+        "exit_period": 19,
+        "vol_ratio_min": 1.1,
+        "atr_stop_mul": 4.0
+      },
+      "wf_consistency": 100.0,
+      "wf_overfit_ratio": 2.081,
+      "timestamp": "2026-03-16T23:05:21.021946"
+    },
+    {
+      "round": 1,
+      "stock": "ADP",
+      "strategy": "macd_divergence",
+      "old_score": 0.3859,
+      "new_score": 0.3914,
+      "delta": 0.0055,
+      "params": {
+        "macd_fast": 5,
+        "macd_slow": 30,
+        "lookback": 17,
+        "rsi_sell": 78,
+        "atr_stop_mul": 1.0
+      },
+      "wf_consistency": 80.0,
+      "wf_overfit_ratio": 1.394,
+      "timestamp": "2026-03-17T00:34:29.457470"
+    }
+  ]
+}
