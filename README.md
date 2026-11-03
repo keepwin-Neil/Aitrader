@@ -7,7 +7,7 @@ machine only**: multi-strategy backtesting, parameter optimization, Walk-Forward
 real-time scanning, news-driven stock picking, paper trading, LLM strategy evaluation, and IB
 Gateway market data integration.
 
-> 📦 Repository: https://github.com/keepwin-Neil/Aitrader (private)
+> 📦 Repository: https://github.com/keepwin-Neil/Aitrader (public)
 
 ---
 

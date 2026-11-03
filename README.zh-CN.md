@@ -6,7 +6,7 @@
 多策略回测、参数优化、Walk-Forward 验证、实时扫描、新闻驱动选股、
 模拟交易、LLM 策略评估与 IB Gateway 行情接入。
 
-> 📦 仓库地址：https://github.com/keepwin-Neil/Aitrader （私有仓库）
+> 📦 仓库地址：https://github.com/keepwin-Neil/Aitrader （公开仓库）
 
 ---
 
