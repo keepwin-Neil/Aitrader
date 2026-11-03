@@ -68,3 +68,4 @@ _eval_progress.json
 
 # 运行日志不进仓库
 auto_optimize_results/*.log
+server.log
